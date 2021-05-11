@@ -27,7 +27,7 @@
     <div class="container">
         <header>
             <div class="image">
-                <img src="comprado.jpeg" height=500 />
+                <img src="img/comprado.jpeg" height=500 />
             </div>
         </header>
         <main>

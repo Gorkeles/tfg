@@ -37,7 +37,7 @@
     <div class="container">
         <header>
             <div class="image">
-                <img src="contacto.png" height=500 />
+                <img src="img/contacto.png" height=500 />
             </div>
         </header>
         <main>

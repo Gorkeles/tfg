@@ -24,7 +24,7 @@
         <main>
             <center>
                 <H1> ¡Si no aceptas las cookies estas expuesto! </H1> <!-- Titulo de la web -->
-                <img src="coronavirus.jpg" alt="Cerula coronavirus">
+                <img src="img/coronavirus.jpg" alt="Cerula coronavirus">
             </center>
         </main>
 

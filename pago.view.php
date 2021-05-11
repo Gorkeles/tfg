@@ -28,7 +28,7 @@
     <div class="container">
         <header>
             <div class="image">
-                <img src="tarjeta.jpg" height=500 />
+                <img src="img/tarjeta.jpg" height=500 />
             </div>
         </header>
         <main>

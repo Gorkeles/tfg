@@ -69,14 +69,14 @@ $_SESSION['nombre'] = 'Gorka'; //Sesión iniciada con Gorka
     <div class="container">
         <header>
             <div class="image">
-                <img src="mascarillas.jpg" height=500 />
+                <img src="img/mascarillas.jpg" height=500 />
             </div>
         </header>
         <main>
             <h1>Tu web de mascarillas</h1>
 
             <section class="bottle">
-                <img src="persona-mascarilla.jpg" />
+                <img src="img/persona-mascarilla.jpg" />
                 <div>
                     En tu web de mascarillas queremos que te sientas protegido pero agusto y por eso asdfsgbwsfvswrtsdfdvsgbdfgbx
                     fdgbsdbs
@@ -95,11 +95,11 @@ $_SESSION['nombre'] = 'Gorka'; //Sesión iniciada con Gorka
             <!-- Galería de fotos -->
             <h2>Galería</h2>
             <section class="gallery">
-                <img src="galeria-mascarilla.jpg"/>
-                <img src="galeria-mascarilla.jpg"/>
-                <img src="galeria-mascarilla.jpg"/>
-                <img src="galeria-mascarilla.jpg"/>
-                <img src="galeria-mascarilla.jpg"/>
+                <img src="img/galeria-mascarilla.jpg"/>
+                <img src="img/galeria-mascarilla.jpg"/>
+                <img src="img/galeria-mascarilla.jpg"/>
+                <img src="img/galeria-mascarilla.jpg"/>
+                <img src="img/galeria-mascarilla.jpg"/>
 
             </section>
     </div>

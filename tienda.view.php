@@ -42,7 +42,7 @@
     <div class="container">
         <header>
             <div class="image">
-                <img src="tienda.jpg" height=500 />
+                <img src="img/tienda.jpg" height=500 />
             </div>
         </header>
         <main>
@@ -61,15 +61,15 @@
             <h2>Muestrario</h2>
             <div class="cards">
                 <div class="card">
-                    <a title="Mascarilla" href="login.view.php"><img src="mascarilla-negra.jpg" alt="Mascarilla negra" /></a>
+                    <a title="Mascarilla" href="login.view.php"><img src="img/mascarilla-negra.jpg" alt="Mascarilla negra" /></a>
                     <h3>Mascarillas</h3>
                 </div>
                 <div class="card">
-                    <a title="Filtros" href="login.view.php"><img src="filtros.jpg" alt="Filtros de mascatilla" /></a>
+                    <a title="Filtros" href="login.view.php"><img src="img/filtros.jpg" alt="Filtros de mascatilla" /></a>
                     <h3>Filtros</h3>
                 </div>
                 <div class="card">
-                    <a title="Estuche" href="login.view.php"><img src="estuche.jpg" alt="Estuche portamascarillas" /></a>
+                    <a title="Estuche" href="login.view.php"><img src="img/estuche.jpg" alt="Estuche portamascarillas" /></a>
                     <h3>Portamascarillas</h3>
                 </div>
             </div>
