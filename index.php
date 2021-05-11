@@ -107,9 +107,6 @@ $_SESSION['nombre'] = 'Gorka'; //Sesión iniciada con Gorka
         <div class="nav-item">
             <a href="contacto.view.php" style="text-decoration:none">Contacto</a>
         </div>
-        <section class="social">
-            <a href="cerrar.php" style="text-decoration:none">Cerrar sesión</a>
-        </section>
 
     </nav>
 
@@ -155,12 +152,12 @@ $_SESSION['nombre'] = 'Gorka'; //Sesión iniciada con Gorka
     </main>
     <footer>
         <address>
-            <p>Siempre protegido </p>
+            Siempre protegido
 
         </address>
         <div>Enmascarados | Portada</div>
         <section class="social">
-            <p><a href="mapa.view.php" style="text-decoration:none">Mapa WEB</a></p>
+            <a href="mapa.view.php" style="text-decoration:none">Mapa WEB</a>
         </section>
     </footer>
 </body>

@@ -103,7 +103,7 @@
 
 	<footer>
 		<address>
-			<p>Siempre protegido </p>
+			Siempre protegido
 
 		</address>
 		<div>Enmascarados | Portada </div>

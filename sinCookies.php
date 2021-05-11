@@ -33,7 +33,7 @@
 
     <footer>
         <address>
-            <p>Siempre protegido </p>
+            Siempre protegido
 
         </address>
         <div>Cookies | Enmascarados</div>
