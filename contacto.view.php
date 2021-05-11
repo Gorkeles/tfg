@@ -52,12 +52,16 @@
                 <div class="contacto">
                     <!-- contenedor -->
 
-                    <form action=" " name="formulario" method="post">
+                    <form action="contacto.php" name="formulario" method="post">
                         <!-- Usamos el método post para recoger lo que seleccione el usuario en unas variables -->
                         <!-- Placeholder es lo que le aparece al usuario en la web, name es como se llama la variable que recogeremos con post y type el tipo de datos que introduce el usuario -->
                         <!-- El nombre es tipo text -->
                         Nombre: <br>
-                        <input type="text" placeholder="Introduce tu nombre" name="nombre" id="nombre" required>
+                        <input type="text" placeholder="Introduce tu nombre y apellido" name="nombre" id="nombre" required>
+                        <br>
+                        <br>
+                        Teléfono: <br>
+                        <input type="text" placeholder="Introduce tu teléfono" name="phone" id="phone" required>
                         <br>
                         <br>
                         <!-- El DNI es tipo text -->
@@ -65,19 +69,14 @@
                         <input type="email" placeholder="Introduce tu email" name="email" id="email" required>
                         <br>
                         <br>
-                        <!-- La fecha es tipo text -->
-                        Número de pedido: <br>
-                        <input type="text" placeholder="Solo rellena si es un pedido" name="pedido" id="pedido">
-                        <br>
-                        <br>
-                        <!-- El dni es tipo text -->
+                        <!-- El comentario es tipo text-->
                         Comentarios: <br>
                         <input type="text" placeholder="Detallanos todas tus dudas para ponernos en contacto contigo" name="consulta" id="consulta" required>
                         <br>
                         <br>
 
                         <!-- boton para enviar los datos -->
-                        <input type="button" name="registrar" onclick="enviarDatos();" class="btn btn-primary" id="form" value="Enviar"><br><br>
+                        <input type="submit" class="btn btn-primary" id="form" value="Enviar"><br><br>
                     </form>
 
 
