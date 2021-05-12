@@ -199,12 +199,12 @@
     </main>
     <footer>
         <address>
-            <p>Siempre protegido </p>
+            Siempre protegido
 
         </address>
         <div>Enmascarados | Tienda</div>
         <section class="social">
-            <p><a href="mapa.view.php" style="text-decoration:none">Mapa WEB</a></p>
+            <a href="mapa.view.php" style="text-decoration:none">Mapa WEB</a>
         </section>
     </footer>
 </body>
