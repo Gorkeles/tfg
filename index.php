@@ -157,9 +157,8 @@ $_SESSION['nombre'] = 'Gorka'; //Sesión iniciada con Gorka
         </address>
         <div>Enmascarados | Portada</div>
 
-        <!-- AQUI PONER UN ENLACE QUE PPONGA ADMINISTRADOR QUE LLEVE A UNA PAGINA DE LOGIN -->
         <section class="social">
-            <a href="mapa.view.php" style="text-decoration:none">Mapa WEB</a>
+            <a href="admin.view.php" style="text-decoration:none">Aministrador</a>
         </section>
     </footer>
 </body>
