@@ -26,6 +26,7 @@ p {
 /*defining colour variables*/
 
 :root {
+    /*gana contraste con #a9fbfb*/
     --background-color: #CCFFFF;
     --primary-color: #009999;
     --primary-text-color: #000000;
