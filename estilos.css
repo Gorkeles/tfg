@@ -23,11 +23,9 @@ p {
 
 /* Estilo para las fuentes en toda la página */
 
-/*defining colour variables*/
-
 :root {
-    /*gana contraste con #a9fbfb*/
-    --background-color: #CCFFFF;
+    /*todos son colores seguros, falta añadir a guía de estilos*/
+    --background-color: #99FFFF;
     --primary-color: #009999;
     --primary-text-color: #000000;
     --secondary-text-color: #FFFFFF;
