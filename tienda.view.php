@@ -30,9 +30,6 @@
         <div class="nav-item">
             <a href="contacto.view.php" style="text-decoration:none">Contacto</a>
         </div>
-        <section class="social">
-            <a href="cerrar.php" style="text-decoration:none">Cerrar sesión</a>
-        </section>
 
     </nav>
 
