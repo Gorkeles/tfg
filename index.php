@@ -124,7 +124,7 @@ $_SESSION['nombre'] = 'Gorka'; //Sesión iniciada con Gorka
             <section class="bottle">
                 <img src="img/persona-mascarilla.jpg" />
                 <div>
-                    En tu web de mascarillas queremos que te sientas protegido pero agusto y por eso asdfsgbwsfvswrtsdfdvsgbdfgbx
+                    En tu web de mascarillas queremos que te sientas protegido pero a gusto y por eso asdfsgbwsfvswrtsdfdvsgbdfgbx
                     fdgbsdbs
                     dba_closesdfbsdfb
                 </div>
@@ -157,9 +157,8 @@ $_SESSION['nombre'] = 'Gorka'; //Sesión iniciada con Gorka
         </address>
         <div>Enmascarados | Portada</div>
 
-        <!-- AQUI PONER UN ENLACE QUE PPONGA ADMINISTRADOR QUE LLEVE A UNA PAGINA DE LOGIN -->
         <section class="social">
-            <a href="mapa.view.php" style="text-decoration:none">Mapa WEB</a>
+            <a href="admin.view.php" style="text-decoration:none">Aministrador</a>
         </section>
     </footer>
 </body>

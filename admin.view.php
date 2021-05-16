@@ -39,38 +39,18 @@
     <!-- Imagen de cabecera, subtítulo y descripción -->
     <div class="container">
         <header>
-            <div class="image">
-                <img src="img/tienda.jpg" height=500 />
-            </div>
         </header>
         <main>
-            <h1>Bienvenidos a la tienda</h1><br>
+            <h1>Bienvenido Administrador</h1><br>
 
             <section class="rutasMoto">
 
                 <div>
-                    En nuestra tienda tienes una original seleción de merchandising que no encontrarás en otras páginas y con envío gratuito
+                    Desde aquí eres Dios
                 </div>
 
 
             </section>
-
-            <!-- Introducimos una serie de apartados para organizar el contenido de la web -->
-            <h2>Muestrario</h2>
-            <div class="cards">
-                <div class="card">
-                    <a title="Mascarilla" href="login.view.php"><img src="img/mascarilla-negra.jpg" alt="Mascarilla negra" /></a>
-                    <h3>Mascarillas</h3>
-                </div>
-                <div class="card">
-                    <a title="Filtros" href="login.view.php"><img src="img/filtros.jpg" alt="Filtros de mascatilla" /></a>
-                    <h3>Filtros</h3>
-                </div>
-                <div class="card">
-                    <a title="Estuche" href="login.view.php"><img src="img/estuche.jpg" alt="Estuche portamascarillas" /></a>
-                    <h3>Portamascarillas</h3>
-                </div>
-            </div>
     </div>
 
 
@@ -78,12 +58,12 @@
 <!-- Imagen de cabecera, subtítulo y descripción -->
 <div class="container">
         <main>
-            <h1>Buscador de mascarillas</h1><br>
+            <h1>Administración de artículos</h1><br>
 
             <section class="rutasMoto">
 
                 <div>
-                    En éste apartado te mostraremos las mejores rutas disponibles, catalogamos las rutas por longitud y niveles de dificultad, para adaptarse a tus necesidades.
+                    Busca las mascarillas que quieras insertar, modificar o eliminar
                 </div><br>
 
 
@@ -92,7 +72,7 @@
             <!-- Buscador de rutas que busca en la base de datos según el datos que elijas
             y a continuación escribir que quieres buscar dentro de ese campo seleccionado -->
             <section>
-                <h2>Buscador de rutas</h2>
+                <h2>Buscador de mascarillas</h2>
                 <br>
                 <div class="motos">
                     <form action="rutas.php" name="rutas" method="post">
@@ -151,7 +131,7 @@
 
 
             <section>
-                <h2>Introduce tu ruta</h2>
+                <h2>Introducción de mascarillas</h2>
                 <br>
                 <div class="rutas">
                     <!-- contenedor -->
@@ -200,9 +180,9 @@
             Siempre protegido
 
         </address>
-        <div>Enmascarados | Tienda</div>
+        <div>Enmascarados | Administrador</div>
         <section class="social">
-            <a href="admin.view.php" style="text-decoration:none">Administrador</a>
+            <a href="index.view.php" style="text-decoration:none">Volver a Portada</a>
         </section>
     </footer>
 </body>

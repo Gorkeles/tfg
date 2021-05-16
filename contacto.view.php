@@ -89,7 +89,7 @@
         </address>
         <div>Enmascarados | Contacto</div>
         <section class="social">
-            <a href="mapa.view.php" style="text-decoration:none">Mapa WEB</a>
+            <a href="admin.view.php" style="text-decoration:none">Administrador</a>
         </section>
     </footer>
 </body>
