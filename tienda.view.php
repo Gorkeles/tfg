@@ -49,7 +49,7 @@
             <section class="rutasMoto">
 
                 <div>
-                    En nuestra tienda tienes una original seleción de merchandising que no encontrarás en otras páginas y con envío gratuito
+                    En nuestra tienda tienes una variedad de mascarillas...
                 </div>
 
 
@@ -63,7 +63,7 @@
                     <h3>Mascarillas</h3>
                 </div>
                 <div class="card">
-                    <a title="Filtros" href="login.view.php"><img src="img/filtros.jpg" alt="Filtros de mascatilla" /></a>
+                    <a title="Filtros" href="login.view.php"><img src="img/filtros.jpg" alt="Filtros de mascarilla" /></a>
                     <h3>Filtros</h3>
                 </div>
                 <div class="card">

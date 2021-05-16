@@ -269,7 +269,8 @@ footer {
 }
 
 footer address {
-    float: left;
+    text-align: center;
+    float: center;
     width: 20%;
 }
 

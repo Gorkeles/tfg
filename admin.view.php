@@ -182,7 +182,7 @@
         </address>
         <div>Enmascarados | Administrador</div>
         <section class="social">
-            <a href="index.view.php" style="text-decoration:none">Volver a Portada</a>
+            <a href="index.php" style="text-decoration:none">Volver a Portada</a>
         </section>
     </footer>
 </body>

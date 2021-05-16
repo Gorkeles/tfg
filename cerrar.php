@@ -24,7 +24,7 @@ session_destroy();
     <!-- Barra de navegación con los enlaces a distintas páginas de la web -->
     <nav>
         <div class="nav-item" href="index.php" target="_blank">
-            <a href="index.php" style="text-decoration:none">Ir a LOGIN</a>
+            <a href="index.php" style="text-decoration:none">Ir a PORTADA</a>
         </div>
     </nav>
     <main>

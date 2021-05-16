@@ -49,7 +49,7 @@
                     <div class="panel panel-default">
                         <div class="panel-body">
                             <span class="paymentErrors alert-danger"></span>
-                            <form action="comprado.php" method="POST" id="paymentForm" onsubmit="return validar();">
+                            <form action="comprado.view.php" method="POST" id="paymentForm" onsubmit="return validar();">
                                 <div class="form-group">
                                     <label for="name">Nombre</label>
                                     <input type="text" name="nombre" id="nombre" placeholder="Nombre Apellido Apellido" class="form-control" required>
