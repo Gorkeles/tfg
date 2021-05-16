@@ -92,7 +92,6 @@
             <!-- Buscador de rutas que busca en la base de datos según el datos que elijas
             y a continuación escribir que quieres buscar dentro de ese campo seleccionado -->
             <section>
-                <h2>Buscador de rutas</h2>
                 <br>
                 <div class="motos">
                     <form action="rutas.php" name="rutas" method="post">
@@ -148,47 +147,6 @@
                     </center>
                 <?php } ?>
             </div>
-
-
-            <section>
-                <h2>Introduce tu ruta</h2>
-                <br>
-                <div class="rutas">
-                    <!-- contenedor -->
-
-                    <form action="rutas.php" name="rutas" method="post">
-                        <!-- Usamos el método post para recoger lo que seleccione el usuario en unas variables -->
-
-                        <!-- Placeholder es lo que le aparece al usuario en la web, name es como se llama la variable que recogeremos con post y type el tipo de datos que introduce el usuario -->
-
-                        Provincia: <br>
-                        <input type="text" placeholder="¿Donde es la ruta?" name="provincia" id="provincia" required>
-                        <br>
-                        <br>
-                        Dificultad: <br>
-                        <input type="text" placeholder="¿Fácil, media o dificil?" name="nivel" id="nivel" required>
-                        <br>
-                        <br>
-                        Distancia: <br>
-                        <input type="text" placeholder="¿Cuantos kilómetros tiene?" name="distancia" id="distancia" required>
-                        <br>
-                        <br>
-                        Descripción: <br>
-                        <input type="text" placeholder="Describe la ruta brevemente" name="descripcion" id="descripcion" required>
-                        <br>
-                        <br>
-
-
-                        <!-- boton para enviar los datos -->
-                        <input type="submit" name="rutas" class="btn btn-primary" value="Enviar">
-                    </form>
-
-
-                </div>
-
-
-            </section>
-
     </div>
 
 

@@ -1,14 +1,11 @@
-<<<<<<< HEAD
-:root {
+<<<<<<< HEAD:root {
     --primary-color: #E5E1E6;
     --secundary-color: #CCFFFF;
     --tertiary-color: #66ff66;
     --text-color: #000000;
 }
 
-
-=======
->>>>>>> 748a88bd83eb72d155ca36e89eab1dbcfb35a53e
+=======>>>>>>>748a88bd83eb72d155ca36e89eab1dbcfb35a53e
 /* BOX-SIZING para calcular directamente todas las dimensiones de las cajas */
 
 * {
@@ -139,15 +136,16 @@ main {
     background-color: var(--background-color);
 }
 
-main h1, 
-main h2, 
+main h1,
+main h2,
 h1,
 h2,
 h3,
 h4,
-h5{
+h5 {
     text-align: center;
 }
+
 
 /* Línea de separacion en los títulos */
 
@@ -170,9 +168,9 @@ main h2::before {
 
 .cards .card {
     float: left;
-    padding: 20px;
+    padding: 25px;
     text-align: center;
-    width: 33%;
+    width: 25%;
 }
 
 .cards .card img {
@@ -456,7 +454,6 @@ form input[type="submit"]:hover {
 footer {
     background-color: #009999;
     clear: both;
-    font-weight: bolder;
     font-size: 0.8;
     margin-top: 20px;
     overflow-y: auto;
