@@ -124,7 +124,7 @@ $_SESSION['nombre'] = 'Gorka'; //Sesión iniciada con Gorka
             <section class="bottle">
                 <img src="img/persona-mascarilla.jpg" />
                 <div>
-                    En tu web de mascarillas queremos que te sientas protegido pero agusto y por eso asdfsgbwsfvswrtsdfdvsgbdfgbx
+                    En tu web de mascarillas queremos que te sientas protegido pero a gusto y por eso asdfsgbwsfvswrtsdfdvsgbdfgbx
                     fdgbsdbs
                     dba_closesdfbsdfb
                 </div>

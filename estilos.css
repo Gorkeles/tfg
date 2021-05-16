@@ -1,17 +1,9 @@
-color-definition {
-    --primary-color: #009999;
-    --secundary-color: #FEFCC7;
-    --tertiary-color: #FF6699;
-}
-
-
 /* BOX-SIZING para calcular directamente todas las dimensiones de las cajas */
 
 * {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
-    background-color: #FEFCC7;
 }
 
 
@@ -31,14 +23,30 @@ p {
 
 /* Estilo para las fuentes en toda la página */
 
+:root {
+    /*todos son colores seguros, falta añadir a guía de estilos*/
+    --background-color: #99FFFF;
+    --primary-color: #009999;
+    --primary-text-color: #000000;
+    --secondary-text-color: #FFFFFF;
+}
+
 body {
-    color: #FF6699;
+    /*el background color también se podría poner simplemente blanco*/
+    font-size: 16px;
     font-family: 'Montserrat', sans-serif;
+    color: var(--primary-text-color);
+    background-color: rgb(238, 236, 236);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-color: 'ligthblue';
 }
 
 a {
-    color: #FF6699;
-    background-color: #009999;
+    color: var(--primary-text-color);
+    background-color: var(--primary-color);
 }
 
 
@@ -72,7 +80,7 @@ footer {
 
 nav {
     background-color: #009999;
-    color: #FF6699;
+    color: var(--primary-text-color);
     font-size: 1.4;
     padding: 10px;
     position: -webkit-sticky;
@@ -86,7 +94,7 @@ nav div {
     float: left;
     margin-left: 20px;
     padding: 5px;
-    background-color: #009999;
+    background-color: var(--primary-color);
 }
 
 nav section {
@@ -117,41 +125,23 @@ header img {
 main {
     margin: 0px auto;
     width: 80%;
+    background-color: var(--background-color);
 }
 
-main h1 {
+main h1, 
+main h2, 
+h1,
+h2,
+h3,
+h4,
+h5{
     text-align: center;
 }
-
-main h2 {
-    text-align: center;
-}
-
-h1 {
-    text-align: center;
-}
-
-h2 {
-    text-align: center;
-}
-
-h3 {
-    text-align: center;
-}
-
-h4 {
-    text-align: center;
-}
-
-h5 {
-    text-align: center;
-}
-
 
 /* Línea de separacion en los títulos */
 
 main h2::before {
-    background-color: #FEFCC7;
+    background-color: #000000;
     display: block;
     content: " ";
     height: 2px;
@@ -259,10 +249,10 @@ main h2::before {
 /* Estilos para el pie de página presente en todas las páginas */
 
 footer {
-    background-color: #009999;
+    background-color: var(--primary-color);
     clear: both;
-    color: #FF6699;
-    font-weight: bolder;
+    color: var(--primary-text-color);
+    /*font-weight: bolder;*/
     font-size: 0.8;
     margin-top: 20px;
     overflow-y: auto;
@@ -319,17 +309,6 @@ td {
 tr:hover td {
     background: #d0d0d0;
     color: rgb(128, 128, 128);
-}
-
-body {
-    /*background:#F2F2F2;   Color y fuente*/
-    font-size: 16px;
-    font-family: 'Montserrat', sans-serif;
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
-    background-color: 'ligthblue';
 }
 
 h3 {
@@ -423,7 +402,8 @@ form input[type="submit"]:hover {
 
 .container {
     margin: 0 auto;
-    width: 50%;
+    width: 65%;
+    background-color: var(--background-color);
 }
 
 .content {
