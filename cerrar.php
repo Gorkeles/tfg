@@ -1,4 +1,4 @@
-<?php 
+<?php
 
 session_start();
 session_destroy();
@@ -16,8 +16,8 @@ session_destroy();
 
     <!-- Incluimos los estilos y fuente utilizada en la web -->
     <link href="estilos.css" rel="stylesheet" type="text/css" />
-<link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -28,7 +28,7 @@ session_destroy();
         </div>
     </nav>
     <main>
-    <div class="cerrar" href="index.php" target="_blank">
+        <div class="cerrar" href="index.php" target="_blank">
             <h2>¡Has cerrado sesión con éxito!</h2>
         </div>
     </main>

@@ -20,57 +20,57 @@ $_SESSION['nombre'] = 'Gorka'; //Sesión iniciada con Gorka
 
     <!-- Incluimos los estilos y fuente utilizada en la web -->
     <link href="estilos.css" rel="stylesheet" type="text/css" />
-<link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
 
-	<!-- Script para la cookie inicial -->
-	<script>
-		function galletas() {
-			if (confirm("¿Aceptas todos nuestros terminos y condiciones de privacidad?")) {
-				document.cookie = "expiration_time";
-				var expiration_time = new Date();
-				// Cambio formato fecha para poner la expiracion de cookies por dias
-				expiration_time.setTime(expiration_time.getTime() + expiration * 24 * 60 * 60 * 1000);
-				var expiration = "expires=" + d.toUTCString();
-				document.cookie = nombre + "=" + valor + ";" + expiracion + ";path=/";
-				console.log(document.cookie);
-			} else {
-				window.open("sinCookies.php");
-			}
-		}
+    <!-- Script para la cookie inicial -->
+    <script>
+        function galletas() {
+            if (confirm("¿Aceptas todos nuestros terminos y condiciones de privacidad?")) {
+                document.cookie = "expiration_time";
+                var expiration_time = new Date();
+                // Cambio formato fecha para poner la expiracion de cookies por dias
+                expiration_time.setTime(expiration_time.getTime() + expiration * 24 * 60 * 60 * 1000);
+                var expiration = "expires=" + d.toUTCString();
+                document.cookie = nombre + "=" + valor + ";" + expiracion + ";path=/";
+                console.log(document.cookie);
+            } else {
+                window.open("sinCookies.php");
+            }
+        }
 
-		// Introducimos cookies si ya las teniamos
+        // Introducimos cookies si ya las teniamos
 
-		document.getElementById("confirm").addEventListener("click", confirm);
+        document.getElementById("confirm").addEventListener("click", confirm);
 
-		function confirmEvent(e) {
-			if (!e) e = window.event;
-			if (e.target.id == "confirm")
-				document.cookie = "nombre = Gorka";
-		}
+        function confirmEvent(e) {
+            if (!e) e = window.event;
+            if (e.target.id == "confirm")
+                document.cookie = "nombre = Gorka";
+        }
 
-		// Función para obtener los datos de una cookie
-		function getGalletas(nombre) {
-			var nom = nombre + "=";
-			// Creamos un array alacene los datos de las cookies y los valla recorriendo 1 a 1
-			//hasta llegar al espacio (fin de la cadena)
-			var array = document.cookie.split(";");
-			for (var i = 0; i < array.length; i++) {
-				var c = array[i];
-				while (c.charAt(0) == " ") {
-					c = c.substring(1);
-				}
-				if (c.indexOf(nombre) == 0) {
-					// Comprobamos si aparece la palabra nombre+"="
-					return c.substring(nom.length, c.length);
-					// Pasamos 2 paramentro para comprobar la longitud del nombre
+        // Función para obtener los datos de una cookie
+        function getGalletas(nombre) {
+            var nom = nombre + "=";
+            // Creamos un array alacene los datos de las cookies y los valla recorriendo 1 a 1
+            //hasta llegar al espacio (fin de la cadena)
+            var array = document.cookie.split(";");
+            for (var i = 0; i < array.length; i++) {
+                var c = array[i];
+                while (c.charAt(0) == " ") {
+                    c = c.substring(1);
+                }
+                if (c.indexOf(nombre) == 0) {
+                    // Comprobamos si aparece la palabra nombre+"="
+                    return c.substring(nom.length, c.length);
+                    // Pasamos 2 paramentro para comprobar la longitud del nombre
 
-				}
-			}
-			// Si no devuelve nada
-			return "";
-		}
-	</script>
+                }
+            }
+            // Si no devuelve nada
+            return "";
+        }
+    </script>
 
 </head>
 
@@ -141,11 +141,11 @@ $_SESSION['nombre'] = 'Gorka'; //Sesión iniciada con Gorka
             <!-- Galería de fotos -->
             <h2>Galería</h2>
             <section class="gallery">
-                <img src="img/galeria-mascarilla.jpg"/>
-                <img src="img/galeria-mascarilla.jpg"/>
-                <img src="img/galeria-mascarilla.jpg"/>
-                <img src="img/galeria-mascarilla.jpg"/>
-                <img src="img/galeria-mascarilla.jpg"/>
+                <img src="img/galeria-mascarilla.jpg" />
+                <img src="img/galeria-mascarilla.jpg" />
+                <img src="img/galeria-mascarilla.jpg" />
+                <img src="img/galeria-mascarilla.jpg" />
+                <img src="img/galeria-mascarilla.jpg" />
 
             </section>
     </div>

@@ -1,6 +1,6 @@
 <<<<<<< HEAD:root {
-    --primary-color: #E5E1E6;
-    --secundary-color: #CCFFFF;
+    --primary-color: #e5e1e6;
+    --secundary-color: #ccffff;
     --tertiary-color: #66ff66;
     --text-color: #000000;
 }
@@ -33,23 +33,23 @@ p {
 
 :root {
     /*todos son colores seguros, falta añadir a guía de estilos*/
-    --background-color: #99FFFF;
+    --background-color: #99ffff;
     --primary-color: #009999;
     --primary-text-color: #000000;
-    --secondary-text-color: #FFFFFF;
+    --secondary-text-color: #ffffff;
 }
 
 body {
     /*el background color también se podría poner simplemente blanco*/
     font-size: 16px;
-    font-family: 'Montserrat', sans-serif;
+    font-family: "Montserrat", sans-serif;
     color: var(--primary-text-color);
     background-color: rgb(238, 236, 236);
     background-position: center center;
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
-    background-color: 'ligthblue';
+    background-color: "ligthblue";
 }
 
 a {
@@ -237,11 +237,11 @@ main h2::before {
 }
 
 #registro {
-    float: left
+    float: left;
 }
 
 #login {
-    float: right
+    float: right;
 }
 
 #image {
@@ -337,7 +337,7 @@ form {
     width: 100%;
     margin: 20px 0;
     padding: 20px;
-    background: #F2F2F2;
+    background: #f2f2f2;
     overflow: hidden;
     box-shadow: 0 0 3px grey;
     border-top: 4px solid #2e6cb4;
@@ -353,7 +353,7 @@ form input[type="day"],
 
 form input[type="text"]:focus {
     color: "black";
-    font-family: 'Montserrat', sans-serif;
+    font-family: "Montserrat", sans-serif;
     display: block;
 }
 
@@ -365,7 +365,7 @@ form input[type="text"]:focus {
 
 label {
     color: #0000;
-    font-family: 'Montserrat', sans-serif;
+    font-family: "Montserrat", sans-serif;
     display: block;
 }
 
@@ -381,13 +381,13 @@ label {
 }
 
 .alert.error {
-    background: #F2DEDE;
+    background: #f2dede;
     border: 1px solid #a94442;
     color: #a94442;
 }
 
 .alert.success {
-    background: #4CAF50;
+    background: #4caf50;
 }
 
 
@@ -399,7 +399,7 @@ form input[type="submit"] {
     background: #7e7c7b;
     color: #000000;
     font-size: 1em;
-    font-family: 'Montserrat', sans-serif;
+    font-family: "Montserrat", sans-serif;
     border-radius: 2px;
     border: none;
     float: right;

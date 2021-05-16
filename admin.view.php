@@ -9,8 +9,8 @@
 
     <!-- Incluimos los estilos y fuente utilizada en la web -->
     <link href="estilos.css" rel="stylesheet" type="text/css" />
-<link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
 
 
 
@@ -41,7 +41,7 @@
         <header>
         </header>
         <main>
-            <h1>Bienvenido Administrador</h1><br>
+            <h1>Bienvenido Administrador</h1>
 
             <section class="rutasMoto">
 
@@ -54,9 +54,8 @@
     </div>
 
 
-
-<!-- Imagen de cabecera, subtítulo y descripción -->
-<div class="container">
+    <!-- Imagen de cabecera, subtítulo y descripción -->
+    <div class="container">
         <main>
             <h1>Administración de artículos</h1><br>
 
@@ -76,7 +75,7 @@
                 <br>
                 <div class="motos">
                     <form action="rutas.php" name="rutas" method="post">
-                        Aquí puedes buscar todas las rutas por el criterio que elijas
+                        ¿No encuentras tu mascarilla? Aquí podrás buscarlas y futúramente modificarlas o eliminarlas
                         <br>
                         <br>
                         <select name="tipoBusquedaRuta" id="tipoBusquedaRuta">
@@ -137,10 +136,11 @@
                     <!-- contenedor -->
 
                     <form action="rutas.php" name="rutas" method="post">
+                        ¿Nuevas mascarillas? Aquí puedes añadirlas
                         <!-- Usamos el método post para recoger lo que seleccione el usuario en unas variables -->
-
+                        <br>
                         <!-- Placeholder es lo que le aparece al usuario en la web, name es como se llama la variable que recogeremos con post y type el tipo de datos que introduce el usuario -->
-
+                        <br>
                         Provincia: <br>
                         <input type="text" placeholder="¿Donde es la ruta?" name="provincia" id="provincia" required>
                         <br>

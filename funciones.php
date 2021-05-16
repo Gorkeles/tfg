@@ -83,4 +83,3 @@
 			echo 'No hay datos en la base de datos';
 		}
 	}
-?>

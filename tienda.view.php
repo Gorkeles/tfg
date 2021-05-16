@@ -9,8 +9,8 @@
 
     <!-- Incluimos los estilos y fuente utilizada en la web -->
     <link href="estilos.css" rel="stylesheet" type="text/css" />
-<link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
 
 
 
@@ -72,8 +72,8 @@
 
 
 
-<!-- Imagen de cabecera, subtítulo y descripción -->
-<div class="container">
+    <!-- Imagen de cabecera, subtítulo y descripción -->
+    <div class="container">
         <main>
             <h1>Buscador de mascarillas</h1><br>
 

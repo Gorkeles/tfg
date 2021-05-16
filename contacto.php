@@ -33,4 +33,3 @@
 
     echo "¡Su consulta se ha enviado con éxito!";
     }
-?>
