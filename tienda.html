@@ -1,38 +1,23 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Enmascarados | Tienda</title>
-
-    <!-- Incluimos los estilos y fuente utilizada en la web -->
-    <link href="estilos.css" rel="stylesheet" type="text/css" />
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
-
-
-
-
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="estilos.css">
+    <title>Tienda</title>
 </head>
 
 <body>
 
-    <!-- Barra de navegación con los enlaces a distintas páginas de la web -->
-    <nav>
-        <div class="nav-item" href="index.php" target="_blank">
-            <a href="index.php" style="text-decoration:none">Portada</a>
-        </div>
-        <div class="nav-item">
-            <a href="tienda.view.php" style="text-decoration:none">Tienda</a>
-        </div>
-        <div class="nav-item">
-            <a href="contacto.view.php" style="text-decoration:none">Contacto</a>
-        </div>
-
+    <nav class="navbar navbar-dark bg-dark">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent"
+            aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
     </nav>
-
     <header>
         <div class="container">
             <h1 class="text-center">TIENDA</h1>
@@ -47,8 +32,8 @@
 
                     <div class="col-12 col-md-6">
                         <div class="item shadow mb-4">
-                            <h3 class="item-title">Mascarilla básica azul</h3>
-                            <img class="item-image" src="./img/1azul.jpg">
+                            <h3 class="item-title">Pokemon Azul</h3>
+                            <img class="item-image" src="./img/pokemon-azul.jpg">
 
                             <div class="item-details">
                                 <h4 class="item-price">9.99€</h4>
@@ -58,9 +43,9 @@
                     </div>
                     <div class="col-12 col-md-6">
                         <div class="item shadow mb-4">
-                            <h3 class="item-title">Mascarilla básica rosa</h3>
+                            <h3 class="item-title">Pokemon Rojo</h3>
 
-                            <img class="item-image" src="./img/2rosa.jpg">
+                            <img class="item-image" src="./img/pokemon-rojo.jpg">
 
                             <div class="item-details">
                                 <h4 class="item-price">9.99€</h4>
@@ -73,9 +58,9 @@
                 <div class="row">
                     <div class="col-12 col-md-6">
                         <div class="item shadow mb-4">
-                            <h3 class="item-title">Mascarilla básica beige</h3>
+                            <h3 class="item-title">Pokemon Verde</h3>
 
-                            <img class="item-image" src="./img/3beige.jpg">
+                            <img class="item-image" src="./img/pokemon-verde.jpg">
 
                             <div class="item-details">
                                 <h4 class="item-price">9.99€</h4>
@@ -85,12 +70,36 @@
                     </div>
                     <div class="col-12 col-md-6">
                         <div class="item shadow mb-4">
-                            <h3 class="item-title">Mascarilla básica negra</h3>
+                            <h3 class="item-title">Pokemon Plata</h3>
 
-                            <img class="item-image" src="./img/4negra.jpg">
+                            <img class="item-image" src="./img/pokemon-plata.jpg">
 
                             <div class="item-details">
-                                <h4 class="item-price">9.99€</h4>
+                                <h4 class="item-price">19.99€</h4>
+                                <button class="item-button btn btn-primary addToCart">AÑADIR AL CARRITO</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12 col-md-6">
+                        <div class="item shadow mb-4">
+                            <h3 class="item-title">Pokemon Oro</h3>
+
+                            <img class="item-image" src="./img/pokemon-oro.jpg">
+                            <div class="item-details">
+                                <h4 class="item-price">19.99€</h4>
+                                <button class="item-button btn btn-primary addToCart">AÑADIR AL CARRITO</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6">
+                        <div class="item shadow mb-4">
+                            <h3 class="item-title">Sonic</h3>
+
+                            <img class="item-image" src="./img/sonic.jpg">
+                            <div class="item-details">
+                                <h4 class="item-price">6.99€</h4>
                                 <button class="item-button btn btn-primary addToCart">AÑADIR AL CARRITO</button>
                             </div>
                         </div>
@@ -182,25 +191,29 @@
     </section>
     <!-- END SECTION SHOPPING CART -->
 
+
+    <!-- START FOOTER -->
+    <footer class="bg-dark p-3 mt-5">
+        <p class="text-center m-0 text-muted">Tienda video juegos</p>
+    </footer>
+    <!-- END FOOTER -->
+
+
+
+
+    <!-- SCRIPTS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+        crossorigin="anonymous"></script>
+
     <script src="./tienda.js"></script>
 
-
-    </div>
-
-
-
-
-    </main>
-    <footer>
-        <address>
-            Siempre protegido
-
-        </address>
-        <div>Enmascarados | Tienda</div>
-        <section class="social">
-            <a href="admin.view.php" style="text-decoration:none">Administrador</a>
-        </section>
-    </footer>
 </body>
 
 </html>
