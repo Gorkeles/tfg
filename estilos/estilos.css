@@ -332,14 +332,9 @@ form {
     background: #f2f2f2;
     overflow: hidden;
     box-shadow: 0 0 3px grey;
-    border-top: 4px solid #2e6cb4;
+    border-top: 4px solid var(--primary-color);
 }
 
-
-/*Accedemos a los input que hemos creado*/
-
-form input[type="text"],
-form input[type="day"],
 
 /*Estado focus (cuando está seleccionado) */
 
@@ -348,9 +343,6 @@ form input[type="text"]:focus {
     font-family: "Montserrat", sans-serif;
     display: block;
 }
-
-
-/*formlogin input[type="day"]:focus,*/
 
 
 /*Reglas para ancho y alto del formulario*/
@@ -388,7 +380,7 @@ label {
 .btn,
 form input[type="submit"] {
     padding: 15px;
-    background: #7e7c7b;
+    background: var(--background-color);
     color: #000000;
     font-size: 1em;
     font-family: "Montserrat", sans-serif;
@@ -399,7 +391,7 @@ form input[type="submit"] {
 }
 
 form input[type="submit"]:hover {
-    background: #2e6cb4;
+    background: var(--primary-color);
 }
 
 .container {
@@ -482,5 +474,4 @@ footer social {
 footer img {
     width: 12%;
 }
-
 
