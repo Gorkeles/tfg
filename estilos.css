@@ -490,6 +490,7 @@ footer img {
     border: 2px solid #000;
     padding: 10px;
     border-radius: 20px;
+    display: block;
   }
   
   .item-title {
@@ -500,7 +501,7 @@ footer img {
   
   .item-image {
     height: 300px;
-    width: 100%;
+    max-width: 100%;
   }
   
   .item-details {

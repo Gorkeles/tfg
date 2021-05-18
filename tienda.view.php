@@ -45,56 +45,56 @@
             <div class="items">
                 <div class="row">
 
-                    <div class="col-12 col-md-6">
-                        <div class="item shadow mb-4">
-                            <h3 class="item-title">Mascarilla básica azul</h3>
-                            <img class="item-image" src="./img/1azul.jpg">
+                    
+                    <div class="item shadow mb-4">
+                        <h3 class="item-title">Mascarilla básica azul</h3>
+                        <img class="item-image" src="./img/1azul.jpg">
 
-                            <div class="item-details">
-                                <h4 class="item-price">9.99€</h4>
-                                <button class="item-button btn btn-primary addToCart">AÑADIR AL CARRITO</button>
-                            </div>
+                        <div class="item-details">
+                            <h4 class="item-price">9.99€</h4>
+                            <button class="item-button btn btn-primary addToCart">AÑADIR AL CARRITO</button>
                         </div>
                     </div>
-                    <div class="col-12 col-md-6">
-                        <div class="item shadow mb-4">
-                            <h3 class="item-title">Mascarilla básica rosa</h3>
+                    
+                   
+                    <div class="item shadow mb-4">
+                        <h3 class="item-title">Mascarilla básica rosa</h3>
 
-                            <img class="item-image" src="./img/2rosa.jpg">
+                        <img class="item-image" src="./img/2rosa.jpg">
 
-                            <div class="item-details">
-                                <h4 class="item-price">9.99€</h4>
-                                <button class="item-button btn btn-primary addToCart">AÑADIR AL CARRITO</button>
-                            </div>
+                        <div class="item-details">
+                            <h4 class="item-price">9.99€</h4>
+                            <button class="item-button btn btn-primary addToCart">AÑADIR AL CARRITO</button>
                         </div>
                     </div>
+                
                 </div>
 
                 <div class="row">
-                    <div class="col-12 col-md-6">
-                        <div class="item shadow mb-4">
-                            <h3 class="item-title">Mascarilla básica beige</h3>
+                
+                    <div class="item shadow mb-4">
+                        <h3 class="item-title">Mascarilla básica beige</h3>
 
-                            <img class="item-image" src="./img/3beige.jpg">
+                        <img class="item-image" src="./img/3beige.jpg">
 
-                            <div class="item-details">
-                                <h4 class="item-price">9.99€</h4>
-                                <button class="item-button btn btn-primary addToCart">AÑADIR AL CARRITO</button>
-                            </div>
+                        <div class="item-details">
+                            <h4 class="item-price">9.99€</h4>
+                            <button class="item-button btn btn-primary addToCart">AÑADIR AL CARRITO</button>
                         </div>
                     </div>
-                    <div class="col-12 col-md-6">
-                        <div class="item shadow mb-4">
-                            <h3 class="item-title">Mascarilla básica negra</h3>
+                
+                
+                    <div class="item shadow mb-4">
+                        <h3 class="item-title">Mascarilla básica negra</h3>
 
-                            <img class="item-image" src="./img/4negra.jpg">
+                        <img class="item-image" src="./img/4negra.jpg">
 
-                            <div class="item-details">
-                                <h4 class="item-price">9.99€</h4>
-                                <button class="item-button btn btn-primary addToCart">AÑADIR AL CARRITO</button>
-                            </div>
+                        <div class="item-details">
+                            <h4 class="item-price">9.99€</h4>
+                            <button class="item-button btn btn-primary addToCart">AÑADIR AL CARRITO</button>
                         </div>
                     </div>
+                
                 </div>
             </div>
         </div>
