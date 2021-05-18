@@ -3,9 +3,9 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 22-02-2021 a las 17:49:20
+-- Tiempo de generación: 18-05-2021 a las 20:09:13
 -- Versión del servidor: 10.4.17-MariaDB
--- Versión de PHP: 8.0.1
+-- Versión de PHP: 7.2.34
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -24,13 +24,21 @@ SET time_zone = "+00:00";
 -- --------------------------------------------------------
 
 --
--- Estructura de tabla para la tabla `motorutas`
+-- Estructura de tabla para la tabla `admin`
 --
 
-CREATE TABLE `motorutas` (
-  `id_moto` int(11) NOT NULL,
-  `id_ruta` int(11) NOT NULL
+CREATE TABLE `admin` (
+  `id_admin` int(1) NOT NULL,
+  `email` varchar(50) NOT NULL,
+  `pass` varchar(30) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Volcado de datos para la tabla `admin`
+--
+
+INSERT INTO `admin` (`id_admin`, `email`, `pass`) VALUES
+(1, 'gorkeles@gmail.com', 'qwerty');
 
 -- --------------------------------------------------------
 
@@ -45,15 +53,6 @@ CREATE TABLE `motos` (
   `cilindrada` int(5) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
---
--- Volcado de datos para la tabla `motos`
---
-
-INSERT INTO `motos` (`id_moto`, `marca`, `modelo`, `cilindrada`) VALUES
-(1, 'Suzuki', 'GSX-R', 1000),
-(2, 'Yamaha', 'Tmax', 530),
-(3, 'Yamaha', 'FZ1-S', 1000);
-
 -- --------------------------------------------------------
 
 --
@@ -61,8 +60,8 @@ INSERT INTO `motos` (`id_moto`, `marca`, `modelo`, `cilindrada`) VALUES
 --
 
 CREATE TABLE `practica5` (
-  `id` int(9) NOT NULL,
-  `nombre` varchar(50) NOT NULL,
+  `id` int(5) NOT NULL,
+  `nombre` varchar(20) NOT NULL,
   `telefono` int(8) NOT NULL,
   `email` varchar(30) NOT NULL,
   `pass` varchar(20) NOT NULL,
@@ -75,8 +74,7 @@ CREATE TABLE `practica5` (
 --
 
 INSERT INTO `practica5` (`id`, `nombre`, `telefono`, `email`, `pass`, `fecha`, `asistencia`) VALUES
-(1, 'Gorka', 600080988, 'gorkeles@gmail.com', 'qwerty', '2021-01-21', 'Si'),
-(2, 'Sara', 655895387, 'saragarcia2310@gmail.com', 'qwerty', '2021-01-07', 'No');
+(1, 'Gorka', 600080988, 'gorkeles@gmail.com', 'qwerty', '2021-05-18', 'Si');
 
 -- --------------------------------------------------------
 
@@ -85,7 +83,7 @@ INSERT INTO `practica5` (`id`, `nombre`, `telefono`, `email`, `pass`, `fecha`, `
 --
 
 CREATE TABLE `rutas` (
-  `id_ruta` int(5) NOT NULL,
+  `id_ruta` int(11) NOT NULL,
   `provincia` varchar(20) NOT NULL,
   `nivel` varchar(10) NOT NULL,
   `distancia` int(5) NOT NULL,
@@ -93,24 +91,14 @@ CREATE TABLE `rutas` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
--- Volcado de datos para la tabla `rutas`
---
-
-INSERT INTO `rutas` (`id_ruta`, `provincia`, `nivel`, `distancia`, `descripcion`) VALUES
-(1, 'MADRID', 'Fácil', 200, 'Cruz Verde'),
-(2, 'MADRID', 'Media', 150, 'Atazar'),
-(3, 'Guadalajara', 'Dificil', 300, 'Galve de Sorve');
-
---
 -- Índices para tablas volcadas
 --
 
 --
--- Indices de la tabla `motorutas`
+-- Indices de la tabla `admin`
 --
-ALTER TABLE `motorutas`
-  ADD KEY `id_moto` (`id_moto`),
-  ADD KEY `id_ruta` (`id_ruta`);
+ALTER TABLE `admin`
+  ADD PRIMARY KEY (`id_admin`);
 
 --
 -- Indices de la tabla `motos`
@@ -135,33 +123,28 @@ ALTER TABLE `rutas`
 --
 
 --
+-- AUTO_INCREMENT de la tabla `admin`
+--
+ALTER TABLE `admin`
+  MODIFY `id_admin` int(1) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+
+--
 -- AUTO_INCREMENT de la tabla `motos`
 --
 ALTER TABLE `motos`
-  MODIFY `id_moto` int(5) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `id_moto` int(5) NOT NULL AUTO_INCREMENT;
 
 --
 -- AUTO_INCREMENT de la tabla `practica5`
 --
 ALTER TABLE `practica5`
-  MODIFY `id` int(9) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `id` int(5) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
 -- AUTO_INCREMENT de la tabla `rutas`
 --
 ALTER TABLE `rutas`
-  MODIFY `id_ruta` int(5) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
-
---
--- Restricciones para tablas volcadas
---
-
---
--- Filtros para la tabla `motorutas`
---
-ALTER TABLE `motorutas`
-  ADD CONSTRAINT `motorutas_ibfk_1` FOREIGN KEY (`id_ruta`) REFERENCES `rutas` (`id_ruta`),
-  ADD CONSTRAINT `motorutas_ibfk_2` FOREIGN KEY (`id_moto`) REFERENCES `motos` (`id_moto`);
+  MODIFY `id_ruta` int(11) NOT NULL AUTO_INCREMENT;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

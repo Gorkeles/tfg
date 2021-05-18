@@ -38,7 +38,7 @@
             </div>
         </header>
         <main>
-            <h2>Aquí tiene tu formulario de contacto para cualquier tipo de duda, consulta con tu pedido o incidencia</h2><br>
+            <h2>Aquí tienes tu formulario de contacto para cualquier tipo de duda, consulta con tu pedido o incidencia</h2><br>
 
             <div id="result">
                 <!-- Aquí usaremos el DOM para mostrar el usiario y contraseña generado -->

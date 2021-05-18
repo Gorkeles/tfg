@@ -54,7 +54,7 @@ if (isset($_POST['adminLog'])) {
 		} else {
 
 			// Antes de insertar, hacemos una query para ver si existe email
-			$existeEmailSql = 'SELECT * from practica5 where email=\'' . $emailog . '\' AND pass=\'' . $passlog . '\' ';
+			$existeEmailSql = 'SELECT * from admin where email=\'' . $emailog . '\' AND pass=\'' . $passlog . '\' ';
 
 
 			$conexion->query($existeEmailSql);
