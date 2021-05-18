@@ -8,7 +8,7 @@
     <title>Enmascarados | Tienda</title>
 
     <!-- Incluimos los estilos y fuente utilizada en la web -->
-    <link href="estilos.css" rel="stylesheet" type="text/css" />
+    <link href="estilos/tienda.css" rel="stylesheet" type="text/css" />
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
 
@@ -33,12 +33,6 @@
 
     </nav>
 
-    <header>
-        <div class="container">
-            <h1 class="text-center">TIENDA</h1>
-            <hr>
-        </div>
-    </header>
     <!-- START SECTION STORE -->
     <section class="store">
         <div class="container">
