@@ -3,6 +3,8 @@ addToShoppingCartButtons.forEach((addToCartButton) => {
   addToCartButton.addEventListener('click', addToCartClicked);
 });
 
+var pedido = [];
+
 const comprarButton = document.querySelector('.comprarButton');
 comprarButton.addEventListener('click', comprarButtonClicked);
 
@@ -11,6 +13,7 @@ const shoppingCartItemsContainer = document.querySelector(
 );
 
 function addToCartClicked(event) {
+  alert("Elemento añadido al carrito :)");
   const button = event.target;
   const item = button.closest('.item');
 
@@ -22,6 +25,12 @@ function addToCartClicked(event) {
 }
 
 function addItemToShoppingCart(itemTitle, itemPrice, itemImage) {
+var productoComprado = { }; 
+productoComprado["nombre"] = itemTitle;
+productoComprado["precio"] = itemPrice;
+pedido.push(productoComprado);
+console.log("eeeeeeeee"+pedido[0]["nombre"])
+
   const elementsTitle = shoppingCartItemsContainer.getElementsByClassName(
     'shoppingCartItemTitle'
   );
@@ -33,19 +42,17 @@ function addItemToShoppingCart(itemTitle, itemPrice, itemImage) {
         '.shoppingCartItemQuantity'
       );
       elementQuantity.value++;
-      $('.toast').toast('show');
       updateShoppingCartTotal();
       return;
     }
   }
-
   const shoppingCartRow = document.createElement('div');
   const shoppingCartContent = `
   <div class="row shoppingCartItem">
         <div class="col-6">
             <div class="shopping-cart-item d-flex align-items-center h-100 border-bottom pb-2 pt-3">
                 <img src=${itemImage} class="shopping-cart-image">
-                <h6 class="shopping-cart-item-title shoppingCartItemTitle text-truncate ml-3 mb-0">${itemTitle}</h6>
+                <h6 id="shoppingCartItemTitle" class="shopping-cart-item-title shoppingCartItemTitle text-truncate ml-3 mb-0">${itemTitle}</h6>
             </div>
         </div>
         <div class="col-2">
@@ -78,6 +85,7 @@ function addItemToShoppingCart(itemTitle, itemPrice, itemImage) {
 
 function updateShoppingCartTotal() {
   let total = 0;
+  
   const shoppingCartTotal = document.querySelector('.shoppingCartTotal');
 
   const shoppingCartItems = document.querySelectorAll('.shoppingCartItem');
@@ -98,10 +106,17 @@ function updateShoppingCartTotal() {
     total = total + shoppingCartItemPrice * shoppingCartItemQuantity;
   });
   shoppingCartTotal.innerHTML = `${total.toFixed(2)}€`;
+  
+
 }
 
 function removeShoppingCartItem(event) {
   const buttonClicked = event.target;
+  const item = buttonClicked.closest('.shoppingCartItem');
+ const itemTitle = item.querySelectorAll('.shopping-cart-item-title')[0].innerHTML;
+ const itemPrice = item.querySelectorAll('.shoppingCartItemPrice')[0].innerHTML;
+ console.log("oooo"+itemTitle+"erwer"+itemPrice);
+ // if pedido contains itemTitle itemPrice delete()
   buttonClicked.closest('.shoppingCartItem').remove();
   updateShoppingCartTotal();
 }

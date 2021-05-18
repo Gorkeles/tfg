@@ -36,61 +36,48 @@
     <!-- START SECTION STORE -->
     <section class="store">
         <div class="container">
-            <div class="items">
-                <div class="row">
+                <div class="item">
+                    <h3 class="item-title">Mascarilla básica azul</h3>
+                    <img class="item-image" src="./img/1azul.jpg">
 
-                    
-                    <div class="item shadow mb-4">
-                        <h3 class="item-title">Mascarilla básica azul</h3>
-                        <img class="item-image" src="./img/1azul.jpg">
-
-                        <div class="item-details">
-                            <h4 class="item-price">9.99€</h4>
-                            <button class="item-button btn btn-primary addToCart">AÑADIR AL CARRITO</button>
-                        </div>
+                    <div class="item-details">
+                        <h4 class="item-price">9.99€</h4>
+                        <button class="item-button btn btn-primary addToCart">AÑADIR AL CARRITO</button>
                     </div>
-                    
-                   
-                    <div class="item shadow mb-4">
-                        <h3 class="item-title">Mascarilla básica rosa</h3>
-
-                        <img class="item-image" src="./img/2rosa.jpg">
-
-                        <div class="item-details">
-                            <h4 class="item-price">9.99€</h4>
-                            <button class="item-button btn btn-primary addToCart">AÑADIR AL CARRITO</button>
-                        </div>
-                    </div>
+                </div>               
                 
+                <div class="item">
+                    <h3 class="item-title">Mascarilla básica rosa</h3>
+
+                    <img class="item-image" src="./img/2rosa.jpg">
+
+                    <div class="item-details">
+                        <h4 class="item-price">9.99€</h4>
+                        <button class="item-button btn btn-primary addToCart">AÑADIR AL CARRITO</button>
+                    </div>
+                </div>            
+            
+                <div class="item">
+                    <h3 class="item-title">Mascarilla básica beige</h3>
+
+                    <img class="item-image" src="./img/3beige.jpg">
+
+                    <div class="item-details">
+                        <h4 class="item-price">9.99€</h4>
+                        <button class="item-button btn btn-primary addToCart">AÑADIR AL CARRITO</button>
+                    </div>
+                </div>            
+            
+                <div class="item">
+                    <h3 class="item-title">Mascarilla básica negra</h3>
+
+                    <img class="item-image" src="./img/4negra.jpg">
+
+                    <div class="item-details">
+                        <h4 class="item-price">9.99€</h4>
+                        <button class="item-button btn btn-primary addToCart">AÑADIR AL CARRITO</button>
+                    </div>
                 </div>
-
-                <div class="row">
-                
-                    <div class="item shadow mb-4">
-                        <h3 class="item-title">Mascarilla básica beige</h3>
-
-                        <img class="item-image" src="./img/3beige.jpg">
-
-                        <div class="item-details">
-                            <h4 class="item-price">9.99€</h4>
-                            <button class="item-button btn btn-primary addToCart">AÑADIR AL CARRITO</button>
-                        </div>
-                    </div>
-                
-                
-                    <div class="item shadow mb-4">
-                        <h3 class="item-title">Mascarilla básica negra</h3>
-
-                        <img class="item-image" src="./img/4negra.jpg">
-
-                        <div class="item-details">
-                            <h4 class="item-price">9.99€</h4>
-                            <button class="item-button btn btn-primary addToCart">AÑADIR AL CARRITO</button>
-                        </div>
-                    </div>
-                
-                </div>
-            </div>
         </div>
     </section>
     <!-- END SECTION STORE -->
@@ -127,19 +114,6 @@
                     <div class="shopping-cart-total d-flex align-items-center">
                         <p class="mb-0">Total</p>
                         <p class="ml-4 mb-0 shoppingCartTotal">0€</p>
-                        <div class="toast ml-auto bg-info" role="alert" aria-live="assertive" aria-atomic="true"
-                            data-delay="2000">
-                            <div class="toast-header">
-                                <span>✅</span>
-                                <strong class="mr-auto ml-1 text-secondary">Elemento en el carrito</strong>
-                                <button type="button" class="ml-2 mb-1 close" data-dismiss="toast" aria-label="Close">
-                                    <span aria-hidden="true">&times;</span>
-                                </button>
-                            </div>
-                            <div class="toast-body text-white">
-                                Se aumentó correctamente la cantidad
-                            </div>
-                        </div>
                         <button class="btn btn-success ml-auto comprarButton" type="button" data-toggle="modal"
                             data-target="#comprarModal">Comprar</button>
                     </div>
@@ -148,28 +122,7 @@
 
             <!-- END TOTAL -->
 
-            <!-- START MODAL COMPRA -->
-            <div class="modal fade" id="comprarModal" tabindex="-1" aria-labelledby="comprarModalLabel"
-                aria-hidden="true">
-                <div class="modal-dialog modal-dialog-centered">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <h5 class="modal-title" id="comprarModalLabel">Gracias por su compra</h5>
-                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                <span aria-hidden="true">&times;</span>
-                            </button>
-                        </div>
-                        <div class="modal-body">
-                            <p>Pronto recibirá su pedido</p>
-                        </div>
-                        <div class="modal-footer">
-                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- END MODAL COMPRA -->
-
+            
 
         </div>
 
