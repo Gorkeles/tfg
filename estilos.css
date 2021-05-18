@@ -332,14 +332,9 @@ form {
     background: #f2f2f2;
     overflow: hidden;
     box-shadow: 0 0 3px grey;
-    border-top: 4px solid #2e6cb4;
+    border-top: 4px solid var(--primary-color);
 }
 
-
-/*Accedemos a los input que hemos creado*/
-
-form input[type="text"],
-form input[type="day"],
 
 /*Estado focus (cuando está seleccionado) */
 
@@ -348,9 +343,6 @@ form input[type="text"]:focus {
     font-family: "Montserrat", sans-serif;
     display: block;
 }
-
-
-/*formlogin input[type="day"]:focus,*/
 
 
 /*Reglas para ancho y alto del formulario*/
@@ -388,7 +380,7 @@ label {
 .btn,
 form input[type="submit"] {
     padding: 15px;
-    background: #7e7c7b;
+    background: var(--background-color);
     color: #000000;
     font-size: 1em;
     font-family: "Montserrat", sans-serif;
@@ -399,7 +391,7 @@ form input[type="submit"] {
 }
 
 form input[type="submit"]:hover {
-    background: #2e6cb4;
+    background: var(--primary-color);
 }
 
 .container {
@@ -483,60 +475,58 @@ footer img {
     width: 12%;
 }
 
-
-
-
 .item {
     border: 2px solid #000;
     padding: 10px;
     border-radius: 20px;
-  }
-  
-  .item-title {
+}
+
+.item-title {
     text-transform: uppercase;
     text-align: center;
     font-weight: 600;
-  }
-  
-  .item-image {
+}
+
+.item-image {
     height: 300px;
     width: 100%;
-  }
-  
-  .item-details {
+}
+
+.item-details {
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin: 20px 0px 15px;
-  }
-  
-  .item-details > .item-price {
+}
+
+.item-details>.item-price {
     margin: 0;
-  }
-  
-  /* ? SHOPPING CART */
-  .shopping-cart-items {
+}
+
+
+/* ? SHOPPING CART */
+
+.shopping-cart-items {
     padding: 20px 0px;
-  }
-  
-  .shopping-cart-header {
+}
+
+.shopping-cart-header {
     border-bottom: 1px solid #ccc;
-  }
-  
-  .shopping-cart-image {
+}
+
+.shopping-cart-image {
     max-width: 80px;
     border-radius: 20px;
-  }
-  
-  .shopping-cart-quantity-input {
+}
+
+.shopping-cart-quantity-input {
     max-width: 45px;
     border: 1px solid #ccc;
     border-radius: 5px;
     background: #eee;
     padding: 5px;
-  }
-  
-  .shopping-cart-total {
+}
+
+.shopping-cart-total {
     min-height: 96px;
-  }
-  
+}
