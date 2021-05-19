@@ -22,18 +22,19 @@ p {
 }
 
 
-/* Estilo para las fuentes en toda la página */
+/* Todos son colores seguros, falta añadir a guía de estilos*/
 
 :root {
-    /*todos son colores seguros, falta añadir a guía de estilos*/
     --background-color: #99ffff;
     --primary-color: #009999;
     --primary-text-color: #000000;
     --secondary-text-color: #ffffff;
 }
 
+
+/* El background color también se podría poner simplemente blanco*/
+
 body {
-    /*el background color también se podría poner simplemente blanco*/
     font-size: 16px;
     font-family: "Montserrat", sans-serif;
     color: var(--primary-text-color);
@@ -78,7 +79,6 @@ nav {
     color: var(--primary-text-color);
     font-size: 1.4;
     padding: 10px;
-    position: -webkit-sticky;
     position: sticky;
     overflow-y: auto;
     top: 0px;
@@ -169,6 +169,9 @@ footer section {
     background-color: var(--primary-color);
 }
 
+
+/*Estilo de las tablas del buscador*/
+
 label {
     display: inline-block;
     width: 120px;
@@ -199,22 +202,14 @@ tr:hover td {
     color: rgb(128, 128, 128);
 }
 
+
+/*Contendeor wrap*/
+
 .registro {
-    /*Contendeor wrap*/
     width: 90%;
     max-width: 500px;
     margin: auto;
     background: #0000;
-}
-
-form {
-    width: 100%;
-    margin: 20px 0;
-    padding: 20px;
-    background: #f2f2f2;
-    overflow: hidden;
-    box-shadow: 0 0 3px grey;
-    border-top: 4px solid var(--primary-color);
 }
 
 
@@ -231,6 +226,16 @@ form input[type="submit"] {
     border: none;
     float: right;
     cursor: pointer;
+}
+
+form {
+    width: 100%;
+    margin: 20px 0;
+    padding: 20px;
+    background: #f2f2f2;
+    overflow: hidden;
+    box-shadow: 0 0 3px grey;
+    border-top: 4px solid var(--primary-color);
 }
 
 form input[type="text"]:focus {
