@@ -27,7 +27,8 @@ button:hover {
     margin: 5px;
     border-radius: 5px;
     display: inline-block;
-    height: 30%;
+    height: 25%;
+    width: 30%;
     background-color: #273b47
 
 }

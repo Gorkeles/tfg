@@ -33,7 +33,7 @@
 
     </nav>
 
-    <!-- START SECTION STORE -->
+    <!-- INICIO TIENDA -->
     <section class="store">
         <div class="container">
                 <div class="item">
@@ -78,10 +78,32 @@
                         <button class="item-button btn btn-primary addToCart">AÑADIR AL CARRITO</button>
                     </div>
                 </div>
+
+                <div class="item">
+                    <h3 class="item-title">Mascarilla estampada flores</h3>
+
+                    <img class="item-image" src="./img/5flores.jpg">
+
+                    <div class="item-details">
+                        <h4 class="item-price">11.99€</h4>
+                        <button class="item-button btn btn-primary addToCart">AÑADIR AL CARRITO</button>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <h3 class="item-title">Mascarilla estampada tigre</h3>
+
+                    <img class="item-image" src="./img/6tigre.jpg">
+
+                    <div class="item-details">
+                        <h4 class="item-price">11.99€</h4>
+                        <button class="item-button btn btn-primary addToCart">AÑADIR AL CARRITO</button>
+                    </div>
+                </div>
         </div>
     </section>
-    <!-- END SECTION STORE -->
-    <!-- START SECTION SHOPPING CART -->
+    <!-- FIN TIENDA -->
+    <!-- INICIO CARRITO -->
     <section class="shopping-cart">
         <div class="container">
             <h1 class="text-center">CARRITO</h1>
@@ -103,12 +125,12 @@
                     </div>
                 </div>
             </div>
-            <!-- ? START SHOPPING CART ITEMS -->
+            <!-- ? INICIO SHOPPING CART ITEMS -->
             <div class="shopping-cart-items shoppingCartItemsContainer">
             </div>
-            <!-- ? END SHOPPING CART ITEMS -->
+            <!-- ? FIN SHOPPING CART ITEMS -->
 
-            <!-- START TOTAL -->
+            <!-- INICIO TOTAL -->
             <div class="row">
                 <div class="col-12">
                     <div class="shopping-cart-total d-flex align-items-center">
@@ -120,7 +142,7 @@
                 </div>
             </div>
 
-            <!-- END TOTAL -->
+            <!-- FIN TOTAL -->
 
             
 
