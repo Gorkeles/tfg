@@ -137,17 +137,6 @@ $_SESSION['nombre'] = 'Gorka'; //Sesión iniciada con Gorka
                     dfh sdfh s dh sdfg hsdf hs dghs dfh s
                 </div>
             </section>
-
-            <!-- Galería de fotos -->
-            <h2>Galería</h2>
-            <section class="gallery">
-                <img src="img/galeria-mascarilla.jpg" />
-                <img src="img/galeria-mascarilla.jpg" />
-                <img src="img/galeria-mascarilla.jpg" />
-                <img src="img/galeria-mascarilla.jpg" />
-                <img src="img/galeria-mascarilla.jpg" />
-
-            </section>
     </div>
     </main>
     <footer>
