@@ -9,8 +9,10 @@ button {
     height: 50px;
     color: #fff;
     size: 20em;
+    margin-right: 40px;
     border: none;
-    background-color: #273b47
+    background-color: #009999;    
+    font-size: 0.7em;
 
 }
 
@@ -29,13 +31,14 @@ button:hover {
     display: inline-block;
     height: 25%;
     width: 30%;
-    background-color: #273b47
+    background-color: #009999;   
+    font-size: 1.5em;
 
 }
 
 .item-title {
     text-align: center;
-    background-color:#273b47;
+    background-color:#009999;
     margin: 0;
     padding: 20px;
     color: #fff;
@@ -56,8 +59,9 @@ margin: 20px 0px 15px;
 }
 
 .item-details > .item-price {
-margin: 0;
-color: #fff
+margin-right: 40px;
+margin-left: 40px;
+color: #fff;
 }
 
 /* ? SHOPPING CART */
