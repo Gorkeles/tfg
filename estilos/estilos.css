@@ -18,6 +18,7 @@ h5,
 h6,
 p {
     margin: 0px;
+    text-align: center;
 }
 
 
@@ -59,12 +60,7 @@ footer {
     margin: 0px auto;
 }
 
-.contacto,
-.motos,
-.rutas,
-.rutasMoto,
-.cerrar {
-    /*Contendeor wrap*/
+.contacto {
     align-items: center;
     align-content: center;
     text-align: center;
@@ -127,16 +123,6 @@ main {
     background-color: var(--background-color);
 }
 
-main h1,
-main h2,
-h1,
-h2,
-h3,
-h4,
-h5 {
-    text-align: center;
-}
-
 
 /* Línea de separacion en los títulos */
 
@@ -151,24 +137,6 @@ main h2::before {
 }
 
 
-/* Estilos para la zona de las cards y organización de la web */
-
-.cards {
-    overflow-y: auto;
-}
-
-.cards .card {
-    float: left;
-    padding: 25px;
-    text-align: center;
-    width: 33%;
-}
-
-.cards .card img {
-    width: 50%;
-}
-
-
 /* Estilos para el pie de página presente en todas las páginas */
 
 footer {
@@ -179,6 +147,7 @@ footer {
     margin-top: 20px;
     overflow-y: auto;
     padding: 20px;
+    margin-bottom: 0px;
 }
 
 footer address {
@@ -249,16 +218,7 @@ form {
 }
 
 
-/*Estado focus (cuando está seleccionado) */
-
-form input[type="text"]:focus {
-    color: "black";
-    font-family: "Montserrat", sans-serif;
-    display: block;
-}
-
-
-/*Estilo del botón de envío*/
+/*Estilo de formularios*/
 
 .btn,
 form input[type="submit"] {
@@ -271,6 +231,10 @@ form input[type="submit"] {
     border: none;
     float: right;
     cursor: pointer;
+}
+
+form input[type="text"]:focus {
+    color: "black";
 }
 
 form input[type="submit"]:hover {

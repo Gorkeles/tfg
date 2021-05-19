@@ -38,26 +38,8 @@
 
     <!-- Imagen de cabecera, subtítulo y descripción -->
     <div class="container">
-        <header>
-        </header>
         <main>
-            <h1>Bienvenido Administrador</h1>
-
-            <section class="rutasMoto">
-
-                <div>
-                    Desde aquí eres Dios
-                </div>
-
-
-            </section>
-    </div>
-
-
-    <!-- Imagen de cabecera, subtítulo y descripción -->
-    <div class="container">
-        <main>
-            <h1>Administración de artículos</h1><br>
+            <h1>Bienvenido Administrador</h1><br>
 
             <section class="rutasMoto">
 
@@ -73,7 +55,7 @@
             <section>
                 <h2>Buscador de mascarillas</h2>
                 <br>
-                <div class="motos">
+                <div class="contacto">
                     <form action="rutas.php" name="rutas" method="post">
                         ¿No encuentras tu mascarilla? Aquí podrás buscarlas y futúramente modificarlas o eliminarlas
                         <br>
@@ -132,7 +114,7 @@
             <section>
                 <h2>Introducción de mascarillas</h2>
                 <br>
-                <div class="rutas">
+                <div class="contacto">
                     <!-- contenedor -->
 
                     <form action="rutas.php" name="rutas" method="post">
