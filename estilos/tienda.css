@@ -49,6 +49,7 @@ button:hover {
     height: 400px;
     width: 100%;
     object-position: center;
+    border-radius: 20px;
 }
 
 .item-details {
@@ -79,7 +80,7 @@ border-radius: 20px;
 }
 
 .shopping-cart-quantity-input {
-max-width: 45px;
+max-width: 60px;
 border: 1px solid #ccc;
 border-radius: 5px;
 background: #eee;
@@ -90,9 +91,16 @@ padding: 5px;
 min-height: 96px;
 }
 
-.shopping-cart-header {
-    display: inline-block;
+.row {
     width: 100%;
 }
+.shopping-cart-header, .shopping-cart-items, .shopping-cart-footer {
+    display: inline-block;
+    width: 33%;
+    text-align: center;
+    font-size: 1.5em;
+}
+
+
 
 

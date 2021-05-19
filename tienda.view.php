@@ -109,37 +109,30 @@
             <h1 class="text-center">CARRITO</h1>
             <hr>
             <div class="row">
-                <div class="col-6">
                     <div class="shopping-cart-header">
                         <h6>Producto</h6>
                     </div>
-                </div>
-                <div class="col-2">
+                
                     <div class="shopping-cart-header">
                         <h6 class="text-truncate">Precio</h6>
                     </div>
-                </div>
-                <div class="col-4">
+                
                     <div class="shopping-cart-header">
                         <h6>Cantidad</h6>
                     </div>
-                </div>
+                
             </div>
             <!-- ? INICIO SHOPPING CART ITEMS -->
-            <div class="shopping-cart-items shoppingCartItemsContainer">
+            
+            <div class="row shoppingCartItemsContainer">
             </div>
             <!-- ? FIN SHOPPING CART ITEMS -->
 
             <!-- INICIO TOTAL -->
-            <div class="row">
-                <div class="col-12">
-                    <div class="shopping-cart-total d-flex align-items-center">
-                        <p class="mb-0">Total</p>
-                        <p class="ml-4 mb-0 shoppingCartTotal">0€</p>
-                        <button class="btn btn-success ml-auto comprarButton" type="button" data-toggle="modal"
-                            data-target="#comprarModal">Comprar</button>
-                    </div>
-                </div>
+            <div class="row shopping-cart-total">
+                <p class="shopping-cart-footer">Total</p>
+                <p class="shopping-cart-footer shoppingCartTotal">0€</p>
+                <p class="shopping-cart-footer "><button class="comprarButton" type="button" >Comprar</button></p>
             </div>
 
             <!-- FIN TOTAL -->
