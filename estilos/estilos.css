@@ -78,7 +78,6 @@ footer {
 nav {
     background-color: var(--primary-color);
     color: var(--primary-text-color);
-    font-size: 1.4;
     padding: 10px;
     position: sticky;
     overflow-y: auto;
@@ -97,6 +96,11 @@ nav div {
     color: #ffffff;
 }
 
+.logo{
+    float: left;
+    height: 35px;
+}
+
 
 /* Estilos para la cabecera */
 
@@ -109,8 +113,7 @@ header {
 /* Fondo de la cabecera */
 
 header img {
-    opacity: 0.7;
-    width: 100%;
+  width: 100%;
 }
 
 

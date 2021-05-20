@@ -98,6 +98,7 @@ $_SESSION['nombre'] = 'Gorka'; //Sesión iniciada con Gorka
 
     <!-- Barra de navegación con los enlaces a distintas páginas de la web -->
     <nav>
+        <img src="img/logo.jpg" alt="logo" class="logo">
         <div class="nav-item" href="index.php" target="_blank">
             <a href="index.php" style="text-decoration:none">Portada</a>
         </div>
@@ -115,7 +116,7 @@ $_SESSION['nombre'] = 'Gorka'; //Sesión iniciada con Gorka
     <div class="container">
         <header>
             <div class="image">
-                <img src="img/mascarillas.jpg" height=500 />
+                <img src="img/portada.jpg" height=500 />
             </div>
         </header>
         <main>
