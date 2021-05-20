@@ -1,52 +1,28 @@
-body {
-    margin: 0 auto;
-    width: 65%;
-    background-color: var(--background-color);
-    
-}
-
-button {
-    height: 50px;
-    color: #fff;
-    size: 20em;
-    margin-right: 40px;
-    border: none;
-    background-color: #009999;    
-    font-size: 0.7em;
-
-}
+@import 'estilos.css';
 
 
-button:hover {
-    background-color:#fff;
-    transition: background-color 0.2s ease;
-    color: black;
-
-}
 .item {
-    border: 2px solid #000;
     padding: 10px;
-    margin: 5px;
+    margin: 20px;
     border-radius: 5px;
     display: inline-block;
     height: 30%;
-    width: 30%;
-    background-color: #009999;   
-    font-size: 1.4em;
+    width: 25%;
+    background-color: var(--primary-color)  ;
+    font-size: smaller;
 
 }
 
 .item-title {
     text-align: center;
-    background-color:#009999;
+    background-color: var(--primary-color) ;
     margin: 0;
     padding: 20px;
-    color: #fff;
 }
 
 .item-image {
     object-fit: contain;
-    height: 400px;
+    height: 300px;
     width: 100%;
     object-position: center;
     border-radius: 20px;
@@ -62,7 +38,6 @@ margin: 20px 0px 15px;
 .item-details > .item-price {
 margin-right: 40px;
 margin-left: 40px;
-color: #fff;
 }
 
 /* ? SHOPPING CART */

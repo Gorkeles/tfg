@@ -66,7 +66,7 @@
 				<br>
 
 				<!-- boton para enviar los datos -->
-				<input type="submit" name="registrar" class="btn btn-primary" value="Enviar">
+				<input type="submit" name="registrar" class="button button-primary" value="Enviar">
 			</form>
 
 
@@ -95,7 +95,7 @@
 				<br>
 
 				<!-- boton para enviar los datos -->
-				<input type="submit" name="loguear" class="btn btn-primary" value="Enviar">
+				<input type="submit" name="loguear" class="button button-primary" value="Enviar">
 			</form>
 
 		</div>

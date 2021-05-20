@@ -73,13 +73,12 @@
                         <br>
 
                         <!-- boton para enviar los datos -->
-                        <input type="submit" class="btn btn-primary" id="form" value="Enviar"><br><br>
+                        <input type="submit" class="button" id="form" value="Enviar"><br><br>
                     </form>
-
-
+                    <br>
+                    <br>
                 </div>
             </section>
-
     </div>
     </main>
     <footer>

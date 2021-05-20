@@ -46,8 +46,8 @@ if (isset($_POST['adminLog'])) {
 		//Todo OK, continuamos
 
 
-		$conexion = new mysqli('localhost', 'root', '', 'gorka');
-		//conectamos mi base de datos 'gorka'
+		$conexion = new mysqli('localhost', 'root', '', 'tfg');
+		//conectamos mi base de datos 'tfg'
 
 		if ($conexion->connect_errno) {
 			die('Lo siento, hubo un problema con el servidor');

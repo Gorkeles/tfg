@@ -50,7 +50,7 @@
 				<br>
 
 				<!-- boton para enviar los datos -->
-				<input type="submit" name="adminLog" class="btn btn-primary" value="Enviar">
+				<input type="submit" name="adminLog" class="button button-primary" value="Enviar">
 			</form>
 
 		</div>

@@ -21,6 +21,9 @@
 
     <!-- Barra de navegación con los enlaces a distintas páginas de la web -->
     <nav>
+        <div >
+            <a href="cerrar.php" style="text-decoration:none" class="social">Cerrar sesión</a>
+        </div>
         <div class="nav-item" href="index.php" target="_blank">
             <a href="index.php" style="text-decoration:none">Portada</a>
         </div>
@@ -30,9 +33,7 @@
         <div class="nav-item">
             <a href="contacto.view.php" style="text-decoration:none">Contacto</a>
         </div>
-        <section class="social">
-            <a href="cerrar.php" style="text-decoration:none">Cerrar sesión</a>
-        </section>
+       
 
     </nav>
 
@@ -75,7 +76,7 @@
                         <input type="text" placeholder="¿Qué ruta quieres buscar?" name="provincia" id="provincia" require="required">
                         <br>
                         <br>
-                        <input type="submit" name="buscarRutas" class="btn btn-primary" value="Enviar">
+                        <input type="submit" name="buscarRutas" class="button button-primary" value="Enviar">
                         <br>
                     </form>
                 </div>
@@ -142,7 +143,7 @@
 
 
                         <!-- boton para enviar los datos -->
-                        <input type="submit" name="rutas" class="btn btn-primary" value="Enviar">
+                        <input type="submit" name="rutas" class="button button-primary" value="Enviar">
                     </form>
 
 
