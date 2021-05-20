@@ -62,11 +62,11 @@ footer {
     margin: 0px auto;
 }
 
-.contacto {
+.contacto,
+.registro {
     align-items: center;
     align-content: center;
     text-align: center;
-    width: 90%;
     max-width: 600px;
     margin: auto;
     background: #0000;
@@ -123,19 +123,6 @@ main {
     margin: 0px auto;
     width: 80%;
     background-color: var(--background-color);
-}
-
-
-/* Línea de separacion en los títulos */
-
-main h2::before {
-    background-color: #000000;
-    display: block;
-    content: " ";
-    height: 2px;
-    width: 30%;
-    margin: 0px auto;
-    margin-top: 30px;
 }
 
 
@@ -201,16 +188,6 @@ td {
 tr:hover td {
     background: #d0d0d0;
     color: rgb(128, 128, 128);
-}
-
-
-/*Contendeor wrap*/
-
-.registro {
-    width: 90%;
-    max-width: 500px;
-    margin: auto;
-    background: #0000;
 }
 
 

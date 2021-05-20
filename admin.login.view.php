@@ -28,32 +28,38 @@
 	</nav>
 
 	<div class="container">
-		<H1> Acceso a administración </H1> <!-- Titulo de la web -->
-		<div class="registro">
-			<!-- contenedor -->
+		<main>
+			<H1> Acceso a administración </H1> <!-- Titulo de la web -->
+			<br>
+			<section>
+				<div class="registro">
+					<!-- contenedor -->
 
-			<form action="admin.login.php" name="formulario" method="post">
-				<!-- Usamos el método post para recoger lo que seleccione el usuario en unas variables -->
-				<h3>Inicia sesión</h3>
-				<!-- Placeholder es lo que le aparece al usuario en la web, name es como se llama la variable que recogeremos con post y type el tipo de datos que introduce el usuario -->
-				<br>
-				<!-- El email es tipo email -->
-				E-mail: <br>
-				<input type="email" placeholder="xxxxxx@xxxx.com" name="emailog" id="emailog">
-				<br>
-				<br>
-				<!-- El password es un tipo password -->
-				Contraseña: <br>
-				<input type="password" placeholder="Introduce una contraseña" name="passlog" id="passlog">
-				<br>
-				<br>
+					<form action="admin.login.php" name="formulario" method="post">
+						<!-- Usamos el método post para recoger lo que seleccione el usuario en unas variables -->
+						<h3>Inicia sesión</h3>
+						<!-- Placeholder es lo que le aparece al usuario en la web, name es como se llama la variable que recogeremos con post y type el tipo de datos que introduce el usuario -->
+						<br>
+						<!-- El email es tipo email -->
+						E-mail: <br>
+						<input type="email" placeholder="xxxxxx@xxxx.com" name="emailog" id="emailog">
+						<br>
+						<br>
+						<!-- El password es un tipo password -->
+						Contraseña: <br>
+						<input type="password" placeholder="Introduce una contraseña" name="passlog" id="passlog">
+						<br>
+						<br>
 
-				<!-- boton para enviar los datos -->
-				<input type="submit" name="adminLog" class="button button-primary" value="Enviar">
-			</form>
-		</div>
+						<!-- boton para enviar los datos -->
+						<input type="submit" name="adminLog" class="button button-primary" value="Enviar"><br><br>
+					</form>
+					<br>
+					<br>
+				</div>
+			</section>
 	</div>
-	<br>
+	</main>
 
 	<footer>
 		<address>
