@@ -27,6 +27,21 @@
 </div>
 </nav>
 
+ <!-- Barra de navegación con los enlaces a distintas páginas de la web -->
+ <nav>
+        <img src="img/logo.jpg" alt="logo" class="logo">
+        <div class="nav-item" href="index.php" target="_blank">
+            <a href="index.php" style="text-decoration:none">Portada</a>
+        </div>
+        <div class="nav-item">
+            <a href="tienda.view.php" style="text-decoration:none">Tienda</a>
+        </div>
+        <div class="nav-item">
+            <a href="contacto.view.php" style="text-decoration:none">Contacto</a>
+        </div>
+
+    </nav>
+
 	<div class="wrapper">
 		<H1> Acceso a administración </H1> <!-- Titulo de la web -->
 
