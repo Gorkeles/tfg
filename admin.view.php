@@ -21,6 +21,7 @@
 
     <!-- Barra de navegación con los enlaces a distintas páginas de la web -->
     <nav>
+        <img src="img/logo.jpg" alt="logo" class="logo">
         <div >
             <a href="cerrar.php" style="text-decoration:none" class="social">Cerrar sesión</a>
         </div>
