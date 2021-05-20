@@ -4,14 +4,8 @@
 
 <head>
 	<meta charset="UTF-8">
-	<title>Enmascarados | Portada</title>
-	<style type="text/css">
-		H1 {
-			Text-align: center
-		}
+	<title>Acceso a administración | Portada</title>
 
-		/*H1 alineado al centro de la página*/
-	</style>
 	<!-- Incluimos los estilos y fuente utilizada en la web -->
 	<link href="estilos/estilos.css" rel="stylesheet" type="text/css" />
 	<link rel="preconnect" href="https://fonts.gstatic.com">
@@ -33,7 +27,7 @@
 		</div>
 	</nav>
 
-	<div class="wrapper">
+	<div class="container">
 		<H1> Acceso a administración </H1> <!-- Titulo de la web -->
 		<div class="registro">
 			<!-- contenedor -->
@@ -42,7 +36,7 @@
 				<!-- Usamos el método post para recoger lo que seleccione el usuario en unas variables -->
 				<h3>Inicia sesión</h3>
 				<!-- Placeholder es lo que le aparece al usuario en la web, name es como se llama la variable que recogeremos con post y type el tipo de datos que introduce el usuario -->
-
+				<br>
 				<!-- El email es tipo email -->
 				E-mail: <br>
 				<input type="email" placeholder="xxxxxx@xxxx.com" name="emailog" id="emailog">

@@ -92,11 +92,11 @@ nav div {
     background-color: var(--primary-color);
 }
 
-.social{
+.social {
     color: #ffffff;
 }
 
-.logo{
+.logo {
     float: left;
     height: 35px;
 }
@@ -113,7 +113,7 @@ header {
 /* Fondo de la cabecera */
 
 header img {
-  width: 100%;
+    width: 100%;
 }
 
 
@@ -216,25 +216,23 @@ tr:hover td {
 
 /*Estilo de formularios*/
 
-button, .button {
+button,
+.button {
     height: 50px;
     width: 150px;
     margin-right: 10px;
     border: none;
-    background-color: var(--primary-color) ;    
+    background-color: var(--primary-color);
     font-size: 0.7em;
     border-radius: 10px;
     font-size: 16px;
     font-family: "Montserrat";
     font-weight: bold;
-
 }
 
-
 button:hover {
-    background-color:#fff;
+    background-color: #fff;
     transition: background-color 0.2s ease;
-
 }
 
 form {
@@ -255,7 +253,6 @@ form input[type="submit"]:hover {
 
 .container {
     margin: 0 auto;
-    width: 65%;
     background-color: var(--background-color);
 }
 
