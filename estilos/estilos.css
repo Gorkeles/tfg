@@ -25,8 +25,8 @@ p {
 /* Todos son colores seguros, falta añadir a guía de estilos*/
 
 :root {
-    --background-color: #CCFFCC;
-    --primary-color: #CC99CC;
+    --background-color: #ccffcc;
+    --primary-color: #cc99cc;
     --primary-text-color: #000000;
     --secondary-text-color: #ffffff;
 }
@@ -39,16 +39,13 @@ body {
     font-family: "Montserrat", sans-serif;
     color: var(--primary-text-color);
     background-color: rgb(238, 236, 236);
-    background-position: center center;
-    background-repeat: no-repeat;
+    background-position: center;
     background-attachment: fixed;
-    background-size: cover;
     font-weight: bold;
 }
 
 a {
     color: var(--primary-text-color);
-    background-color: var(--primary-color);
 }
 
 
@@ -62,6 +59,11 @@ footer {
     margin: 0px auto;
 }
 
+.container {
+    margin: 0 auto;
+    background-color: var(--background-color);
+}
+
 .contacto,
 .registro {
     align-items: center;
@@ -73,7 +75,7 @@ footer {
 }
 
 
-/* Estilos para el menú principal */
+/* Estilos para el menú superior */
 
 nav {
     background-color: var(--primary-color);
@@ -89,7 +91,6 @@ nav div {
     float: right;
     margin-left: 20px;
     padding: 5px;
-    background-color: var(--primary-color);
 }
 
 .social {
@@ -102,15 +103,12 @@ nav div {
 }
 
 
-/* Estilos para la cabecera */
+/* Estilos y fondo para la cabecera */
 
 header {
     position: relative;
     text-align: center;
 }
-
-
-/* Fondo de la cabecera */
 
 header img {
     width: 100%;
@@ -226,20 +224,6 @@ form input[type="text"]:focus {
 
 form input[type="submit"]:hover {
     background: var(--primary-color);
-}
-
-.container {
-    margin: 0 auto;
-    background-color: var(--background-color);
-}
-
-.content {
-    padding: 5px;
-    margin: 0 auto;
-}
-
-.content span {
-    width: 250px;
 }
 
 
