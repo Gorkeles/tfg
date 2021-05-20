@@ -17,19 +17,19 @@ if (isset($_POST['loguear'])) {
     if (!$result) {
         echo "<script type='text/javascript'>
         		alert(¡ERROR! Has introducido mal tu E-mail o contraseña);
-        		window.location.href='login.php';
+        		window.location.href='admin.php';
         		</script>";
     } else {
         if (password_verify($pass, $result['pass'])) {
             $_SESSION['user_id'] = $result['id'];
             echo "<script type='text/javascript'>
             alert(¡ENHORABUENA! Te has logueado satisfactoriamente);
-            window.location.href='login.php';
+            window.location.href='admin.php';
             </script>";
         } else {
             echo "<script type='text/javascript'>
         		alert(¡ERROR! Has introducido mal tu E-mail o contraseña);
-        		window.location.href='login.php';
+        		window.location.href='admin.php';
         		</script>";
         }
     }

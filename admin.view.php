@@ -11,6 +11,7 @@
     <link href="estilos/estilos.css" rel="stylesheet" type="text/css" />
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+
 </head>
 
 <body>
@@ -34,16 +35,10 @@
     <!-- Imagen de cabecera, subtítulo y descripción -->
     <div class="container">
         <main>
-            <h1>Bienvenido Administrador</h1><br>
-
-            <section class="rutasMoto">
-
-                <div>
-                    Busca las mascarillas que quieras insertar, modificar o eliminar
-                </div><br>
-
-
-            </section>
+            <h1>Bienvenido Administrador</h1>
+            Busca las mascarillas que quieras insertar, modificar o eliminar
+            <br>
+            <br>
 
             <!-- Buscador de rutas que busca en la base de datos según el datos que elijas
             y a continuación escribir que quieres buscar dentro de ese campo seleccionado -->
@@ -64,13 +59,12 @@
                         </select>
                         <br>
                         <br>
-                        Ahora escribe que quieres buscar
-                        <br>
+                        Ahora escribe que quieres buscar:
                         <br>
                         <input type="text" placeholder="¿Qué ruta quieres buscar?" name="provincia" id="provincia" require="required">
                         <br>
                         <br>
-                        <input type="submit" name="buscarRutas" class="button button-primary" value="Enviar">
+                        <input type="submit" name="buscarRutas" class="button button-primary" value="Enviar"><br>
                         <br>
                     </form>
                 </div>
@@ -104,8 +98,8 @@
                     </center>
                 <?php } ?>
             </div>
-
-
+            <br>
+            <br>
             <section>
                 <h2>Introducción de mascarillas</h2>
                 <br>
@@ -134,16 +128,14 @@
                         <input type="text" placeholder="Describe la ruta brevemente" name="descripcion" id="descripcion" required>
                         <br>
                         <br>
-
-
                         <!-- boton para enviar los datos -->
-                        <input type="submit" name="rutas" class="button button-primary" value="Enviar">
+                        <input type="submit" name="rutas" class="button button-primary" value="Enviar"><br><br>
                     </form>
+                    <br>
+                    <br>
                 </div>
             </section>
     </div>
-    <br>
-
     </main>
     <footer>
         <address>

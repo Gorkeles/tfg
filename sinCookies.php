@@ -38,7 +38,7 @@
         </address>
         <div>Cookies | Enmascarados</div>
         <section class="social">
-            <p><a href="login.php" style="text-decoration:none">Volver a INICIO</a></p>
+            <p><a href="index.php" style="text-decoration:none">Volver a INICIO</a></p>
         </section>
     </footer>
 
