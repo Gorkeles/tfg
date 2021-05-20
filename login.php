@@ -6,8 +6,8 @@ $erroresLog = '';
 $enviadoLog = true;
 // Comprobamos que el formulario haya sido enviado con las variables que hayamos puesto en login.view, deben llamarse igual!
 if (isset($_POST['registrar'])) {
-	$conexion = new mysqli('localhost', 'root', '', 'gorka');
-	//conectamos mi base de datos 'gorka'
+	$conexion = new mysqli('localhost', 'root', '', 'tfg');
+	//conectamos mi base de datos 'tfg'
 
 	$nombre = $_POST['nombre'];
 	$telefono = $_POST['telefono'];
@@ -89,8 +89,8 @@ if (isset($_POST['registrar'])) {
 		//Todo OK, continuamos
 
 
-		$conexion = new mysqli('localhost', 'root', '', 'gorka');
-		//conectamos mi base de datos 'gorka'
+		$conexion = new mysqli('localhost', 'root', '', 'tfg');
+		//conectamos mi base de datos 'tfg'
 
 
 
@@ -184,8 +184,8 @@ if (isset($_POST['loguear'])) {
 		//Todo OK, continuamos
 
 
-		$conexion = new mysqli('localhost', 'root', '', 'gorka');
-		//conectamos mi base de datos 'gorka'
+		$conexion = new mysqli('localhost', 'root', '', 'tfg');
+		//conectamos mi base de datos 'tfg'
 
 		if ($conexion->connect_errno) {
 			die('Lo siento, hubo un problema con el servidor');

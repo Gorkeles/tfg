@@ -9,8 +9,8 @@ $arrayRutas = array();
 
 // Comprobamos que el formulario haya sido enviado con las variables que hayamos puesto en index.view, deben llamarse igual!
 if (isset($_POST['rutas'])) {
-    $conexion = new mysqli('localhost', 'root', '', 'gorka');
-    //conectamos mi base de datos 'gorka'
+    $conexion = new mysqli('localhost', 'root', '', 'tfg');
+    //conectamos mi base de datos 'tfg'
 
     $provincia = $_POST['provincia'];
     $nivel = $_POST['nivel'];
@@ -18,8 +18,8 @@ if (isset($_POST['rutas'])) {
     $descripcion = $_POST['descripcion'];
 
 
-    $conexion = new mysqli('localhost', 'root', '', 'gorka');
-    //conectamos mi base de datos 'gorka'
+    $conexion = new mysqli('localhost', 'root', '', 'tfg');
+    //conectamos mi base de datos 'tfg'
 
 
     if ($conexion->connect_errno) {
@@ -66,8 +66,8 @@ if (isset($_POST['rutas'])) {
 
 
 if (isset($_POST['buscarRutas'])) {
-    $conexion = new mysqli('localhost', 'root', '', 'gorka');
-    //conectamos mi base de datos 'gorka'
+    $conexion = new mysqli('localhost', 'root', '', 'tfg');
+    //conectamos mi base de datos 'tfg'
 
     $yaBuscado = true;
     $busqueda = $_POST['provincia'];

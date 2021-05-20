@@ -18,9 +18,8 @@
 
     <!-- Barra de navegación con los enlaces a distintas páginas de la web -->
     <nav>
-    <img src="img/logo.jpg" alt="logo" class="logo">
-        <div class="nav-item" href="index.php" target="_blank">
-            <a href="tienda.view.php" style="text-decoration:none">Volver a TIENDA</a>
+        <a href="index.php"><img src="img/logo.jpg" alt="logo" class="logo"></a>
+        <a href="tienda.view.php" style="text-decoration:none">Volver a TIENDA</a>
         </div>
     </nav>
 
