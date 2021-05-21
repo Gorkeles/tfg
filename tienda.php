@@ -5,7 +5,7 @@ $errores = '';
 $enviado = true;
 
 $yaBuscado = false;
-$arrayRutas = array();
+$arrayProducts = array();
 
 // Comprobamos que el formulario haya sido enviado con las variables que hayamos puesto en index.view, deben llamarse igual!
 if (isset($_POST['rutas'])) {
@@ -27,10 +27,10 @@ if (isset($_POST['rutas'])) {
     } else {
 
         // Antes de insertar, hacemos una query para ver si existe email
-        $existeRutaSql = 'SELECT * from rutas where descripcion=\'' . $descripcion . '\'';
+        $existeProductoSql = 'SELECT * from rutas where descripcion=\'' . $descripcion . '\'';
 
 
-        $conexion->query($existeRutaSql);
+        $conexion->query($existeProductoSql);
         if ($conexion->affected_rows >= 1) {
             echo "<script type='text/javascript'>
 		alert('Ya has introducido esa ruta');
@@ -76,32 +76,32 @@ if (isset($_POST['buscarRutas'])) {
 
     if ($tipoBusquedaRuta == 'PROVINCIA') {
 
-        $buscarRutasSql = "SELECT * from rutas where provincia LIKE '%$busqueda%'";
+        $buscarProductosSql = "SELECT * from rutas where provincia LIKE '%$busqueda%'";
     } elseif ($tipoBusquedaRuta == 'NIVEL') {
 
-        $buscarRutasSql = "SELECT * from rutas where nivel LIKE '%$busqueda%'";
+        $buscarProductosSql = "SELECT * from rutas where nivel LIKE '%$busqueda%'";
     } elseif ($tipoBusquedaRuta == 'DISTANCIA') {
 
-        $buscarRutasSql = "SELECT * from rutas where distancia LIKE '$busqueda'";
+        $buscarProductosSql = "SELECT * from rutas where distancia LIKE '$busqueda'";
     } elseif ($tipoBusquedaRuta == 'DESCRIPCION') {
 
-        $buscarRutasSql = "SELECT * from rutas where descripcion LIKE '%$busqueda%'";
+        $buscarProductosSql = "SELECT * from rutas where descripcion LIKE '%$busqueda%'";
     } else {
 
         if ($busqueda < 300) {
-            $buscarRutasSql = "SELECT * from rutas where nivel LIKE '%fácil%'";
+            $buscarProductosSql = "SELECT * from rutas where nivel LIKE '%fácil%'";
         } elseif ($busqueda >= 300 && $busqueda < 600) {
-            $buscarRutasSql = "SELECT * from rutas where nivel LIKE '%media%'";
+            $buscarProductosSql = "SELECT * from rutas where nivel LIKE '%media%'";
         } elseif ($busqueda > 600) {
-            $buscarRutasSql = "SELECT * from rutas where nivel LIKE '%dificil%'";
+            $buscarProductosSql = "SELECT * from rutas where nivel LIKE '%dificil%'";
         }
     }
 
-    $resultado = $conexion->query($buscarRutasSql);
+    $resultado = $conexion->query($buscarProductosSql);
 
     while ($row = $resultado->fetch_assoc()) {
 
-        array_push($arrayRutas, $row);
+        array_push($arrayProducts, $row);
     }
 }
 

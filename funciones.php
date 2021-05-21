@@ -65,15 +65,15 @@
 		
 
 	function hayConexion (){
-	$sql = "SELECT * FROM practica5"; //Traemos los elementos de la base de datos
+	$sql = "SELECT * FROM products"; //Traemos los elementos de la base de datos
 	$connect = $conexion->query($sql); //La conexión se ejecuta
 	
 		if($connect->num_rows){ //Con este condicional vamos a comprobar que hay datos en la base de datos
 		
 			while($fila = $connect->fetch_assoc()){  //El método fetch_assoc trae la información del elemento de cada fila que queramos
 				
-				if($fila['nombre']==$nombre){
-				echo  "Hola ". $fila['nombre'] . '<br />';
+				if($fila['id_product']==$id_product){
+				echo  "Hola ". $fila['id_product'] . '<br />';
 				//aquí podemos hacer un require o un include de otra página donde el usuario pueda hacer cosas.
 				//O redirigirle a la página de Login
 				}

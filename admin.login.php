@@ -87,7 +87,6 @@ if (isset($_POST['adminLog'])) {
 					window.location.href='admin.php';
 					</script>";
 
-					require 'bienvenido.php';
 				} else {
 					echo "<script type='text/javascript'>
 						alert(¡ERROR! Has introducido mal tu E-mail o contraseña);
