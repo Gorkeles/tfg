@@ -76,6 +76,16 @@ min-height: 96px;
     font-size: 1.5em;
 }
 
+#x {
+    height: 30px;;
+    width: 30px;
+}
+
+.total {
+    border-top: solid var(--primary-color);
+    padding: 10px;
+}
+
 
 
 
