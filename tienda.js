@@ -63,7 +63,7 @@ console.log("eeeeeeeee"+pedido[0]["nombre"])
         <div class="shopping-cart-items">
             <div class="shopping-cart-quantity ">
                 <input class="shopping-cart-quantity-input shoppingCartItemQuantity" type="number" value="1">
-                <button class="btn btn-danger buttonDelete" type="button">X</button>
+                <button class="btn btn-danger buttonDelete" id="x" type="button">X</button>
             </div>
         </div>
   </div>`;

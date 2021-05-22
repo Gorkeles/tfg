@@ -101,7 +101,7 @@
             <!-- ? FIN SHOPPING CART ITEMS -->
 
             <!-- INICIO TOTAL -->
-            <div class="row shopping-cart-total">
+            <div class="total">
                 <p class="shopping-cart-footer">Total</p>
                 <p class="shopping-cart-footer shoppingCartTotal">0€</p>
                 <p class="shopping-cart-footer "><button class="comprarButton" type="button">Comprar</button></p>
