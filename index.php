@@ -133,7 +133,7 @@ $_SESSION['nombre'] = 'Gorka'; //Sesión iniciada con Gorka
                     <li id="slide3">
                     <h1>Ejemplo con otros elementos</h1>
                     <p>Esto es un párrafo de ejemplo para comprobar que podemos meter cualquier tipo de elementos en el slider</p>
-                    <a href="https://kikopalomares.com/">¡Corre a mi web para más contenido!</a>
+                    <a href="tienda.view.php">¡Corre a mirar nuestros productos!</a>
                     </li>
                 </ul>
             
