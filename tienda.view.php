@@ -51,18 +51,14 @@
         while ($row = $result->fetch_assoc()){
             array_push($arrayProducts, $row);
         }
-        
-    
-    ?><?php foreach ($arrayProducts as $product) : ?>
+    ?>
 
 
     <section class="container">
     
-        <div class="caja">
+        <?php foreach ($arrayProducts as $product) : ?>
         
-            <div class="item">
-            
-            
+            <div class="item"> 
                 <h3 class="item-title"><?php echo ($product["title"]); 
                 ?></h3>
                 <img class="item-image" src="<?php echo($product["img_url"]); ?>">
@@ -71,10 +67,8 @@
                     <h4 class="item-price"><?php echo ($product["price"]);?></h4>
                     <button class="item-button btn btn-primary addToCart">AÑADIR AL CARRITO</button>
                 </div>
-                <br>HOla
-                <?php endforeach; ?>
             </div>
-        </div>
+        <?php endforeach; ?>
     </section>
     <?php } ?>
     
@@ -83,7 +77,7 @@
 
     <!-- INICIO CARRITO -->
     <section class="shopping-cart">
-        <div class="caja">
+        <div class="container">
             <h1 class="text-center">CARRITO</h1>
             <hr>
             <div class="row">
