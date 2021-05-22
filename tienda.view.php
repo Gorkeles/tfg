@@ -29,78 +29,61 @@
     </nav>
 
     <!-- INICIO TIENDA -->
-    <section class="store">
-        <div class="container">
+    <!-- Conexion a la base de datos -->
+    <?php
+
+    //creo array vacio para guardar los productos
+    $arrayProducts = array();
+
+    //conecto con la bbdd
+    $conexion = new mysqli('localhost', 'root', '', 'tfg');
+
+    if ($conexion->connect_errno) {
+        die('Lo siento, hubo un problema con el servidor');
+    } else {
+        // creo una query
+        $query1 = 'SELECT * from products';
+
+        // guardo los resultados de la query en una variable
+        $result = $conexion->query($query1);
+
+        // guarfdo los resultados en un array
+        while ($row = $result->fetch_assoc()){
+            array_push($arrayProducts, $row);
+        }
+        
+    
+    ?><?php foreach ($arrayProducts as $product) : ?>
+
+
+    <section class="container">
+    
+        <div class="caja">
+        
             <div class="item">
-                <h3 class="item-title">Mascarilla básica azul</h3>
-                <img class="item-image" src="./img/1azul.jpg">
+            
+            
+                <h3 class="item-title"><?php echo ($product["title"]); 
+                ?></h3>
+                <img class="item-image" src="<?php echo($product["img_url"]); ?>">
 
                 <div class="item-details">
-                    <h4 class="item-price">9.99€</h4>
+                    <h4 class="item-price"><?php echo ($product["price"]);?></h4>
                     <button class="item-button btn btn-primary addToCart">AÑADIR AL CARRITO</button>
                 </div>
-            </div>
-
-            <div class="item">
-                <h3 class="item-title">Mascarilla básica rosa</h3>
-
-                <img class="item-image" src="./img/2rosa.jpg">
-
-                <div class="item-details">
-                    <h4 class="item-price">9.99€</h4>
-                    <button class="item-button btn btn-primary addToCart">AÑADIR AL CARRITO</button>
-                </div>
-            </div>
-
-            <div class="item">
-                <h3 class="item-title">Mascarilla básica beige</h3>
-
-                <img class="item-image" src="./img/3beige.jpg">
-
-                <div class="item-details">
-                    <h4 class="item-price">9.99€</h4>
-                    <button class="item-button btn btn-primary addToCart">AÑADIR AL CARRITO</button>
-                </div>
-            </div>
-
-            <div class="item">
-                <h3 class="item-title">Mascarilla básica negra</h3>
-
-                <img class="item-image" src="./img/4negra.jpg">
-
-                <div class="item-details">
-                    <h4 class="item-price">9.99€</h4>
-                    <button class="item-button btn btn-primary addToCart">AÑADIR AL CARRITO</button>
-                </div>
-            </div>
-
-            <div class="item">
-                <h3 class="item-title">Mascarilla estampada flores</h3>
-
-                <img class="item-image" src="./img/5flores.jpg">
-
-                <div class="item-details">
-                    <h4 class="item-price">11.99€</h4>
-                    <button class="item-button btn btn-primary addToCart">AÑADIR AL CARRITO</button>
-                </div>
-            </div>
-
-            <div class="item">
-                <h3 class="item-title">Mascarilla estampada tigre</h3>
-
-                <img class="item-image" src="./img/6tigre.jpg">
-
-                <div class="item-details">
-                    <h4 class="item-price">11.99€</h4>
-                    <button class="item-button btn btn-primary addToCart">AÑADIR AL CARRITO</button>
-                </div>
+                <br>HOla
+                <?php endforeach; ?>
             </div>
         </div>
     </section>
+    <?php } ?>
+    
+
     <!-- FIN TIENDA -->
+
     <!-- INICIO CARRITO -->
     <section class="shopping-cart">
-        <div class="container">
+        <div class="caja">
             <h1 class="text-center">CARRITO</h1>
             <hr>
             <div class="row">
