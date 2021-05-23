@@ -259,9 +259,10 @@ form input[type="submit"]:hover {
 
 .container1{
     margin: auto;
-    background-color: var(--primary-color);
+    background-color: var(--background-color);
     width: 950px;
-    padding: 50px;
+    padding: 5px;
+    text-align: -webkit-center;
 }
 
 ul, li {
@@ -312,15 +313,15 @@ ul.slider li:target {
 }
 
 .menu li a{
-  display: inline-block;
-  color: white;
-  text-decoration: none;
-  background-color: grey;
-  padding: 10px;
-  width: 20px;
-  height: 20px;
-  font-size: 20px;
-  border-radius: 100%;
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    background-color: grey;
+    padding: 10px;
+    width: 42px;
+    height: 42px;
+    font-size: 20px;
+    border-radius: 100%;
 }
 
 .infoPortada{
