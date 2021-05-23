@@ -11,7 +11,7 @@
     <link href="estilos/estilos.css" rel="stylesheet" type="text/css" />
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
-
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 </head>
 
 <body>
@@ -81,6 +81,7 @@
                                     <th><b><u>Nombre</u></b></th>
                                     <th><b><u>Precio</u></b></th>
                                     <th><b><u>Imágen</u></b></th>
+                                    <th><b><u>Borrar</u></b></th>
                                 </tr>
                             </thead>
                             <tbody>
@@ -90,6 +91,7 @@
                                         <td><?= $products["title"]; ?></td>
                                         <td><?= $products["price"]; ?></td>
                                         <td><?= $products["img_url"]; ?></td>
+                                        <td><a href="admin.php?id=<?php echo $borrar;?>" class="delete" title="Eliminar" data-toggle="tooltip"><i class="material-icons">&#xE872;</i></a></td>
                                     </tr>
                             </tbody>
                         <?php endforeach; ?>

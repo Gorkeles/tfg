@@ -97,5 +97,21 @@ if (isset($_POST['buscarProductos'])) {
 }
 
 
+if (isset($POST['borrar'])){
+    $conexion = new mysqli('localhost', 'root', '', 'tfg');
+    //conectamos mi base de datos 'tfg'
+
+	$borrar=intval($_POST['borrar']);
+	$res = $cliente->delete($borrar);
+	if($borrar == 'id_product'){
+        $borrarSql = "DELETE id_product from products where id_product LIKE '%$borrar%'";
+		header('location: index.php');
+	}else{
+		echo "Error al eliminar el registro";
+	}
+    $resultado = $conexion->query($borrarSql);
+}
+
+
 require 'admin.view.php';
 //llamamos al índice en HTML
