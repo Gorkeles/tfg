@@ -54,7 +54,7 @@
                             <option value="id_product">ID</option>
                             <option value="title">Nombre</option>
                             <option value="price">Precio</option>
-                            <option value="img_url">Imágen</option>
+                            <option value="img_url">Imagen</option>
                             <option value="atl">Descripción</option>
                         </select>
                         <br>
@@ -81,7 +81,7 @@
                                     <th><b><u>ID</u></b></th>
                                     <th><b><u>Nombre</u></b></th>
                                     <th><b><u>Precio</u></b></th>
-                                    <th><b><u>Imágen</u></b></th>
+                                    <th><b><u>Imagen</u></b></th>
                                     <th><b><u>Descripción</u></b></th>
                                     <th><b><u>Borrar</u></b></th>
                                 </tr>
@@ -128,7 +128,7 @@
                         <input type="text" placeholder="¿Cuanto vale?" name="price" id="price" required>
                         <br>
                         <br>
-                        Imágen: <br>
+                        Imagen: <br>
                         <input type="text" placeholder="¿Cual es tu URL?" name="img_url" id="img_url" required>
                         <br>
                         <br>
