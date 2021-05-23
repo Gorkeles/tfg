@@ -318,9 +318,9 @@ ul.slider li:target {
 
 .menu li a {
     display: inline-block;
-    color: white;
+    color: var(--background-color);
     text-decoration: none;
-    background-color: grey;
+    background-color: var(--primary-color);
     padding: 10px;
     width: 42px;
     height: 42px;
