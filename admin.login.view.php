@@ -4,7 +4,7 @@
 
 <head>
 	<meta charset="UTF-8">
-	<title>Acceso a administración | Portada</title>
+	<title>Enmascarados | Acceso a administración</title>
 
 	<!-- Incluimos los estilos y fuente utilizada en la web -->
 	<link href="estilos/estilos.css" rel="stylesheet" type="text/css" />
@@ -66,7 +66,7 @@
 			Siempre protegido
 
 		</address>
-		<div>Acceso a administración | Portada </div>
+		<div>Enmascarados | Acceso a administración</div>
 		<section class="social">
 			<p><a href="index.php" style="text-decoration:none">Volver a Portada</a></p>
 		</section>
