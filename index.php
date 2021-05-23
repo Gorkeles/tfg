@@ -77,7 +77,7 @@ $_SESSION['nombre'] = 'Gorka'; //Sesión iniciada con Gorka
     <body onload="galletas()">
 
         <script type="text/javascript">
-            /* Creamos una coookie: nombre; fecha de expiración (UTC); edad máxima; ruta; dominio
+        // Creamos una coookie: nombre; fecha de expiración (UTC); edad máxima; ruta; dominio
         document.cookie = "usuario = Gorka; expires=Thu, 04 Feb 2021 12:00:00 UTC;";
         document.cookie = "sexo = hombre;";
 
@@ -92,7 +92,7 @@ $_SESSION['nombre'] = 'Gorka'; //Sesión iniciada con Gorka
         // Elimicar cookie (fecha anterior)
         document.cookie = "usuario=; expires=Thu, 01 Jan 1970 00:00:01 GMT";
         document.cookie = "SEXO=; expires=Thu, 01 Jan 1970 00:00:01 GMT";
-        alert(document.cookie); */
+        alert(document.cookie);
         </script>
 
 
@@ -115,7 +115,7 @@ $_SESSION['nombre'] = 'Gorka'; //Sesión iniciada con Gorka
         <div class="container">
             <header>
                 <div class="image">
-                    <img src="img/portada.jpg" height=500 />
+                    <img src="img/portada.jpg" height=500 alt="foto portada de mascarillas" />
                 </div>
             </header>
             <main>
@@ -125,27 +125,27 @@ $_SESSION['nombre'] = 'Gorka'; //Sesión iniciada con Gorka
     
                 <ul class="slider">
                     <li id="slide1">
-                    <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/3947459/car.jpg"/>
+                    <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/3947459/car.jpg" alt=""/>
                     </li>
                     <li id="slide2">
-                    <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/3947459/sunset.jpg"/>
+                    <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/3947459/sunset.jpg" alt=""/>
                     </li>
                     <li id="slide3">
                     <h1>Ejemplo con otros elementos</h1>
                     <p>Esto es un párrafo de ejemplo para comprobar que podemos meter cualquier tipo de elementos en el slider</p>
-                    <a href="tienda.view.php">¡Corre a mirar nuestros productos!</a>
+                    <a href="tienda.view.php" alt="">¡Corre a mirar nuestros productos!</a>
                     </li>
                 </ul>
             
                 <ul class="menu">
                     <li>
-                    <a href="#slide1">1</a>
+                    <a href="#slide1" alt="1">1</a>
                     </li>
                     <li>
-                    <a href="#slide2">2</a>
+                    <a href="#slide2" alt="2">2</a>
                     </li>
                     <li>
-                    <a href="#slide3">3</a>
+                    <a href="#slide3" alt="3">3</a>
                     </li>
                 </ul>
             
@@ -158,7 +158,7 @@ $_SESSION['nombre'] = 'Gorka'; //Sesión iniciada con Gorka
                     <h2>MAYOR SUJECCIÓN</h2>
                 </div>
                 <div class="textos">
-                    <p>Sujección baja que evita rozaduras y molestias en la zona de las orejas</p>
+                    <p>Sujección baja que evita rozaduras y molestias en la zona de las orejas <br><br><br><br></p>
                 </div>
             </div>
             <div class="bloque2">
