@@ -331,7 +331,8 @@ ul.slider li:target {
     display: inline-flex;
 }
 
-.titulos .textos{
+.titulos{
     margin:2px;
     padding: 5px;
+    border: double;
 }
