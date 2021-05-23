@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 19-05-2021 a las 16:25:23
+-- Tiempo de generación: 23-05-2021 a las 19:14:54
 -- Versión del servidor: 10.4.17-MariaDB
 -- Versión de PHP: 7.2.34
 
@@ -50,20 +50,21 @@ CREATE TABLE `products` (
   `id_product` int(5) NOT NULL,
   `title` varchar(100) NOT NULL,
   `price` float NOT NULL,
-  `img_url` varchar(500) NOT NULL
+  `img_url` varchar(500) NOT NULL,
+  `alt` varchar(100) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
 -- Volcado de datos para la tabla `products`
 --
 
-INSERT INTO `products` (`id_product`, `title`, `price`, `img_url`) VALUES
-(1, 'Mascarilla Basica Azul', 9.99, '/img/1azul.jpg'),
-(2, 'Mascarilla Basica Rosa', 9.99, '/img/2rosa.jpg'),
-(3, 'Mascarilla Basica Beige', 9.99, '/img/3beige.jpg'),
-(4, 'Mascarilla Basica Negra', 9.99, '/img/4negra.jpg'),
-(5, 'MAsccarilla Estampada Flores', 11.99, '/img/5flores.jpg'),
-(6, 'Mascarilla Estampada Tigre', 11.99, '/img/6tigre.jpg');
+INSERT INTO `products` (`id_product`, `title`, `price`, `img_url`, `alt`) VALUES
+(1, 'Mascarilla Basica Azul', 9.99, 'img/1azul.jpg', 'Mascarilla de tela color azul con tira para colgar del cuello'),
+(2, 'Mascarilla Basica Rosa', 9.99, 'img/2rosa.jpg', 'Mascarilla de tela color rosa con tira para colgar del cuello'),
+(3, 'Mascarilla Basica Beige', 9.99, 'img/3beige.jpg', 'Mascarilla de tela color beige con tira para colgar del cuello'),
+(4, 'Mascarilla Basica Negra', 9.99, 'img/4negra.jpg', 'Mascarilla de tela color negro con tira para colgar del cuello'),
+(5, 'Mascarilla Estampada Flores ', 11.99, 'img/5flores.jpg', 'Mascarilla de tela estampada de fondo negro y flores azules con tira para colgar del cuello'),
+(6, 'Mascarilla Estampada Tigre', 11.99, 'img/6tigre.jpg', 'Mascarilla de tela con estampado de tigue en tonos marrones con tira para colgar del cuello');
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

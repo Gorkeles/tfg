@@ -61,7 +61,7 @@
             <div class="item"> 
                 <h3 class="item-title"><?php echo ($product["title"]); 
                 ?></h3>
-                <img class="item-image" src="<?php echo($product["img_url"]); ?>">
+                <img class="item-image" src="<?php echo($product["img_url"]); ?>" alt="<?php echo($product["alt"]); ?>">
 
                 <div class="item-details">
                     <h4 class="item-price"><?php echo ($product["price"]);?></h4>
