@@ -119,8 +119,8 @@ $_SESSION['nombre'] = 'Gorka'; //Sesión iniciada con Gorka
                 </div>
             </header>
             <main>
-                <h1>Tu web de mascarillas <br></h1>
-
+                <h1>Tu web de mascarillas</h1>
+                <br>
             <div class="container1">
     
                 <ul class="slider">
@@ -132,6 +132,7 @@ $_SESSION['nombre'] = 'Gorka'; //Sesión iniciada con Gorka
                     </li>
                     <li id="slide3">
                     <h1>Ejemplo con otros elementos</h1>
+                    <br>
                     <p>Esto es un párrafo de ejemplo para comprobar que podemos meter cualquier tipo de elementos en el slider</p>
                     <a href="tienda.view.php" alt="">¡Corre a mirar nuestros productos!</a>
                     </li>

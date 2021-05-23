@@ -16,6 +16,7 @@ if (isset($_POST['introducir'])) {
     $title = $_POST['title'];
     $price = $_POST['price'];
     $img_url = $_POST['img_url'];
+    $alt = $_POST['alt'];
 
 
     $conexion = new mysqli('localhost', 'root', '', 'tfg');
@@ -41,7 +42,7 @@ if (isset($_POST['introducir'])) {
 
 
 
-        $sql = "INSERT INTO products (id_product,title,price,img_url) VALUES ('$id_product','$title','$price','$img_url')";
+        $sql = "INSERT INTO products (id_product,title,price,img_url,alt) VALUES ('$id_product','$title','$price','$img_url','$alt')";
 
         $conexion->query($sql);
         //Hacemos un query a la base de datos
@@ -86,6 +87,9 @@ if (isset($_POST['buscarProductos'])) {
     } elseif ($tipoBusquedaProducto == 'img_url') {
 
         $buscarProductosSql = "SELECT * from products where img_url LIKE '%$busqueda%'";
+    } elseif ($tipoBusquedaProducto == 'alt') {
+
+        $buscarProductosSql = "SELECT * from products where alt LIKE '%$busqueda%'";
     }
 
     $resultado = $conexion->query($buscarProductosSql);
@@ -94,6 +98,22 @@ if (isset($_POST['buscarProductos'])) {
 
         array_push($arrayProducts, $row);
     }
+}
+
+
+if (isset($POST['borrar'])){
+    $conexion = new mysqli('localhost', 'root', '', 'tfg');
+    //conectamos mi base de datos 'tfg'
+
+	$borrar=intval($_POST['borrar']);
+	$res = $cliente->delete($borrar);
+	if($borrar == 'id_product'){
+        $borrarSql = "DELETE id_product from products where id_product LIKE '%$borrar%'";
+		header('location: index.php');
+	}else{
+		echo "Error al eliminar el registro";
+	}
+    $resultado = $conexion->query($borrarSql);
 }
 
 

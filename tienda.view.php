@@ -61,7 +61,7 @@
             <div class="item"> 
                 <h3 class="item-title"><?php echo ($product["title"]); 
                 ?></h3>
-                <img class="item-image" src="<?php echo($product["img_url"]); ?>">
+                <img class="item-image" src="<?php echo($product["img_url"]); ?>" alt="<?php echo($product["alt"]); ?>">
 
                 <div class="item-details">
                     <h4 class="item-price"><?php echo ($product["price"]);?></h4>
@@ -104,7 +104,7 @@
             <div class="total">
                 <p class="shopping-cart-footer">Total</p>
                 <p class="shopping-cart-footer shoppingCartTotal">0€</p>
-                <p class="shopping-cart-footer "><button class="comprarButton" type="button">Comprar</button></p>
+                <p class="shopping-cart-footer "><button class="comprarButton" type="button" id="comprar">Comprar</button></p>
             </div>
 
             <!-- FIN TOTAL -->
@@ -123,22 +123,22 @@
             <!-- Placeholder es lo que le aparece al usuario en la web, name es como se llama la variable que recogeremos con post y type el tipo de datos que introduce el usuario -->
             <br>
             <!-- El nombre es tipo text -->
-            Nombre: <br>
-            <input type="hidden" placeholder="Introduce tu nombre y apellido" name="nombre" id="name" required>
+            Nombre: <br><br>
+            <input type="text" placeholder="Introduzca su nombre y apellido" name="nombre" id="name" required>
             <br>
             <br>
-            Teléfono: <br>
-            <input type="text" placeholder="Introduce tu teléfono" name="phone" id="phone" required>
+            Teléfono: <br><br>
+            <input type="text" placeholder="Introduzca su teléfono" name="phone" id="phone" required>
             <br>
             <br>
             <!-- El correo es tipo text -->
-            Correo electrónico: <br>
-            <input type="email" placeholder="Introduce tu email" name="email" id="email" required>
+            Correo electrónico: <br><br>
+            <input type="email" placeholder="Introduzca su email" name="email" id="email" required>
             <br>
             <br>
             <!-- La direccion es tipo text-->
-            Comentarios: <br>
-            <input type="text" placeholder="Introduce tu dirección" name="direction" id="direction" required>
+            Comentarios: <br><br>
+            <input type="text" placeholder="Introduzca su dirección" name="direction" id="direction" required>
             <br>
             <br>
 

@@ -69,7 +69,7 @@
                         <br>
                         <!-- El comentario es tipo text-->
                         Comentarios: <br><br>
-                        <input type="textarea" placeholder="Detallenos sus dudas y contactaremos con usted" name="consulta" id="consulta" required>
+                        <input type="text" placeholder="Detallenos sus dudas y contactaremos con usted" name="consulta" id="consulta" required>
                         <br>
                         <br>
 

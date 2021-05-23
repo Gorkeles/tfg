@@ -9,7 +9,7 @@
     if(!isset($_POST['nombre']) ||
     !isset($_POST['phone']) ||
     !isset($_POST['email']) ||
-    !isset($_POST['text'])) {
+    !isset($_POST['consulta'])) {
 
 
     echo "<b>Ocurrió un error y el formulario no ha sido enviado. </b><br />";
@@ -21,7 +21,7 @@
     $email_message .= "Nombre: " . $_POST['nombre'] . "\n";
     $email_message .= "E-mail: " . $_POST['email'] . "\n";
     $email_message .= "Telefono: " . $_POST['phone'] . "\n";
-    $email_message .= "Comentarios: " . $_POST['text'] . "\n\n";
+    $email_message .= "Comentarios: " . $_POST['consulta'] . "\n\n";
 
     
 
