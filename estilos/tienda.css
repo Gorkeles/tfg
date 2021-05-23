@@ -38,6 +38,7 @@ margin: 20px 0px 15px;
 .item-details > .item-price {
 margin-right: 40px;
 margin-left: 40px;
+font-size: larger;
 }
 
 /* ? SHOPPING CART */
@@ -84,6 +85,15 @@ min-height: 96px;
 .total {
     border-top: solid var(--primary-color);
     padding: 10px;
+}
+
+.modal{
+    max-width: 1200px;
+    min-width: 576px;
+    margin: 0px auto;
+    /*position: absolute;*/
+    background-color: var(--background-color);
+    
 }
 
 

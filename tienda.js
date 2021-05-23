@@ -111,10 +111,10 @@ function updateShoppingCartTotal() {
 function removeShoppingCartItem(event) {
   const buttonClicked = event.target;
   const item = buttonClicked.closest('.shoppingCartItem');
- const itemTitle = item.querySelectorAll('.shopping-cart-item-title')[0].innerHTML;
- const itemPrice = item.querySelectorAll('.shoppingCartItemPrice')[0].innerHTML;
- console.log("oooo"+itemTitle+"erwer"+itemPrice);
- // if pedido contains itemTitle itemPrice delete()
+  const itemTitle = item.querySelectorAll('.shopping-cart-item-title')[0].innerHTML;
+  const itemPrice = item.querySelectorAll('.shoppingCartItemPrice')[0].innerHTML;
+  console.log("oooo"+itemTitle+"erwer"+itemPrice);
+  // if pedido contains itemTitle itemPrice delete()
   buttonClicked.closest('.shoppingCartItem').remove();
   updateShoppingCartTotal();
 }

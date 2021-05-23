@@ -115,16 +115,41 @@
 
     </section>
     <!-- END SECTION SHOPPING CART -->
+    <section class="container">
+        <div class="modal">
+            <form action="tienda.php" name="formulario" method="post">
+            <br>
+            <h3>Datos para el envío:</h3>
+            <!-- Placeholder es lo que le aparece al usuario en la web, name es como se llama la variable que recogeremos con post y type el tipo de datos que introduce el usuario -->
+            <br>
+            <!-- El nombre es tipo text -->
+            Nombre: <br>
+            <input type="hidden" placeholder="Introduce tu nombre y apellido" name="nombre" id="name" required>
+            <br>
+            <br>
+            Teléfono: <br>
+            <input type="text" placeholder="Introduce tu teléfono" name="phone" id="phone" required>
+            <br>
+            <br>
+            <!-- El correo es tipo text -->
+            Correo electrónico: <br>
+            <input type="email" placeholder="Introduce tu email" name="email" id="email" required>
+            <br>
+            <br>
+            <!-- La direccion es tipo text-->
+            Comentarios: <br>
+            <input type="text" placeholder="Introduce tu dirección" name="direction" id="direction" required>
+            <br>
+            <br>
 
+            <!-- boton para enviar los datos -->
+            <input type="submit" class="button" id="form" value="Enviar"><br><br>
+        </form>
+        </div>
+    </section>
+    
     <script src="./tienda.js"></script>
 
-
-    </div>
-
-
-
-
-    </main>
     <footer>
         <address>
             Siempre protegido

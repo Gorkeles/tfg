@@ -48,28 +48,28 @@
                 <div class="contacto">
                     <!-- contenedor -->
 
-                    <form action="contacto.php" name="formulario" method="post">
+                    <form action="contacto.php" name="formulario" method="post"><br>
                         <!-- Usamos el método post para recoger lo que seleccione el usuario en unas variables -->
                         <h3>Contacto</h3>
                         <!-- Placeholder es lo que le aparece al usuario en la web, name es como se llama la variable que recogeremos con post y type el tipo de datos que introduce el usuario -->
                         <br>
                         <!-- El nombre es tipo text -->
-                        Nombre: <br>
-                        <input type="text" placeholder="Introduce tu nombre y apellido" name="nombre" id="nombre" required>
+                        Nombre: <br><br>
+                        <input type="text" placeholder="Introduzca su nombre y apellido" name="nombre" id="nombre" required>
                         <br>
                         <br>
-                        Teléfono: <br>
-                        <input type="text" placeholder="Introduce tu teléfono" name="phone" id="phone" required>
+                        Teléfono: <br><br>
+                        <input type="text" placeholder="Introduzca su teléfono" name="phone" id="phone" required>
                         <br>
                         <br>
                         <!-- El DNI es tipo text -->
-                        Correo electrónico: <br>
-                        <input type="email" placeholder="Introduce tu email" name="email" id="email" required>
+                        Correo electrónico: <br><br>
+                        <input type="email" placeholder="Introduzca su email" name="email" id="email" required>
                         <br>
                         <br>
                         <!-- El comentario es tipo text-->
-                        Comentarios: <br>
-                        <input type="text" placeholder="Detallanos todas tus dudas para ponernos en contacto contigo" name="consulta" id="consulta" required>
+                        Comentarios: <br><br>
+                        <input type="textarea" placeholder="Detallenos sus dudas y contactaremos con usted" name="consulta" id="consulta" required>
                         <br>
                         <br>
 

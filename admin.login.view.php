@@ -41,12 +41,12 @@
 						<!-- Placeholder es lo que le aparece al usuario en la web, name es como se llama la variable que recogeremos con post y type el tipo de datos que introduce el usuario -->
 						<br>
 						<!-- El email es tipo email -->
-						E-mail: <br>
+						E-mail: <br><br>
 						<input type="email" placeholder="xxxxxx@xxxx.com" name="emailog" id="emailog">
 						<br>
 						<br>
 						<!-- El password es un tipo password -->
-						Contraseña: <br>
+						Contraseña: <br><br>
 						<input type="password" placeholder="Introduce una contraseña" name="passlog" id="passlog">
 						<br>
 						<br>
