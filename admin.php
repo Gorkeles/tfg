@@ -16,6 +16,7 @@ if (isset($_POST['introducir'])) {
     $title = $_POST['title'];
     $price = $_POST['price'];
     $img_url = $_POST['img_url'];
+    $alt = $_POST['alt'];
 
 
     $conexion = new mysqli('localhost', 'root', '', 'tfg');
@@ -41,7 +42,7 @@ if (isset($_POST['introducir'])) {
 
 
 
-        $sql = "INSERT INTO products (id_product,title,price,img_url) VALUES ('$id_product','$title','$price','$img_url')";
+        $sql = "INSERT INTO products (id_product,title,price,img_url,alt) VALUES ('$id_product','$title','$price','$img_url','$alt')";
 
         $conexion->query($sql);
         //Hacemos un query a la base de datos
@@ -86,6 +87,9 @@ if (isset($_POST['buscarProductos'])) {
     } elseif ($tipoBusquedaProducto == 'img_url') {
 
         $buscarProductosSql = "SELECT * from products where img_url LIKE '%$busqueda%'";
+    } elseif ($tipoBusquedaProducto == 'alt') {
+
+        $buscarProductosSql = "SELECT * from products where alt LIKE '%$busqueda%'";
     }
 
     $resultado = $conexion->query($buscarProductosSql);
