@@ -357,3 +357,7 @@ ul.slider li:target {
     border: double;
     height: 60%;
 }
+
+#pronto{
+    width: 100%;
+}
