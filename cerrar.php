@@ -27,7 +27,7 @@ session_destroy();
     <div class="container">
         <header>
                 <div class="image">
-                    <img src="img/hasta pronto.jpg" alt="Fondo con cielo y nubes y en primer plano un hasta pronto en color morado"" />
+                    <img src="img/hasta pronto.jpg" alt="Fondo con cielo y nubes y en primer plano un hasta pronto en color morado" />
                 </div>
             </header>
         <main>

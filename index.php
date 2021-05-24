@@ -108,7 +108,7 @@ $_SESSION['nombre'] = 'Gorka'; //Sesión iniciada con Gorka
                     <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/3947459/car.jpg" alt=""/>
                     </li>
                     <li id="slide2">
-                    <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/3947459/sunset.jpg" alt=""/>
+                    <img src="img/galeria-mascarilla.jpg" alt=""/>
                     </li>
                     <li id="slide3">
                     <h1>Ejemplo con otros elementos</h1>
