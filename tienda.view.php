@@ -104,10 +104,10 @@
             <div class="total">
                 <p class="shopping-cart-footer">Total</p>
                 <p class="shopping-cart-footer shoppingCartTotal">0€</p>
-                <form action="tienda.php" name="productos" method="post">
+                <form action="tienda.php" name="productos" method="POST" >
                     <input type="hidden" name="pedido" id="pedido">
+                <p class="shopping-cart-footer "><input class="comprarButton" type="submit" id="comprar" name="comprar" value="comprar">Comprar</button></p>
                 </form>
-                <p class="shopping-cart-footer "><button class="comprarButton" type="button" id="comprar">Comprar</button></p>
             </div>
 
             <!-- FIN TOTAL -->

@@ -30,7 +30,7 @@
 
     <section class="container">
         <div class="modal" id="modal">
-            <form action="tienda.php" name="formulario" method="post">
+            <form action="datosPedido.php" name="formulario" method="POST">
             <br>
             <h3>Datos para el envío:</h3>
             <!-- Placeholder es lo que le aparece al usuario en la web, name es como se llama la variable que recogeremos con post y type el tipo de datos que introduce el usuario -->
@@ -54,6 +54,7 @@
             <input type="text" placeholder="Introduzca su dirección" name="direction" id="direction" required>
             <br>
             <br>
+            <input type="hidden" name="pedido" id="pedido" value='<?php echo $pedido ?>'>
 
             <!-- boton para enviar los datos -->
             <input type="submit" class="button" id="form" value="Enviar"><br><br>
