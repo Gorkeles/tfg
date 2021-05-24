@@ -76,26 +76,6 @@ $_SESSION['nombre'] = 'Gorka'; //Sesión iniciada con Gorka
 
     <body onload="galletas()">
 
-        <script type="text/javascript">
-        /* Creamos una coookie: nombre; fecha de expiración (UTC); edad máxima; ruta; dominio
-        document.cookie = "usuario = Gorka; expires=Thu, 04 Feb 2021 12:00:00 UTC;";
-        document.cookie = "sexo = hombre;";
-
-        // Leer una cookie
-        var miCookie = document.cookie;
-        alert(miCookie);
-
-        // Modificamos una cookie
-        document.cookie = "sexo = mujer;";
-        alert(document.cookie);
-
-        // Elimicar cookie (fecha anterior)
-        document.cookie = "usuario=; expires=Thu, 01 Jan 1970 00:00:01 GMT";
-        document.cookie = "SEXO=; expires=Thu, 01 Jan 1970 00:00:01 GMT";
-        alert(document.cookie);*/
-        </script>
-
-
         <!-- Barra de navegación con los enlaces a distintas páginas de la web -->
         <nav>
             <a href="index.php"><img src="img/logo.jpg" alt="logo" class="logo"></a>
