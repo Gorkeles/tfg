@@ -88,12 +88,7 @@ min-height: 96px;
 }
 
 .modal{
-    max-width: 1200px;
-    min-width: 576px;
-    margin: 0px auto;
     display: none;
-    background-color: black;
-    
 }
 
 
