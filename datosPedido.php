@@ -1,37 +1,41 @@
 <?php
-    if(isset($_POST['email'])) {
+
+include 'funciones.php';
+
+if(isset($_POST['email'])) {
 
     // correo de la dueña al que se enviaran los emails y su asunto
     $email_to = "olga.cobo@ezzing.com";
-    $email_subject = "Contacto desde el sitio web";
+    $email_subject = "Pedido";
 
     // validacion de los datos recogidos por el formulario
     if(!isset($_POST['nombre']) ||
     !isset($_POST['phone']) ||
     !isset($_POST['email']) ||
-    !isset($_POST['consulta'])) {
-
-
-    echo "<b>Ocurrió un error y el formulario no ha sido enviado. </b><br />";
-    die();
+    !isset($_POST['direction'])) {
+        echo "<b>Ocurrió un error y el formulario no ha sido enviado. </b><br />";
+        die();
     }
+    
+    $pedido = $_GET['pedido'];
 
-    $email_message = "Detalles del formulario de contacto:\n\n";
+    $email_message = "Detalles del pedido:\n\n";
     $email_message .= "Nombre: " . $_POST['nombre'] . "\n";
     $email_message .= "E-mail: " . $_POST['email'] . "\n";
     $email_message .= "Telefono: " . $_POST['phone'] . "\n";
-    $email_message .= "Consulta: " . $_POST['consulta'] . "\n\n";
+    $email_message .= "Direccion: " . $_POST['direction'] . "\n\n";
+    $email_message .= "Pedido: " . $pedido;
 
     
 
     if(mail($email_to, $email_subject, $email_message)){
-        include 'consultaEnviada.view.php';
+        include 'pedidoEnviado.view.php';
         die();
     }else{
         echo "Por favor, vuelva atrás y verifique la información ingresada";
     };
+}
 
-    
-    }
 
-require 'contacto.view.php';
+require 'datosPedido.view.php';
+//llamamos al índice en HTML

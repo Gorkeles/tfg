@@ -42,7 +42,7 @@ console.log("eeeeeeeee"+pedido[0]["nombre"])
         '.shoppingCartItemQuantity'
       );
       elementQuantity.value++;
-      updateShoppingCartTotal();
+      updateShoppingCartTotal(pedido);
       return;
     }
   }
@@ -78,10 +78,10 @@ console.log("eeeeeeeee"+pedido[0]["nombre"])
     .querySelector('.shoppingCartItemQuantity')
     .addEventListener('change', quantityChanged);
 
-  updateShoppingCartTotal();
+  updateShoppingCartTotal(pedido);
 }
 
-function updateShoppingCartTotal() {
+function updateShoppingCartTotal(pedido) {
   let total = 0;
   
   const shoppingCartTotal = document.querySelector('.shoppingCartTotal');
@@ -105,7 +105,7 @@ function updateShoppingCartTotal() {
   });
   shoppingCartTotal.innerHTML = `${total.toFixed(2)}€`;
   
-
+  document.getElementById('pedido').value = pedido;
 }
 
 function removeShoppingCartItem(event) {
@@ -116,16 +116,17 @@ function removeShoppingCartItem(event) {
   console.log("oooo"+itemTitle+"erwer"+itemPrice);
   // if pedido contains itemTitle itemPrice delete()
   buttonClicked.closest('.shoppingCartItem').remove();
-  updateShoppingCartTotal();
+  updateShoppingCartTotal(pedido);
 }
 
 function quantityChanged(event) {
   const input = event.target;
   input.value <= 0 ? (input.value = 1) : null;
-  updateShoppingCartTotal();
+  updateShoppingCartTotal(pedido);
 }
 
 function comprarButtonClicked() {
   shoppingCartItemsContainer.innerHTML = '';
-  updateShoppingCartTotal();
+  updateShoppingCartTotal(pedido);
+  window.location.href('datosPedido.php');
 }

@@ -22,9 +22,14 @@ session_destroy();
 <body>
     <!-- Barra de navegación con los enlaces a distintas páginas de la web -->
     <nav>
-        <a href="index.php"><img src="img/logo.jpg" alt="logo" class="logo"></a>
+        <a href="index.php"><img src="img/logo.jpg" alt="logo" class="logo" ></a>
     </nav>
     <div class="container">
+        <header>
+                <div class="image">
+                    <img src="img/hasta pronto.jpg" alt="Fondo con cielo y nubes y en primer plano un hasta pronto en color morado"" />
+                </div>
+            </header>
         <main>
             <br>
             <br>
@@ -32,6 +37,9 @@ session_destroy();
             <H1> ¡Has cerrado sesión con éxito! </H1> <!-- Titulo de la web -->
             <br>
             Esperamos verte pronto, administrador ;)
+            <br>
+            <br>
+            <br>
             <br>
             <br>
             <br>

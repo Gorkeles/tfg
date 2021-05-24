@@ -43,6 +43,7 @@ body {
     background-position: center;
     background-attachment: fixed;
     font-weight: bold;
+    margin-bottom: 0px;
 }
 
 a {
@@ -165,8 +166,9 @@ label {
 }
 
 table {
-    margin: 45px;
-    width: 480px;
+    margin-bottom: 50px;
+    margin-top: 50px;
+    width: 100%;
     text-align: center;
     border-collapse: collapse;
 }
@@ -230,6 +232,15 @@ form input {
     border-radius: 20px;
     padding: 20px;
 }
+
+form select {
+    width: 70%;
+    height: 25px;
+    border: none;
+    border-radius: 20px;
+    color: #333333;
+}
+
 
 form input[type="text"]:focus {
     color: "black";
@@ -344,4 +355,8 @@ ul.slider li:target {
     width: 95%;
     border: double;
     height: 60%;
+}
+
+#pronto{
+    width: 100%;
 }

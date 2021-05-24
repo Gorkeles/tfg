@@ -39,7 +39,60 @@
             Busca las mascarillas que quieras insertar, modificar o eliminar
             <br>
             <br>
+            <h2>Listado de mascarillas en la base de datos</h2>
+            <?php
 
+            //creo array vacio para guardar los productos
+            $todos = array();
+
+            //conecto con la bbdd
+            $conexion = new mysqli('localhost', 'root', '', 'tfg');
+
+            if ($conexion->connect_errno) {
+                die('Lo siento, hubo un problema con el servidor');
+            } else {
+                // creo una query
+                $query1 = 'SELECT * from products';
+
+                // guardo los resultados de la query en una variable
+                $result = $conexion->query($query1);
+
+                // guarfdo los resultados en un array
+                while ($row = $result->fetch_assoc()){
+                    array_push($todos, $row);
+                }
+            ?>
+
+
+            <div class="resultado">
+                <?php if (!empty($todos)) { ?>
+                    <center>
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th><b>ID</b></th>
+                                    <th>Nombre</b></th>
+                                    <th><b>Precio</b></th>
+                                    <th><b>Imagen</b></th>
+                                    <th><b>Descripción</b></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <?php foreach ($todos as $product ) : ?>
+                                    <tr>
+                                        <td><?= $product["id_product"]; ?></td>
+                                        <td><?= $product["title"]; ?></td>
+                                        <td><?= $product["price"]; ?></td>
+                                        <td><?= $product["img_url"]; ?></td>
+                                        <td><?= $product["alt"]; ?></td>
+                                    </tr>
+                            </tbody>
+                        <?php endforeach; ?>
+                        </table>
+                    </center>
+                <?php } ?>
+            </div>
+            <?php } ?>
             <!-- Buscador de rutas que busca en la base de datos según el datos que elijas
             y a continuación escribir que quieres buscar dentro de ese campo seleccionado -->
             <section>
@@ -47,10 +100,11 @@
                 <br>
                 <div class="contacto">
                     <form action="admin.php" name="buscar" id="buscar" method="post">
-                        ¿No encuentras tu mascarilla? Aquí podrás buscarlas y futúramente modificarlas o eliminarlas
+                        ¿No encuentras tu mascarilla? Aquí podrás buscarlas, modificarlas o eliminarlas
                         <br>
                         <br>
                         <select name="tipoBusquedaProducto" id="tipoBusquedaProducto">
+                            <option disabled selected>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Selecciona un filtro</option>
                             <option value="id_product">ID</option>
                             <option value="title">Nombre</option>
                             <option value="price">Precio</option>
@@ -78,12 +132,12 @@
                         <table>
                             <thead>
                                 <tr>
-                                    <th><b><u>ID</u></b></th>
-                                    <th><b><u>Nombre</u></b></th>
-                                    <th><b><u>Precio</u></b></th>
-                                    <th><b><u>Imagen</u></b></th>
-                                    <th><b><u>Descripción</u></b></th>
-                                    <th><b><u>Borrar</u></b></th>
+                                    <th><b>ID</b></th>
+                                    <th><b>Nombre</b></th>
+                                    <th><b>Precio</b></th>
+                                    <th><b>Imagen</b></th>
+                                    <th><b>Descripción</b></th>
+                                    <th><b>Borrar</b></th>
                                 </tr>
                             </thead>
                             <tbody>
