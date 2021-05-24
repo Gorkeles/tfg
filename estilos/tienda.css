@@ -86,11 +86,13 @@ min-height: 96px;
     border-top: solid var(--primary-color);
     padding: 10px;
 }
-
-.modal{
-    display: none;
+/* 
+#comprar {
+    width: 30%;
+    height: 25px;
+    border: none;
+    border-radius: 20px;
+    color: #333333;
+    font-family: "Monserrat";
 }
-
-
-
-
+ */

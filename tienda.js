@@ -29,7 +29,6 @@ var productoComprado = { };
 productoComprado["nombre"] = itemTitle;
 productoComprado["precio"] = itemPrice;
 pedido.push(productoComprado);
-console.log("eeeeeeeee"+pedido[0]["nombre"])
 
   const elementsTitle = shoppingCartItemsContainer.getElementsByClassName(
     'shoppingCartItemTitle'
@@ -105,7 +104,8 @@ function updateShoppingCartTotal(pedido) {
   });
   shoppingCartTotal.innerHTML = `${total.toFixed(2)}€`;
   
-  document.getElementById('pedido').value = pedido;
+  document.getElementById('pedido').value = JSON.stringify(pedido);
+  console.log( 'update'+document.getElementById('pedido').value);
 }
 
 function removeShoppingCartItem(event) {
@@ -128,5 +128,4 @@ function quantityChanged(event) {
 function comprarButtonClicked() {
   shoppingCartItemsContainer.innerHTML = '';
   updateShoppingCartTotal(pedido);
-  window.location.href('datosPedido.php');
 }

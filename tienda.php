@@ -1,13 +1,15 @@
 <?php
 
-include 'funciones.php';
-echo "HOLA;"
-if(isset($_POST['pedido'])) {
-    $pedido = $POST['pedido'];
+
+//echo "HOLA";
+if(!empty($_POST['pedido'])) {
+
+    $pedido = $_POST['pedido'];
+    //echo $pedido ;
     require 'datosPedido.php';
-    die();
+    //echo "hldfkjhgvkjashbgvdlkq".$pedido;
 }
 
 
-require 'tienda.view.php';
+// require 'tienda.view.php';
 //llamamos al índice en HTML
