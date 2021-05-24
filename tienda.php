@@ -1,7 +1,7 @@
 <?php
 
 include 'funciones.php';
-echo "HOLA;"
+echo "HOLA";
 if(isset($_POST['pedido'])) {
     $pedido = $POST['pedido'];
     require 'datosPedido.php';
