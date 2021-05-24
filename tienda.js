@@ -3,17 +3,16 @@ addToShoppingCartButtons.forEach((addToCartButton) => {
   addToCartButton.addEventListener('click', addToCartClicked);
 });
 
-var pedido = [];
+var pedido = []
 
-const comprarButton = document.querySelector('.comprarButton');
-comprarButton.addEventListener('click', comprarButtonClicked);
+
 
 const shoppingCartItemsContainer = document.querySelector(
   '.shoppingCartItemsContainer'
 );
 
 function addToCartClicked(event) {
-  alert("Elemento añadido al carrito :)");
+  // alert("Elemento añadido al carrito :)");
   const button = event.target;
   const item = button.closest('.item');
 
@@ -40,7 +39,7 @@ pedido.push(productoComprado);
       ].parentElement.parentElement.parentElement.querySelector(
         '.shoppingCartItemQuantity'
       );
-      elementQuantity.value++;
+      elementQuantity.value++; 
       updateShoppingCartTotal(pedido);
       return;
     }
@@ -105,7 +104,6 @@ function updateShoppingCartTotal(pedido) {
   shoppingCartTotal.innerHTML = `${total.toFixed(2)}€`;
   
   document.getElementById('pedido').value = JSON.stringify(pedido);
-  console.log( 'update'+document.getElementById('pedido').value);
 }
 
 function removeShoppingCartItem(event) {
@@ -113,19 +111,19 @@ function removeShoppingCartItem(event) {
   const item = buttonClicked.closest('.shoppingCartItem');
   const itemTitle = item.querySelectorAll('.shopping-cart-item-title')[0].innerHTML;
   const itemPrice = item.querySelectorAll('.shoppingCartItemPrice')[0].innerHTML;
-  console.log("oooo"+itemTitle+"erwer"+itemPrice);
   // if pedido contains itemTitle itemPrice delete()
+  pedido = pedido.filter(ped => ped.nombre!=itemTitle);
   buttonClicked.closest('.shoppingCartItem').remove();
   updateShoppingCartTotal(pedido);
 }
 
 function quantityChanged(event) {
   const input = event.target;
-  input.value <= 0 ? (input.value = 1) : null;
-  updateShoppingCartTotal(pedido);
+  input.value <= 0 ? (input.value = 1) : null; 
+  updateShoppingCartTotal(document.getElementById('pedido').value);
 }
 
 function comprarButtonClicked() {
   shoppingCartItemsContainer.innerHTML = '';
-  updateShoppingCartTotal(pedido);
+  updateShoppingCartTotal(document.getElementById('pedido').value);
 }

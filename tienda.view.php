@@ -106,7 +106,7 @@
                 <p class="shopping-cart-footer shoppingCartTotal">0€</p>
                 <form action="tienda.php" name="productos" method="POST" >
                     <input type="hidden" name="pedido" id="pedido">
-                <p class="shopping-cart-footer "><input class="comprarButton" type="submit" id="comprar" name="comprar" value="comprar">Comprar</button></p>
+                <p class="shopping-cart-footer "><input class="comprarButton" type="submit" id="comprar" name="comprar" onclick="comprarButtonClicked()" value="comprar">Comprar</button></p>
                 </form>
             </div>
 
