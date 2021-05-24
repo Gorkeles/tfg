@@ -77,7 +77,7 @@ $_SESSION['nombre'] = 'Gorka'; //Sesión iniciada con Gorka
     <body onload="galletas()">
 
         <script type="text/javascript">
-        // Creamos una coookie: nombre; fecha de expiración (UTC); edad máxima; ruta; dominio
+        /* Creamos una coookie: nombre; fecha de expiración (UTC); edad máxima; ruta; dominio
         document.cookie = "usuario = Gorka; expires=Thu, 04 Feb 2021 12:00:00 UTC;";
         document.cookie = "sexo = hombre;";
 
@@ -92,7 +92,7 @@ $_SESSION['nombre'] = 'Gorka'; //Sesión iniciada con Gorka
         // Elimicar cookie (fecha anterior)
         document.cookie = "usuario=; expires=Thu, 01 Jan 1970 00:00:01 GMT";
         document.cookie = "SEXO=; expires=Thu, 01 Jan 1970 00:00:01 GMT";
-        alert(document.cookie);
+        alert(document.cookie);*/
         </script>
 
 
