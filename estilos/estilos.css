@@ -342,20 +342,28 @@ ul.slider li:target {
     border-radius: 100%;
 }
 
+/*ESTILOS BLOQUE INFORMACIÓN 1*/
+
 .infoPortada {
-    border: 1.5px solid;
+    margin: 1px;
+    border: 5px dashed;
     color: var(--primary-color);
     padding: 5px;
     background-color: var(--background-color);
     display: inline-flex;
 }
 
-.titulos, .textos{
+.titulos, .textos {
     margin: 2px;
     padding: 5px;
     width: 95%;
-    border: double;
+    /* border: double; */
     height: 60%;
+}
+
+.bloque2{
+    border-left: 5px dashed;
+    border-right: 5px dashed;
 }
 
 #pronto{
