@@ -99,41 +99,41 @@ $_SESSION['nombre'] = 'Gorka'; //Sesión iniciada con Gorka
                 </div>
             </header>
             <main>
-                <h1>Tu web de mascarillas</h1>
-                <br>
-            <div class="container1">
-    
-                <ul class="slider">
-                    <li id="slide1">
-                    <img src="img/doctora-mascarilla2.jpg" alt="" height="562" width="200"/>
-                    </li>
-                    <li id="slide2">
-                    <img src="img/galeria-mascarilla.jpg" alt=""/>
-                    </li>
-                    <li id="slide3">
-                    <img src="img/paquete.jpg" alt=""/>
-                    <a href="tienda.view.php" alt="">¡Corre a mirar nuestros productos!</a>
-                    <!--la intención es colocar esto como un aside-->
-                    </li>
-                </ul>
-            
-                <ul class="menu">
-                    <li>
-                    <a href="#slide1" alt="1">1</a>
-                    </li>
-                    <li>
-                    <a href="#slide2" alt="2">2</a>
-                    </li>
-                    <li>
-                    <a href="#slide3" alt="3">3</a>
-                    </li>
-                </ul>
-            
-            </div>
-        
-        </main>
+                <h1>Tu web de mascarillas</h1> <br>
 
-    <!--PRIMER BLOQUE DE INFORMACIÓN-->
+                <div class="container1">
+        
+                    <ul class="slider">
+                        <li id="slide1">
+                        <img src="img/doctora-mascarilla2.jpg" alt="" height="562" width="200"/>
+                        </li>
+                        <li id="slide2">
+                        <img src="img/galeria-mascarilla.jpg" alt=""/>
+                        </li>
+                        <li id="slide3">
+                        <img src="img/paquete.jpg" alt=""/>
+                        <a href="tienda.view.php" alt="">¡Corre a mirar nuestros productos!</a>
+                        <!--la intención es colocar esto como un aside-->
+                        </li>
+                    </ul>
+                
+                    <ul class="menu">
+                        <li>
+                        <a href="#slide1" alt="1">1</a>
+                        </li>
+                        <li>
+                        <a href="#slide2" alt="2">2</a>
+                        </li>
+                        <li>
+                        <a href="#slide3" alt="3">3</a>
+                        </li>
+                    </ul>
+                
+                </div>
+        
+            </main>
+
+            <!--PRIMER BLOQUE DE INFORMACIÓN-->
 
         <div class="infoPortada">
             <div class="bloque1">
@@ -166,75 +166,66 @@ $_SESSION['nombre'] = 'Gorka'; //Sesión iniciada con Gorka
 
         <div class="cover-page">
 	
-	<div class="cover-overlay"></div>
 	<header class="entry-header">
 		<h1 class="entry-title"> <br><br> Acerca de nuestras Mascarillas</h1>
 	</header>
 
 </div>
-<main class="main-content page page-acerca-de-nuestras-maskks double-padding-top double-padding-bottom nopadding">
-	<div class="wrapper double-padding-top double-padding-bottom box100-m nopadding">
-		<article class="articulo">
-		
-			
-				<div class="entry-content post about-our-maskks padding-m">
-                    
-                    <h2 class="center-text">Cómo usarlas</h2>
-                    
-                    <div class="box70 box100-m center-box how-use">
-                        <div class="box33 box100-m f-left center-text double-padding-full flex-box" data-mh="how-to-use">
-                            <img src="img/paso1.png">
-                            <p>Abrir la tira de ajuste lo máximo posible y colocaria alrededor del cuello</p>
-                        </div>
-                        <div class="box33 box100-m f-left center-text double-padding-full flex-box" data-mh="how-to-use">
-                            <img src="img/paso2.png">
-                            <p>Tirar suavemente de la tira a ambos lados</p>
-                        </div>
-                        <div class="box33 box100-m f-left center-text double-padding-full flex-box" data-mh="how-to-use">
-                            <img src="img/paso3.png">
-                            <p>Colocar la tira alrededor de las orejas de forma holgada</p>
-                        </div>
-                        <div class="box33 box100-m f-left center-text double-padding-full flex-box" data-mh="how-to-use">
-                            <img src="img/paso4.png">
-                            <p>Colocar la Maskk sobre el rosto cubriendo boca y nariz</p>
-                        </div>
-                        <div class="box33 box100-m f-left center-text double-padding-full flex-box" data-mh="how-to-use">
-                            <img src="img/paso5.png">
-                            <p>Apretar el cierre sobre la nuca para asegurar un ajuste cómodo y firme</p>
-                        </div>
-                        <div class="box33 box100-m f-left center-text double-padding-full flex-box" data-mh="how-to-use">
-                            <img src="img/paso6.png">
-                            <p>Ajustar la Maskk sobre nariz y barbilla</p>
-                        </div>
-                    </div>
-                    
-                    
-                    <div class="box70 box100-m center-box">
-                        <div class="box50 box100-m f-left center-text double-padding-full flex-box" data-mh="sides">
-                            <h3><strong>Fuera</strong></h3>
-                            <img src="img/fuera.png">
-                        </div>
-                        <div class="box50 box100-m f-left center-text double-padding-full flex-box" data-mh="sides">
-                            <h3><strong>Dentro</strong></h3>
-                            <img src="img/dentro.png">
-                        </div>
-
-                        <h2>información legal</h2>
-                        <p>Posibilidades de uso – Esto no es un consejo medico. No cumple con la regulaciones para usos quirúrjicos (EU/2017/745 regulation).</p>
-                        <p>FH2H, Lda Rua Doutor Eduardo Santos Silva 261 Fracção H 4200-283 Porto NIF: 515994839</p>
-                        <h2>¿cualquier duda?</h2>
-                        <p>Póngase en contacto con nuestro servicio de atención al cliente en <a href="#">EMAIL</a>.</p>
+    <main class="cuerpo-imagenes">
+        <article class="articulo">
+            
+                    <div class="entry-content post about-our-maskks padding-m">
                         
+                        <h2 class="center-text">Cómo usarlas</h2>
+                        
+                        <div class="bloque-imagenes-uso">
+                            <div class="imagenes-uso">
+                                <img src="img/paso1.png">
+                                <p>Abrir la tira de ajuste lo máximo posible y colocaria alrededor del cuello</p>
+                            </div>
+                            <div class="imagenes-uso">
+                                <img src="img/paso2.png">
+                                <p>Tirar suavemente de la tira a ambos lados</p>
+                            </div>
+                            <div class="imagenes-uso">
+                                <img src="img/paso3.png">
+                                <p>Colocar la tira alrededor de las orejas de forma holgada</p>
+                            </div>
+                            <div class="imagenes-uso">
+                                <img src="img/paso4.png">
+                                <p>Colocar la Maskk sobre el rosto cubriendo boca y nariz</p>
+                            </div>
+                            <div class="imagenes-uso">
+                                <img src="img/paso5.png">
+                                <p>Apretar el cierre sobre la nuca para asegurar un ajuste cómodo y firme</p>
+                            </div>
+                            <div class="imagenes-uso">
+                                <img src="img/paso6.png">
+                                <p>Ajustar la Maskk sobre nariz y barbilla</p>
+                            </div>
+                        </div>
+                        
+                        
+                        <div class="">
+                            <div class="">
+                                <h3><strong>Fuera</strong></h3>
+                                <img src="img/fuera.png">
+                            </div>
+                            <div class="">
+                                <h3><strong>Dentro</strong></h3>
+                                <img src="img/dentro.png">
+                            </div>
+
+                            <h2>información legal</h2>
+                            <p>Posibilidades de uso – Esto no es un consejo medico. No cumple con la regulaciones para usos quirúrjicos (EU/2017/745 regulation).</p>
+                            <p>FH2H, Lda Rua Doutor Eduardo Santos Silva 261 Fracção H 4200-283 Porto NIF: 515994839</p>
+                            <h2>¿cualquier duda?</h2>
+                            <p>Póngase en contacto con nuestro servicio de atención al cliente en <a href="#">EMAIL</a>.</p>
+                            
+                        </div>
                     </div>
-                    
-                    
-				</div>
-			</article>
-		
-				
-				
-	</div>
-</main>
+        </article>
+    </main>
 
         <!--FIN SEGUNDO BLOQUE DE INFORMACIÓN-->
 

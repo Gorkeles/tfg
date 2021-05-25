@@ -366,6 +366,19 @@ ul.slider li:target {
     border-right: 5px dashed;
 }
 
+/*ESTILOS BLOQUE INFORMACIÓN 1*/
+
+.bloque-imagenes-uso{
+    margin: 2px;
+    padding: 2px;
+    display: inline-flex;
+}
+
+.imagenes-uso{
+    display: inline-flex;
+}
+
+
 #pronto{
     width: 100%;
 }
