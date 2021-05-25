@@ -29,6 +29,7 @@
     </nav>
 
     <section class="container">
+        <br><br><br><br>
         <div class="modal" id="modal">
             <form action="datosPedido.php" name="formulario" method="POST" onsubmit="return validar();">
             <br>
@@ -59,6 +60,7 @@
             <!-- boton para enviar los datos -->
             <input type="submit" class="button" id="form" value="Enviar"><br><br>
         </form>
+        <br><br><br><br><br><br><br><br><br><br><br><br>
         </div>
     </section>
     

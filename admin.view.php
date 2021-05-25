@@ -75,6 +75,7 @@
                                         <th><b>Precio</b></th>
                                         <th><b>Imagen</b></th>
                                         <th><b>Descripción</b></th>
+                                        <th>     </th>
                                     </tr>
                                 </thead>
                                 <tbody>
@@ -85,6 +86,12 @@
                                             <td><?= $product["price"]; ?></td>
                                             <td><?= $product["img_url"]; ?></td>
                                             <td><?= $product["alt"]; ?></td>
+                                            <td>
+                                            <form method="post"  action="admin.php" id="borracion">
+                                                <input type="hidden" name="borrar" value="<?php echo $product["id_product"]; ?>">
+                                                <input type="submit" class="button button-primary" value="Borrar">
+                                            </form>
+                                            </td>
                                         </tr>
                                 </tbody>
                             <?php endforeach; ?>
@@ -103,8 +110,8 @@
                         ¿No encuentras tu mascarilla? Aquí podrás buscarlas, modificarlas o eliminarlas
                         <br>
                         <br>
-                        <select name="tipoBusquedaProducto" id="tipoBusquedaProducto">
-                            <option disabled selected>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Selecciona un filtro</option>
+                        <select name="tipoBusquedaProducto" id="tipoBusquedaProducto" require="required">
+                            
                             <option value="id_product">ID</option>
                             <option value="title">Nombre</option>
                             <option value="price">Precio</option>
