@@ -32,10 +32,10 @@ function validar() {
     } else if (consulta.length > 100) {
         alert("La consulta es muy larga");
         return false;
-    } else if (consulta.length > 100) {
+    } else if (direction.length > 100) {
         alert("La dirección es muy larga");
         return false;
-    } else if (!expresionNomnre.test(nombre)) {
+    } else if (!expresionNombre.test(nombre)) {
         alert("Introduzca correctamente el nombre");
         return false;
     } else if (!expresionPhone.test(phone)) {
