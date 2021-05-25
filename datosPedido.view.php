@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Enmascarados | Tienda</title>
+    <title>Enmascarados | Proceso de compra</title>
 
     <!-- Incluimos los estilos y fuente utilizada en la web -->
     <link href="estilos/tienda.css" rel="stylesheet" type="text/css" />
@@ -72,7 +72,7 @@
             Siempre protegido
 
         </address>
-        <div>Enmascarados | Tienda</div>
+        <div>Enmascarados | Proceso de compra</div>
         <section class="social">
             <a href="admin.login.view.php" style="text-decoration:none">Administrador</a>
         </section>

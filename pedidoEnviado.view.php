@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Enmascarados | Contacto</title>
+    <title>Enmascarados | Pedido enviado</title>
 
     <!-- Incluimos los estilos y fuente utilizada en la web -->
     <link href="estilos/estilos.css" rel="stylesheet" type="text/css" />
@@ -54,7 +54,7 @@
             Siempre protegido
 
         </address>
-        <div>Enmascarados | Contacto</div>
+        <div>Enmascarados | Pedido enviado</div>
         <section class="social">
             <a href="admin.login.view.php" style="text-decoration:none">Administrador</a>
         </section>
