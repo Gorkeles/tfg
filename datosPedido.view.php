@@ -30,7 +30,7 @@
 
     <section class="container">
         <div class="modal" id="modal">
-            <form action="datosPedido.php" name="formulario" method="POST">
+            <form action="datosPedido.php" name="formulario" method="POST" onsubmit="return validar();">
             <br>
             <h3>Datos para el envío:</h3>
             <!-- Placeholder es lo que le aparece al usuario en la web, name es como se llama la variable que recogeremos con post y type el tipo de datos que introduce el usuario -->
