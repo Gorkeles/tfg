@@ -22,10 +22,10 @@
             <a href="cerrar.php" style="text-decoration:none" class="social">Cerrar sesión</a>
         </div>
         <div class="nav-item">
-            <a href="tienda.view.php" style="text-decoration:none">Tienda</a>
+            <a href="contacto.view.php" style="text-decoration:none">Contacto</a>
         </div>
         <div class="nav-item">
-            <a href="contacto.view.php" style="text-decoration:none">Contacto</a>
+            <a href="tienda.view.php" style="text-decoration:none">Tienda</a>
         </div>
         <div class="nav-item">
             <a href="index.php" style="text-decoration:none">Portada</a>
@@ -75,7 +75,7 @@
                                         <th><b>Precio</b></th>
                                         <th><b>Imagen</b></th>
                                         <th><b>Descripción</b></th>
-                                        <th>     </th>
+                                        <th> </th>
                                     </tr>
                                 </thead>
                                 <tbody>
@@ -87,10 +87,10 @@
                                             <td><?= $product["img_url"]; ?></td>
                                             <td><?= $product["alt"]; ?></td>
                                             <td>
-                                            <form method="post"  action="admin.php" id="borracion">
-                                                <input type="hidden" name="borrar" value="<?php echo $product["id_product"]; ?>">
-                                                <input type="submit" class="button button-primary" value="Borrar">
-                                            </form>
+                                                <form method="post" action="admin.php" id="borracion">
+                                                    <input type="hidden" name="borrar" value="<?php echo $product["id_product"]; ?>">
+                                                    <input type="submit" class="button button-primary" value="Borrar">
+                                                </form>
                                             </td>
                                         </tr>
                                 </tbody>
@@ -111,7 +111,7 @@
                         <br>
                         <br>
                         <select name="tipoBusquedaProducto" id="tipoBusquedaProducto" require="required">
-                            
+
                             <option value="id_product">ID</option>
                             <option value="title">Nombre</option>
                             <option value="price">Precio</option>
@@ -156,7 +156,7 @@
                                         <td><?= $products["img_url"]; ?></td>
                                         <td><?= $products["alt"]; ?></td>
                                         <td>
-                                            <form method="post"  action="admin.php">
+                                            <form method="post" action="admin.php">
                                                 <input type="hidden" name="borrar" value="<?php echo $products["id_product"]; ?>">
                                                 <input type="submit" class="button button-primary" value="Enviar">
                                             </form>
