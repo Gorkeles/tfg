@@ -101,19 +101,19 @@ if (isset($_POST['buscarProductos'])) {
 }
 
 
-if (isset($POST['borrar'])){
+if (isset($POST['delete'])){
     $conexion = new mysqli('localhost', 'root', '', 'tfg');
     //conectamos mi base de datos 'tfg'
 
-	$borrar=intval($_POST['borrar']);
-	$res = $cliente->delete($borrar);
-	if($borrar == 'id_product'){
-        $borrarSql = "DELETE id_product from products where id_product LIKE '%$borrar%'";
+	$delete=intval($_POST['delete']);
+	$res = $cliente->delete($delete);
+	if($delete == 'id_product'){
+        $deleteSql = "DELETE * from products where id_product LIKE '%$delete%'";
 		header('location: index.php');
 	}else{
 		echo "Error al eliminar el registro";
 	}
-    $resultado = $conexion->query($borrarSql);
+    $resultado = $conexion->query($deleteSql);
 }
 
 
