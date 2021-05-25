@@ -112,8 +112,10 @@ $_SESSION['nombre'] = 'Gorka'; //Sesión iniciada con Gorka
                         </li>
                         <li id="slide3">
                         <img src="img/paquete.jpg" alt=""/>
-                        <a href="tienda.view.php" alt="">¡Corre a mirar nuestros productos!</a>
-                        <!--la intención es colocar esto como un aside-->
+                        <aside>
+                            <h3>Si estás interesado</h3>
+                            <h3><a href="tienda.view.php">Compra</a></h3>
+                        </aside>
                         </li>
                     </ul>
                 
@@ -180,7 +182,7 @@ $_SESSION['nombre'] = 'Gorka'; //Sesión iniciada con Gorka
                         
                         <div class="bloque-imagenes-uso">
                             <div class="imagenes-uso">
-                                <img src="img/paso1.png">
+                                <img src="img/paso1.png" width="200px" height="200px">
                                 <p>Abrir la tira de ajuste lo máximo posible y colocaria alrededor del cuello</p>
                             </div>
                             <div class="imagenes-uso">
