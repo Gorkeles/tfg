@@ -29,24 +29,9 @@ $_SESSION['nombre'] = 'Gorka'; //Sesión iniciada con Gorka
                 if (confirm("¿Aceptas todos nuestros terminos y condiciones de privacidad?")) {
                     document.cookie = "expiration_time";
                     var expiration_time = new Date();
-                    // Cambio formato fecha para poner la expiracion de cookies por dias
-                    expiration_time.setTime(expiration_time.getTime() + expiration * 24 * 60 * 60 * 1000);
-                    var expiration = "expires=" + d.toUTCString();
-                    document.cookie = nombre + "=" + valor + ";" + expiracion + ";path=/";
-                    console.log(document.cookie);
                 } else {
                     window.open("sinCookies.php");
                 }
-            }
-
-            // Introducimos cookies si ya las teniamos
-
-            document.getElementById("confirm").addEventListener("click", confirm);
-
-            function confirmEvent(e) {
-                if (!e) e = window.event;
-                if (e.target.id == "confirm")
-                    document.cookie = "nombre = Gorka";
             }
 
             // Función para obtener los datos de una cookie
