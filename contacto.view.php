@@ -48,7 +48,7 @@
                 <div class="contacto">
                     <!-- contenedor -->
 
-                    <form action="contacto.php" name="formulario" method="post"><br>
+                    <form action="contacto.php" name="formulario" method="post" onsubmit="return validar();"><br>
                         <!-- Usamos el método post para recoger lo que seleccione el usuario en unas variables -->
                         <h3>Contacto</h3>
                         <!-- Placeholder es lo que le aparece al usuario en la web, name es como se llama la variable que recogeremos con post y type el tipo de datos que introduce el usuario -->
