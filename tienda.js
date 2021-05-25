@@ -103,16 +103,31 @@ function updateShoppingCartTotal(pedido) {
   shoppingCartTotal.innerHTML = `${total.toFixed(2)}€`;
   
   document.getElementById('pedido').value = JSON.stringify(pedido);
+  console.log(pedido);
 }
 
 function removeShoppingCartItem(event) {
-  encontrado // bucle con if encontrado = true delete, else cont++
+  // bucle con if encontrado = true delete, else cont++
+  var encontrado = false;
   const buttonClicked = event.target;
   const item = buttonClicked.closest('.shoppingCartItem');
   const itemTitle = item.querySelectorAll('.shopping-cart-item-title')[0].innerHTML;
 
+  const itemsIguales = pedido.filter(mascarilla => mascarilla.nombre === itemTitle)
+  const indefFisrtRep = pedido.indexOf(itemsIguales[0])
+  pedido.splice(indefFisrtRep, 1)
+  /* for (var i=0 ; (( i< pedido.length) && (!encontrado)) ; i++){
+    console.log("1"+pedido[i]["nombre"]);
+    if (pedido[i]["nombre"] == itemTitle){
+      encontrado = true;
+      console.log("2"+pedido[i]);
+      pedido.slice(index, i);
+    }
+  } */
 
-  pedido = pedido.filter(ped => ped.nombre!=itemTitle);
+
+
+  //pedido = pedido.filter(ped => ped.nombre!=itemTitle);
   buttonClicked.closest('.shoppingCartItem').remove();
   updateShoppingCartTotal(pedido);
 

@@ -149,8 +149,9 @@
                                         <td><?= $products["img_url"]; ?></td>
                                         <td><?= $products["alt"]; ?></td>
                                         <td>
-                                            <form method="post" name="borrar" id="borrar" action="admin.php">
-                                                <input type="submit" name="borrar" class="button button-primary" value="Enviar">
+                                            <form method="post"  action="admin.php">
+                                                <input type="hidden" name="borrar" value="<?php echo $products["id_product"]; ?>">
+                                                <input type="submit" class="button button-primary" value="Enviar">
                                             </form>
                                         </td>
                                     </tr>

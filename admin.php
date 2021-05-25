@@ -100,17 +100,16 @@ if (isset($_POST['buscarProductos'])) {
     }
 }
 
-
-if (isset($POST['borrar'])) {
+if (isset($_POST['borrar'])) {
     $conexion = new mysqli('localhost', 'root', '', 'tfg');
     //conectamos mi base de datos 'tfg'
     $borrar = $_POST['borrar'];
 
-
     if ($conexion->connect_errno) {
         die('Lo siento, hubo un problema con el servidor');
     } else {
-        $deleteSql = "DELETE from products where id_product = '$borrar'";
+        $deleteSql = "DELETE from products where id_product='$borrar'";
+        $conexion->query($deleteSql);
     }
 }
 

@@ -17,28 +17,31 @@ if(isset($_POST['email'])) {
         echo "<b>Ocurrió un error y el formulario no ha sido enviado. </b><br />";
         die();
     }
-    $pedido = strtr($_POST['pedido'], '"', " ");
-    $pedido = strtr($pedido, "[", " ");
-    $pedido = strtr($pedido, "{", " ");
-    $pedido = strtr($pedido, "}", "\n");
-    $pedido = strtr($pedido, "]", " ");
 
+    // modificacion del string pedido para eliminar signos que no queremos que salgan en el mail
+    $pedido = strtr($_POST['pedido'], '"', " ");
+    $pedido = str_replace("[{\ ", " ", $pedido);
+    $pedido = str_replace("\ ", "  ", $pedido);
+    $pedido = str_replace("},{", "\n", $pedido);
+    $pedido = str_replace(" }]", " ", $pedido);
+
+    // cuerpo del mail
     $email_message = "Detalles del pedido:\n\n";
     $email_message .= "Nombre: " . $_POST['nombre'] . "\n";
     $email_message .= "E-mail: " . $_POST['email'] . "\n";
     $email_message .= "Telefono: " . $_POST['phone'] . "\n";
     $email_message .= "Direccion: " . $_POST['direction'] . "\n\n";
-    $email_message .= "Pedido: \n" . $pedido . "\n\n";
+    $email_message .= "Pedido: \n" . $pedido;
 
-   // die();
+    //si se envia el mail redireccionamos y sino sacamos error
     if(mail($email_to, $email_subject, $email_message)){
         include 'pedidoEnviado.view.php';
         die();
     }else{
-        echo "Por favor, vuelva atrás y verifique la información ingresada";
+        echo "Mail no enviado, por favor, vuelva atrás y verifique la información ingresada";
     };
 }
 
 
 require 'datosPedido.view.php';
-//llamamos al índice en HTML
+//llamamos al view del php
