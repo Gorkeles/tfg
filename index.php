@@ -183,68 +183,45 @@ $_SESSION['nombre'] = 'Gorka'; //Sesión iniciada con Gorka
                     
                     <div class="clr double-padding-full"></div>
                     
-                    <h2 class="center-text">Cómo usar tu Maskk</h2>
+                    <h2 class="center-text">Cómo usarlas</h2>
                     
                     <div class="box70 box100-m center-box how-use">
                         <div class="box33 box100-m f-left center-text double-padding-full flex-box" data-mh="how-to-use">
-                            <img src="https://maskk.com/wp-content/uploads/2020/09/Asset-8.png">
+                            <img src="img/paso1.png">
                             <p>Abrir la tira de ajuste lo máximo posible y colocaria alrededor del cuello</p>
                         </div>
                         <div class="box33 box100-m f-left center-text double-padding-full flex-box" data-mh="how-to-use">
-                            <img src="https://maskk.com/wp-content/uploads/2020/09/Asset-6.png">
+                            <img src="img/paso2.png">
                             <p>Tirar suavemente de la tira a ambos lados</p>
                         </div>
                         <div class="box33 box100-m f-left center-text double-padding-full flex-box" data-mh="how-to-use">
-                            <img src="https://maskk.com/wp-content/uploads/2020/09/Asset-4.png">
+                            <img src="img/paso3.png">
                             <p>Colocar la tira alrededor de las orejas de forma holgada</p>
                         </div>
                         <div class="box33 box100-m f-left center-text double-padding-full flex-box" data-mh="how-to-use">
-                            <img src="https://maskk.com/wp-content/uploads/2020/09/Asset-7.png">
+                            <img src="img/paso4.png">
                             <p>Colocar la Maskk sobre el rosto cubriendo boca y nariz</p>
                         </div>
                         <div class="box33 box100-m f-left center-text double-padding-full flex-box" data-mh="how-to-use">
-                            <img src="https://maskk.com/wp-content/uploads/2020/09/Asset-5.png">
+                            <img src="img/paso5.png">
                             <p>Apretar el cierre sobre la nuca para asegurar un ajuste cómodo y firme</p>
                         </div>
                         <div class="box33 box100-m f-left center-text double-padding-full flex-box" data-mh="how-to-use">
-                            <img src="https://maskk.com/wp-content/uploads/2020/09/Asset-3.png">
+                            <img src="img/paso6.png">
                             <p>Ajustar la Maskk sobre nariz y barbilla</p>
                         </div>
                         <div class="clr"></div>
                     </div>
                     
                     
-                    <div class="clr double-padding-full"></div>
-                    
-                    <h2 class="center-text">Cómo quitarse la Maskk</h2>
-                    
-                    <div class="box70 box100-m center-box how-use">
-                        <div class="box33 box100-m f-left center-text double-padding-full flex-box" data-mh="how-to-remove">
-                            <img src="https://maskk.com/wp-content/uploads/2020/09/Asset-5.png">
-                            <p>Release the stopper on the back of your neck</p>
-                        </div>
-                        <div class="box33 box100-m f-left center-text double-padding-full flex-box" data-mh="how-to-remove">
-                            <img src="https://maskk.com/wp-content/uploads/2020/09/Asset-6.png">
-                            <p>Suelta tu mask cogiendo la cuerda por detrás de las orejas</p>
-                        </div>
-                        <div class="box33 box100-m f-left center-text double-padding-full flex-box" data-mh="how-to-remove">
-                            <img src="https://maskk.com/wp-content/uploads/2020/09/Asset-10.png">
-                            <p>No toques la parte frontal de tu maskk</p>
-                        </div>
-                        <div class="clr"></div>
-                    </div>
-                    
-                    <div class="clr double-padding-full"></div>
-                    
-                    
                     <div class="box70 box100-m center-box">
                         <div class="box50 box100-m f-left center-text double-padding-full flex-box" data-mh="sides">
                             <h3><strong>Fuera</strong></h3>
-                            <img src="https://maskk.com/wp-content/uploads/2020/09/Asset-2.png">
+                            <img src="img/fuera.png">
                         </div>
                         <div class="box50 box100-m f-left center-text double-padding-full flex-box" data-mh="sides">
-                            <h3><strong>Dientro</strong></h3>
-                            <img src="https://maskk.com/wp-content/uploads/2020/09/Asset-1.png">
+                            <h3><strong>Dentro</strong></h3>
+                            <img src="img/dentro.png">
                         </div>
                         <div class="clr"></div>
                     </div>
@@ -252,34 +229,12 @@ $_SESSION['nombre'] = 'Gorka'; //Sesión iniciada con Gorka
                     <div class="clr double-padding-full"></div>
                     <div class="clr double-padding-full"></div>
                     
-                    <h2 class="center-text">Como mantener en buen estado tu Maskk</h2>
                     
-                    <div class="box70 box100-m center-box">
-                        
-                            <img src="https://maskk.com/wp-content/uploads/2020/09/Asset-9.png" style="margin: 0 auto;">
-                            <p class="center-text">No toques la parte frontal de tu maskk</p>
-                        
-                        
-                        <div class="clr"></div>
-                        
-                        <div class="clr double-padding-full"></div>
-                        
-                        <div class="content-about box100-m"><p><strong>Lava tu Maskk todos los días después de cada uso como indica las instrucciones</strong></p>
-<p><strong>Hecha en Portugal</strong><br />
-<strong>Las fabricas están en Portugal</strong></p>
-<ul>
-<li>100% algodón + Polypropyleno 50g/m2 capa de filtración</li>
-<li>Clip para la nariz – Clip de metal recubierto</li>
-<li>Permitida para usar 4 horas seguidas  sin que se degrade el BFE ni la transpirabilidad</li>
-</ul>
-<p>Guarda tu mask en sitio seco, lejos de cualquier contaminación (antes y después de lavarla).</p>
-<p><strong>No usarla en caso de cualquier desperfecto. Cambiala por otra Maskk.</strong></p>
-<p>“Este producto no es un equipo de protección individual ni un producto sanitario” BOE 109 10/04/2020.</p>
 <h2>información legal</h2>
 <p>Posibilidades de uso – Esto no es un consejo medico. No cumple con la regulaciones para usos quirúrjicos (EU/2017/745 regulation).</p>
 <p>FH2H, Lda Rua Doutor Eduardo Santos Silva 261 Fracção H 4200-283 Porto NIF: 515994839</p>
 <h2>¿cualquier duda?</h2>
-<p>Póngase en contacto con nuestro servicio de atención al cliente en <a href="/cdn-cgi/l/email-protection#5e373038311e333f2d3535703d3133"><span class="__cf_email__" data-cfemail="ed84838b82ad808c9e8686c38e8280">[email&#160;protected]</span></a>.</p>
+<p>Póngase en contacto con nuestro servicio de atención al cliente en <a href="#">EMAIL</a>.</p>
 </div>
                         
                     </div>
