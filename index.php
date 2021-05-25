@@ -138,7 +138,7 @@ $_SESSION['nombre'] = 'Gorka'; //Sesión iniciada con Gorka
         <div class="infoPortada">
             <div class="bloque1">
                 <div class="titulos">
-                    <h2>MAYOR SUJECCIÓN</h2>
+                    <h2><u>MAYOR SUJECCIÓN</u></h2>
                 </div>
                 <div class="textos">
                     <p>Sujección baja que evita rozaduras y molestias en la zona de las orejas <br><br><br><br></p>
@@ -146,7 +146,7 @@ $_SESSION['nombre'] = 'Gorka'; //Sesión iniciada con Gorka
             </div>
             <div class="bloque2">
                 <div class="titulos">
-                    <h2>UN DISEÑO ADAPTADO A TI</h2>
+                    <h2><u>UN DISEÑO ADAPTADO A TI</u></h2>
                 </div>
                 <div class="textos">
                     <p>Sujección baja que evita rozaduras y molestias en la zona de las orejas</p>
@@ -154,7 +154,7 @@ $_SESSION['nombre'] = 'Gorka'; //Sesión iniciada con Gorka
             </div>
             <div class="bloque3">
                 <div class="titulos">
-                    <h2>MODA SEGURA</h2>
+                    <h2><u>MODA SEGURA</u></h2>
                 </div>
                 <div class="textos">
                     <p>Sujección baja que evita rozaduras y molestias en la zona de las orejas</p>
@@ -174,14 +174,10 @@ $_SESSION['nombre'] = 'Gorka'; //Sesión iniciada con Gorka
 </div>
 <main class="main-content page page-acerca-de-nuestras-maskks double-padding-top double-padding-bottom nopadding">
 	<div class="wrapper double-padding-top double-padding-bottom box100-m nopadding">
-		<article id="post-17786" class="post-17786 page type-page status-publish has-post-thumbnail hentry">
+		<article class="articulo">
 		
 			
 				<div class="entry-content post about-our-maskks padding-m">
-                    
-                    <div class="clr padding-m mobile"><br></div>
-                    
-                    <div class="clr double-padding-full"></div>
                     
                     <h2 class="center-text">Cómo usarlas</h2>
                     
@@ -210,7 +206,6 @@ $_SESSION['nombre'] = 'Gorka'; //Sesión iniciada con Gorka
                             <img src="img/paso6.png">
                             <p>Ajustar la Maskk sobre nariz y barbilla</p>
                         </div>
-                        <div class="clr"></div>
                     </div>
                     
                     
@@ -223,19 +218,12 @@ $_SESSION['nombre'] = 'Gorka'; //Sesión iniciada con Gorka
                             <h3><strong>Dentro</strong></h3>
                             <img src="img/dentro.png">
                         </div>
-                        <div class="clr"></div>
-                    </div>
-                    
-                    <div class="clr double-padding-full"></div>
-                    <div class="clr double-padding-full"></div>
-                    
-                    
-<h2>información legal</h2>
-<p>Posibilidades de uso – Esto no es un consejo medico. No cumple con la regulaciones para usos quirúrjicos (EU/2017/745 regulation).</p>
-<p>FH2H, Lda Rua Doutor Eduardo Santos Silva 261 Fracção H 4200-283 Porto NIF: 515994839</p>
-<h2>¿cualquier duda?</h2>
-<p>Póngase en contacto con nuestro servicio de atención al cliente en <a href="#">EMAIL</a>.</p>
-</div>
+
+                        <h2>información legal</h2>
+                        <p>Posibilidades de uso – Esto no es un consejo medico. No cumple con la regulaciones para usos quirúrjicos (EU/2017/745 regulation).</p>
+                        <p>FH2H, Lda Rua Doutor Eduardo Santos Silva 261 Fracção H 4200-283 Porto NIF: 515994839</p>
+                        <h2>¿cualquier duda?</h2>
+                        <p>Póngase en contacto con nuestro servicio de atención al cliente en <a href="#">EMAIL</a>.</p>
                         
                     </div>
                     
