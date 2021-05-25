@@ -58,40 +58,40 @@
                 $result = $conexion->query($query1);
 
                 // guarfdo los resultados en un array
-                while ($row = $result->fetch_assoc()){
+                while ($row = $result->fetch_assoc()) {
                     array_push($todos, $row);
                 }
             ?>
 
 
-            <div class="resultado">
-                <?php if (!empty($todos)) { ?>
-                    <center>
-                        <table>
-                            <thead>
-                                <tr>
-                                    <th><b>ID</b></th>
-                                    <th>Nombre</b></th>
-                                    <th><b>Precio</b></th>
-                                    <th><b>Imagen</b></th>
-                                    <th><b>Descripción</b></th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <?php foreach ($todos as $product ) : ?>
+                <div class="resultado">
+                    <?php if (!empty($todos)) { ?>
+                        <center>
+                            <table>
+                                <thead>
                                     <tr>
-                                        <td><?= $product["id_product"]; ?></td>
-                                        <td><?= $product["title"]; ?></td>
-                                        <td><?= $product["price"]; ?></td>
-                                        <td><?= $product["img_url"]; ?></td>
-                                        <td><?= $product["alt"]; ?></td>
+                                        <th><b>ID</b></th>
+                                        <th>Nombre</b></th>
+                                        <th><b>Precio</b></th>
+                                        <th><b>Imagen</b></th>
+                                        <th><b>Descripción</b></th>
                                     </tr>
-                            </tbody>
-                        <?php endforeach; ?>
-                        </table>
-                    </center>
-                <?php } ?>
-            </div>
+                                </thead>
+                                <tbody>
+                                    <?php foreach ($todos as $product) : ?>
+                                        <tr>
+                                            <td><?= $product["id_product"]; ?></td>
+                                            <td><?= $product["title"]; ?></td>
+                                            <td><?= $product["price"]; ?></td>
+                                            <td><?= $product["img_url"]; ?></td>
+                                            <td><?= $product["alt"]; ?></td>
+                                        </tr>
+                                </tbody>
+                            <?php endforeach; ?>
+                            </table>
+                        </center>
+                    <?php } ?>
+                </div>
             <?php } ?>
             <!-- Buscador de rutas que busca en la base de datos según el datos que elijas
             y a continuación escribir que quieres buscar dentro de ese campo seleccionado -->
@@ -148,7 +148,11 @@
                                         <td><?= $products["price"]; ?></td>
                                         <td><?= $products["img_url"]; ?></td>
                                         <td><?= $products["alt"]; ?></td>
-                                        <td><a href="admin.php?id=<?php echo $delete;?>" class="delete" id="delete" title="Eliminar" data-toggle="tooltip"><i class="material-icons">&#xE872;</i></a></td>
+                                        <td>
+                                            <form method="post" name="borrar" id="borrar" action="admin.php">
+                                                <input type="submit" name="borrar" class="button button-primary" value="Enviar">
+                                            </form>
+                                        </td>
                                     </tr>
                             </tbody>
                         <?php endforeach; ?>
