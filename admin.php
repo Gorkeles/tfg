@@ -3,7 +3,8 @@
 include 'funciones.php';
 $errores = '';
 $enviado = true;
-
+$erroresAdmin = '';
+$enviadoAdmin = true;
 $yaBuscado = false;
 $arrayProducts = array();
 
@@ -19,48 +20,116 @@ if (isset($_POST['introducir'])) {
     $alt = $_POST['alt'];
 
 
-    $conexion = new mysqli('localhost', 'root', '', 'tfg');
-    //conectamos mi base de datos 'tfg'
+    if (!empty($id_product)) {
+        $id_product = filter_var($id_product, FILTER_SANITIZE_NUMBER_INT);
+        //comprobamos que es un id_product válido y que lo ha enviado
 
-
-    if ($conexion->connect_errno) {
-        die('Lo siento, hubo un problema con el servidor');
+        if (!filter_var($id_product, FILTER_VALIDATE_INT)) {
+            $erroresAdmin .= 'un id válido, ';
+            $enviadoAdmin = false;
+        }
     } else {
+        $erroresAdmin .= 'un id, ';
+        $enviadoAdmin = false;
+    }
 
-        // Antes de insertar, hacemos una query para ver si existe producto
-        $existeProductoSql = 'SELECT * from products where id_product=\'' . $id_product . '\'';
+
+    if (!empty($title)) {
+        $title = filter_var($title, FILTER_SANITIZE_STRING);
+        //comprobamos que es un título válido y que lo ha enviado
+
+    } else {
+        $erroresAdmin .= 'un título, ';
+        $enviadoAdmin = false;
+    }
 
 
-        $conexion->query($existeProductoSql);
-        if ($conexion->affected_rows >= 1) {
-            echo "<script type='text/javascript'>
+    if (!empty($price)) {
+        $price = filter_var($price, FILTER_SANITIZE_NUMBER_INT);
+        //comprobamos que es un precio válido y que lo ha enviado
+
+        if (!filter_var($price, FILTER_VALIDATE_INT)) {
+            $erroresAdmin .= 'un precio válido, ';
+            $enviadoAdmin = false;
+        }
+    } else {
+        $erroresAdmin .= 'un precio, ';
+        $enviadoAdmin = false;
+    }
+
+
+    if (!empty($img_url)) {
+        $img_url = filter_var($img_url, FILTER_SANITIZE_STRING);
+        //comprobamos que es una URL válido y que lo ha enviado
+
+    } else {
+        $erroresAdmin .= 'una url, ';
+        $enviadoAdmin = false;
+    }
+
+
+    if (!empty($alt)) {
+        $alt = filter_var($alt, FILTER_SANITIZE_STRING);
+        //comprobamos que es una descripción válida y que lo ha enviado
+
+    } else {
+        $erroresAdmin .= 'una descripción, ';
+        $enviadoAdmin = false;
+    }
+
+
+    if ($enviadoAdmin == false) {
+        //lanzamos los errores que hayan podido ocurrir
+        echo "<script type='text/javascript'>
+				   alert('Por favor, indroduzca $erroresAdmin');
+				   window.location.href='admin.php';
+				   </script>";
+    } else {
+        //Todo OK, continuamos
+
+
+        $conexion = new mysqli('localhost', 'root', '', 'tfg');
+        //conectamos mi base de datos 'tfg'
+
+        if ($conexion->connect_errno) {
+            die('Lo siento, hubo un problema con el servidor');
+        } else {
+
+            // Antes de insertar, hacemos una query para ver si existe producto
+            $existeProductoSql = 'SELECT * from products where id_product=\'' . $id_product . '\'';
+
+
+            $conexion->query($existeProductoSql);
+            if ($conexion->affected_rows >= 1) {
+                echo "<script type='text/javascript'>
 		alert('Ya has introducido ese producto');
 		window.location.href='admin.view.php';
 		</script>";
-            return;
-        }
+                return;
+            }
 
 
 
-        $sql = "INSERT INTO products (id_product,title,price,img_url,alt) VALUES ('$id_product','$title','$price','$img_url','$alt')";
+            $sql = "INSERT INTO products (id_product,title,price,img_url,alt) VALUES ('$id_product','$title','$price','$img_url','$alt')";
 
-        $conexion->query($sql);
-        //Hacemos un query a la base de datos
+            $conexion->query($sql);
+            //Hacemos un query a la base de datos
 
-        if ($conexion->affected_rows >= 1) {
-            //si todo va bien saluda al usuario
-            echo "<script type='text/javascript'>
+            if ($conexion->affected_rows >= 1) {
+                //si todo va bien saluda al usuario
+                echo "<script type='text/javascript'>
         			alert('Has introducido $title');
         			window.location.href='admin.view.php';
         			</script>";
 
-            hayConexion();
-        } else {
-            //sino le dice que lo intente de nuevo
-            echo "<script type='text/javascript'>
+                hayConexion();
+            } else {
+                //sino le dice que lo intente de nuevo
+                echo "<script type='text/javascript'>
         			alert('Intentalo de nuevo, por favor');
         			window.location.href='admin.view.php';
         			</script>";
+            }
         }
     }
 }
