@@ -3,9 +3,7 @@ addToShoppingCartButtons.forEach((addToCartButton) => {
   addToCartButton.addEventListener('click', addToCartClicked);
 });
 
-var pedido = []
-
-
+var pedido = [];
 
 const shoppingCartItemsContainer = document.querySelector(
   '.shoppingCartItemsContainer'
@@ -32,18 +30,19 @@ pedido.push(productoComprado);
   const elementsTitle = shoppingCartItemsContainer.getElementsByClassName(
     'shoppingCartItemTitle'
   );
-  for (let i = 0; i < elementsTitle.length; i++) {
-    if (elementsTitle[i].innerText === itemTitle) {
-      let elementQuantity = elementsTitle[
-        i
-      ].parentElement.parentElement.parentElement.querySelector(
-        '.shoppingCartItemQuantity'
-      );
-      elementQuantity.value++; 
-      updateShoppingCartTotal(pedido);
-      return;
-    }
-  }
+  // for (let i = 0; i < elementsTitle.length; i++) {
+  //   if (elementsTitle[i].innerText === itemTitle) {
+  //     let elementQuantity = elementsTitle[
+  //       i
+  //     ]
+      // .parentElement.parentElement.parentElement.querySelector(
+      //   '.shoppingCartItemQuantity'
+      // );
+      // elementQuantity.value++; 
+    //   updateShoppingCartTotal(pedido);
+    //   return;
+    // }
+  //}
   const shoppingCartRow = document.createElement('div');
   const shoppingCartContent = `
   <div class="row shoppingCartItem">
@@ -60,7 +59,7 @@ pedido.push(productoComprado);
         </div>
         <div class="shopping-cart-items">
             <div class="shopping-cart-quantity ">
-                <input class="shopping-cart-quantity-input shoppingCartItemQuantity" type="number" value="1">
+                
                 <button class="btn btn-danger buttonDelete" id="x" type="button">X</button>
             </div>
         </div>
@@ -72,9 +71,9 @@ pedido.push(productoComprado);
     .querySelector('.buttonDelete')
     .addEventListener('click', removeShoppingCartItem);
 
-  shoppingCartRow
-    .querySelector('.shoppingCartItemQuantity')
-    .addEventListener('change', quantityChanged);
+  // shoppingCartRow
+  //   .querySelector('.shoppingCartItemQuantity')
+  //   .addEventListener('change', quantityChanged);
 
   updateShoppingCartTotal(pedido);
 }
@@ -93,13 +92,13 @@ function updateShoppingCartTotal(pedido) {
     const shoppingCartItemPrice = Number(
       shoppingCartItemPriceElement.textContent.replace('€', '')
     );
-    const shoppingCartItemQuantityElement = shoppingCartItem.querySelector(
-      '.shoppingCartItemQuantity'
-    );
-    const shoppingCartItemQuantity = Number(
-      shoppingCartItemQuantityElement.value
-    );
-    total = total + shoppingCartItemPrice * shoppingCartItemQuantity;
+    // const shoppingCartItemQuantityElement = shoppingCartItem.querySelector(
+    //   '.shoppingCartItemQuantity'
+    // );
+    // const shoppingCartItemQuantity = Number(
+    //   shoppingCartItemQuantityElement.value
+    // );
+    total = total + shoppingCartItemPrice ;
   });
   shoppingCartTotal.innerHTML = `${total.toFixed(2)}€`;
   
@@ -107,21 +106,23 @@ function updateShoppingCartTotal(pedido) {
 }
 
 function removeShoppingCartItem(event) {
+  encontrado // bucle con if encontrado = true delete, else cont++
   const buttonClicked = event.target;
   const item = buttonClicked.closest('.shoppingCartItem');
   const itemTitle = item.querySelectorAll('.shopping-cart-item-title')[0].innerHTML;
-  const itemPrice = item.querySelectorAll('.shoppingCartItemPrice')[0].innerHTML;
-  // if pedido contains itemTitle itemPrice delete()
+
+
   pedido = pedido.filter(ped => ped.nombre!=itemTitle);
   buttonClicked.closest('.shoppingCartItem').remove();
   updateShoppingCartTotal(pedido);
+
 }
 
-function quantityChanged(event) {
-  const input = event.target;
-  input.value <= 0 ? (input.value = 1) : null; 
-  updateShoppingCartTotal(document.getElementById('pedido').value);
-}
+// function quantityChanged(event) {
+//   const input = event.target;
+//   input.value <= 0 ? (input.value = 1) : null; 
+//   updateShoppingCartTotal(document.getElementById('pedido').value);
+// }
 
 function comprarButtonClicked() {
   shoppingCartItemsContainer.innerHTML = '';
