@@ -375,12 +375,7 @@ ul.slider li:target {
     margin: 2px;
     margin-bottom: 1px;
     padding: 2px;
-    display: flex;
-    align-items: baseline;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    align-content: stretch;
-    justify-content: space-evenly;
+    display: inline-flex;
 }
 
 .imagenes-uso{
@@ -423,6 +418,18 @@ ul.slider li:target {
 .slider aside h4 {
     margin: 20px 0px;
   }
+
+  .bloque-imagenes-pie{
+    margin: 2px;
+    margin-bottom: 1px;
+    padding: 2px;
+    display: flex;
+    align-items: baseline;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: stretch;
+    justify-content: space-evenly;
+}
 
 
 #pronto{

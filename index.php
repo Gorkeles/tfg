@@ -215,13 +215,14 @@ $_SESSION['nombre'] = 'Gorka'; //Sesión iniciada con Gorka
                             <div class="sub-bloque-imagenes-uso-dentrofuera">
                                 <div class="imagenes-uso">
                                     <h3><strong>Fuera</strong></h3>
-                                    <img src="img/fuera.png" width="225px" height="130px">
+                                    <img src="img/fuera.png" width="210px" height="130px">
                                 </div>
                                 <div class="imagenes-uso">
                                     <h3><strong>Dentro</strong></h3>
-                                    <img src="img/dentro.png" width="225px" height="130px">
+                                    <img src="img/dentro.png" width="210px" height="130px">
                                 </div>
                             </div>
+                            <br>
                             <div class="info-legal-dudas">
                                 <br><br><br>
                                 <h2>Información legal</h2>
@@ -238,7 +239,7 @@ $_SESSION['nombre'] = 'Gorka'; //Sesión iniciada con Gorka
 
         <!--FIN SEGUNDO BLOQUE DE INFORMACIÓN-->
 
-        <div class="bloque-imagenes-uso">
+        <div class="bloque-imagenes-pie">
                 <div class="imagenes-uso">
                     <img src="img/certificado2.png" height="120px" width="200px">
                 </div>
