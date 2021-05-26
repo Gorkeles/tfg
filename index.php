@@ -113,8 +113,8 @@ $_SESSION['nombre'] = 'Gorka'; //Sesión iniciada con Gorka
                         <li id="slide3">
                         <img src="img/paquete.jpg" alt=""/>
                         <aside>
-                            <h3>Si estás interesado</h3>
-                            <h3><a href="tienda.view.php">Compra</a></h3>
+                            <h4>Si estás interesado</h4>
+                            <h4><a href="tienda.view.php">Compra</a></h4>
                         </aside>
                         </li>
                     </ul>
