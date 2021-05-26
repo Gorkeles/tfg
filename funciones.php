@@ -83,3 +83,11 @@
 			echo 'No hay datos en la base de datos';
 		}
 	}
+
+	function borrarProducto($id_product){
+        $pdo = conexion();
+        $sql = "DELETE from products where id_product = '{$_POST["id_product"]}'";
+        $stmt = $pdo->prepare($sql);
+        $stmt ->bindValue(':id_product',$id_product);
+        $stmt->execute();
+    }

@@ -46,9 +46,7 @@ font-size: larger;
 padding: 20px 0px;
 }
 
-.shopping-cart-header {
-border-bottom: 1px solid #ccc;
-}
+
 
 .shopping-cart-image {
 max-width: 80px;
@@ -57,7 +55,6 @@ border-radius: 20px;
 
 .shopping-cart-quantity-input {
 max-width: 60px;
-border: 1px solid #ccc;
 border-radius: 5px;
 background: #eee;
 padding: 5px;
@@ -86,13 +83,32 @@ min-height: 96px;
     border-top: solid var(--primary-color);
     padding: 10px;
 }
-/* 
-#comprar {
-    width: 30%;
-    height: 25px;
-    border: none;
-    border-radius: 20px;
-    color: #333333;
-    font-family: "Monserrat";
+
+#productos{
+    width: 100%;
+    background-color: var(--background-color);
+    margin: auto;
 }
- */
+ /* form input{
+    height: 25px;
+    background-color: var(--primary-color);
+    font-size: 20px;
+    font-family: "Montserrat", sans-serif;
+    color: var(--primary-text-color);
+    font-weight: bold;
+    margin: auto;
+    padding: 10px;
+ } */
+#comprar{
+    width: 100%;
+    height: 40px;
+    background-color: var(--primary-color);
+    font-family: "Montserrat", sans-serif;
+    color: var(--primary-text-color);
+    font-weight: bold;
+    font-size: 30px;
+    margin: auto;
+}
+#comprar:hover{
+    background-color: white;
+}

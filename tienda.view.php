@@ -18,10 +18,10 @@
     <nav>
         <a href="index.php"><img src="img/logo.jpg" alt="logo" class="logo"></a>
         <div class="nav-item">
-            <a href="tienda.view.php" style="text-decoration:none">Tienda</a>
+            <a href="contacto.view.php" style="text-decoration:none">Contacto</a>
         </div>
         <div class="nav-item">
-            <a href="contacto.view.php" style="text-decoration:none">Contacto</a>
+            <a href="tienda.view.php" style="text-decoration:none">Tienda</a>
         </div>
         <div class="nav-item">
             <a href="index.php" style="text-decoration:none">Portada</a>
@@ -104,9 +104,9 @@
             <div class="total">
                 <p class="shopping-cart-footer">Total</p>
                 <p class="shopping-cart-footer shoppingCartTotal">0€</p>
-                <form action="tienda.php" name="productos" method="POST" >
+                <form action="tienda.php" name="productos" method="POST" id="productos">
                     <input type="hidden" name="pedido" id="pedido">
-                <p class="shopping-cart-footer "><input class="comprarButton" type="submit" id="comprar" name="comprar" value="comprar">Comprar</button></p>
+                <p class="shopping-cart-footer "><input class="comprarButton" type="submit" id="comprar" name="comprar" onclick="comprarButtonClicked()" value="comprar"></button></p>
                 </form>
             </div>
 

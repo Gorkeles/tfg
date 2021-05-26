@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Enmascarados | Contacto</title>
+    <title>Enmascarados | Consulta Enviada</title>
 
     <!-- Incluimos los estilos y fuente utilizada en la web -->
     <link href="estilos/estilos.css" rel="stylesheet" type="text/css" />
@@ -19,10 +19,10 @@
     <nav>
         <a href="index.php"><img src="img/logo.jpg" alt="logo" class="logo"></a>
         <div class="nav-item">
-            <a href="tienda.view.php" style="text-decoration:none">Tienda</a>
+            <a href="contacto.view.php" style="text-decoration:none">Contacto</a>
         </div>
         <div class="nav-item">
-            <a href="contacto.view.php" style="text-decoration:none">Contacto</a>
+            <a href="tienda.view.php" style="text-decoration:none">Tienda</a>
         </div>
         <div class="nav-item">
             <a href="index.php" style="text-decoration:none">Portada</a>
@@ -47,7 +47,7 @@
             Siempre protegido
 
         </address>
-        <div>Enmascarados | Contacto</div>
+        <div>Enmascarados | Consulta Enviada</div>
         <section class="social">
             <a href="admin.login.view.php" style="text-decoration:none">Administrador</a>
         </section>

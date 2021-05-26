@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Enmascarados | Administrador</title>
+    <title>Enmascarados | Administración</title>
 
     <!-- Incluimos los estilos y fuente utilizada en la web -->
     <link href="estilos/estilos.css" rel="stylesheet" type="text/css" />
@@ -22,10 +22,10 @@
             <a href="cerrar.php" style="text-decoration:none" class="social">Cerrar sesión</a>
         </div>
         <div class="nav-item">
-            <a href="tienda.view.php" style="text-decoration:none">Tienda</a>
+            <a href="contacto.view.php" style="text-decoration:none">Contacto</a>
         </div>
         <div class="nav-item">
-            <a href="contacto.view.php" style="text-decoration:none">Contacto</a>
+            <a href="tienda.view.php" style="text-decoration:none">Tienda</a>
         </div>
         <div class="nav-item">
             <a href="index.php" style="text-decoration:none">Portada</a>
@@ -58,40 +58,47 @@
                 $result = $conexion->query($query1);
 
                 // guarfdo los resultados en un array
-                while ($row = $result->fetch_assoc()){
+                while ($row = $result->fetch_assoc()) {
                     array_push($todos, $row);
                 }
             ?>
 
 
-            <div class="resultado">
-                <?php if (!empty($todos)) { ?>
-                    <center>
-                        <table>
-                            <thead>
-                                <tr>
-                                    <th><b>ID</b></th>
-                                    <th>Nombre</b></th>
-                                    <th><b>Precio</b></th>
-                                    <th><b>Imagen</b></th>
-                                    <th><b>Descripción</b></th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <?php foreach ($todos as $product ) : ?>
+                <div class="resultado">
+                    <?php if (!empty($todos)) { ?>
+                        <center>
+                            <table>
+                                <thead>
                                     <tr>
-                                        <td><?= $product["id_product"]; ?></td>
-                                        <td><?= $product["title"]; ?></td>
-                                        <td><?= $product["price"]; ?></td>
-                                        <td><?= $product["img_url"]; ?></td>
-                                        <td><?= $product["alt"]; ?></td>
+                                        <th><b>ID</b></th>
+                                        <th>Nombre</b></th>
+                                        <th><b>Precio</b></th>
+                                        <th><b>Imagen</b></th>
+                                        <th><b>Descripción</b></th>
+                                        <th> </th>
                                     </tr>
-                            </tbody>
-                        <?php endforeach; ?>
-                        </table>
-                    </center>
-                <?php } ?>
-            </div>
+                                </thead>
+                                <tbody>
+                                    <?php foreach ($todos as $product) : ?>
+                                        <tr>
+                                            <td><?= $product["id_product"]; ?></td>
+                                            <td><?= $product["title"]; ?></td>
+                                            <td><?= $product["price"]; ?></td>
+                                            <td><?= $product["img_url"]; ?></td>
+                                            <td><?= $product["alt"]; ?></td>
+                                            <td>
+                                                <form method="post" action="admin.php" id="borracion">
+                                                    <input type="hidden" name="borrar" value="<?php echo $product["id_product"]; ?>">
+                                                    <input type="submit" class="button button-primary" value="Borrar">
+                                                </form>
+                                            </td>
+                                        </tr>
+                                </tbody>
+                            <?php endforeach; ?>
+                            </table>
+                        </center>
+                    <?php } ?>
+                </div>
             <?php } ?>
             <!-- Buscador de rutas que busca en la base de datos según el datos que elijas
             y a continuación escribir que quieres buscar dentro de ese campo seleccionado -->
@@ -103,8 +110,8 @@
                         ¿No encuentras tu mascarilla? Aquí podrás buscarlas, modificarlas o eliminarlas
                         <br>
                         <br>
-                        <select name="tipoBusquedaProducto" id="tipoBusquedaProducto">
-                            <option disabled selected>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Selecciona un filtro</option>
+                        <select name="tipoBusquedaProducto" id="tipoBusquedaProducto" require="required">
+
                             <option value="id_product">ID</option>
                             <option value="title">Nombre</option>
                             <option value="price">Precio</option>
@@ -148,7 +155,12 @@
                                         <td><?= $products["price"]; ?></td>
                                         <td><?= $products["img_url"]; ?></td>
                                         <td><?= $products["alt"]; ?></td>
-                                        <td><a href="admin.php?id=<?php echo $borrar;?>" class="delete" title="Eliminar" data-toggle="tooltip"><i class="material-icons">&#xE872;</i></a></td>
+                                        <td>
+                                            <form method="post" action="admin.php">
+                                                <input type="hidden" name="borrar" value="<?php echo $products["id_product"]; ?>">
+                                                <input type="submit" class="button button-primary" value="Enviar">
+                                            </form>
+                                        </td>
                                     </tr>
                             </tbody>
                         <?php endforeach; ?>
@@ -204,7 +216,7 @@
             Siempre protegido
 
         </address>
-        <div>Enmascarados | Administrador</div>
+        <div>Enmascarados | Administración</div>
         <section class="social">
             <a href="index.php" style="text-decoration:none">Volver a Portada</a>
         </section>
