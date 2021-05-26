@@ -82,13 +82,13 @@ $_SESSION['nombre'] = 'Gorka'; //Sesión iniciada con Gorka
         
                     <ul class="slider">
                         <li id="slide1">
-                        <img src="img/portada.jpg" height=500 alt="foto portada de mascarillas" alt=""/>
+                        <img src="img/portada.jpg" alt="imagen logo n-mascarados"/>
                         </li>
                         <li id="slide2">
-                        <img src="img/galeria-mascarilla.jpg" alt=""/>
+                        <img src="img/galeria-mascarilla.jpg" alt="imagen mujer con mascarilla azul con dibujos de planetas"/>
                         </li>
                         <li id="slide3">
-                        <img src="img/paquete.jpg" alt=""/>
+                        <img src="img/paquete.jpg" alt="imagen entrega de paquete por repartidor"/>
                         <aside>
                             <h4>Si estás interesado</h4>
                             <h4><a href="tienda.view.php">Compra</a></h4>
@@ -98,13 +98,13 @@ $_SESSION['nombre'] = 'Gorka'; //Sesión iniciada con Gorka
                 
                     <ul class="menu">
                         <li>
-                        <a href="#slide1" alt="1">1</a>
+                        <a href="#slide1">1</a>
                         </li>
                         <li>
-                        <a href="#slide2" alt="2">2</a>
+                        <a href="#slide2">2</a>
                         </li>
                         <li>
-                        <a href="#slide3" alt="3">3</a>
+                        <a href="#slide3">3</a>
                         </li>
                     </ul>
                 
@@ -161,21 +161,21 @@ $_SESSION['nombre'] = 'Gorka'; //Sesión iniciada con Gorka
                                     <br><br><br>
                                     Abrir la tira de ajuste lo máximo posible y colocaria alrededor del cuello
                                     </p>
-                                    <img src="img/paso1.png" width="200px" height="200px">
+                                    <img src="img/paso1.png" width="200px" height="200px" alt="dibujo 1 persona con mascarilla colgando del cuello">
                                 </div>
                                 <div class="imagenes-uso">
                                     <p><br><br> Paso 2
                                     <br><br><br>
                                     Tirar suavemente de la tira a ambos lados
                                     </p>
-                                    <img src="img/paso2.png" width="200px" height="200px">
+                                    <img src="img/paso2.png" width="200px" height="200px" alt="dibujo 2 persona agarrando mascarilla por las gomas laterales">
                                 </div>
                                 <div class="imagenes-uso">
                                     <p><br><br> Paso 3
                                     <br><br><br>
                                     Colocar la tira alrededor de las orejas de forma holgada
                                     </p>
-                                    <img src="img/paso3.png" width="200px" height="200px">
+                                    <img src="img/paso3.png" width="200px" height="200px" alt="dibujo 3 persona colocando gomas de mascarillas tras las orejas perfil lateral">
                                 </div>
                             </div>
                             <div class="sub-bloque-imagenes-uso">
@@ -184,21 +184,21 @@ $_SESSION['nombre'] = 'Gorka'; //Sesión iniciada con Gorka
                                     <br><br><br>
                                     Colocar la mascarilla sobre el rosto cubriendo boca y nariz
                                     </p>
-                                    <img src="img/paso4.png" width="200px" height="200px">
+                                    <img src="img/paso4.png" width="200px" height="200px" alt="dibujo 4 persona agarrando mascarilla por las gomas laterales perfil frontal">
                                 </div>
                                 <div class="imagenes-uso">
                                     <p><br><br> Paso 5
                                     <br><br><br>
                                     Apretar el cierre sobre la nuca para asegurar un ajuste cómodo y firme
                                     </p>
-                                    <img src="img/paso5.png" width="200px" height="200px">
+                                    <img src="img/paso5.png" width="200px" height="200px" alt="dibujo 5 persona ajustando sucección de mascarilla en parte posterior de la cabeza">
                                 </div>
                                 <div class="imagenes-uso">
                                     <p><br><br> Paso 6
                                     <br><br><br>
                                     Ajustar la mascarilla sobre nariz y barbilla
                                     </p>
-                                    <img src="img/paso6.png" width="200px" height="200px">
+                                    <img src="img/paso6.png" width="200px" height="200px" alt="dibujo 6 persona ajustando la mascarilla sobre nariz y barbilla">
                                 </div>
                             </div>
                         </div>
@@ -208,11 +208,11 @@ $_SESSION['nombre'] = 'Gorka'; //Sesión iniciada con Gorka
                             <div class="sub-bloque-imagenes-uso-dentrofuera">
                                 <div class="imagenes-uso">
                                     <h3><strong>Fuera</strong></h3>
-                                    <img src="img/fuera.png" width="210px" height="130px">
+                                    <img src="img/fuera.png" width="210px" height="130px" alt="dibujo perfil frontal del exterior de la mascarilla con costuras no comunicadas en región superior e inferior de parte central">
                                 </div>
                                 <div class="imagenes-uso">
                                     <h3><strong>Dentro</strong></h3>
-                                    <img src="img/dentro.png" width="210px" height="130px">
+                                    <img src="img/dentro.png" width="210px" height="130px" alt="dibujo perfil frontal del interior de la mascarilla con costura transversal en centro de la mascarilla">
                                 </div>
                             </div>
                             <br>
@@ -234,16 +234,16 @@ $_SESSION['nombre'] = 'Gorka'; //Sesión iniciada con Gorka
 
         <div class="bloque-imagenes-pie">
                 <div class="imagenes-uso">
-                    <img src="img/certificado2.png" height="120px" width="200px">
+                    <img src="img/certificado2.png" height="120px" width="200px" alt="imagen de certificado 'CWA 17553:2020' de calidad del producto">
                 </div>
                 <div class="imagenes-uso">
-                    <img src="img/certificado2.png">
+                    <img src="img/certificado2.png" alt="imagen de certificado 'CWA 17553:2020' de calidad del producto">
                 </div>
                 <div class="imagenes-uso"> 
-                    <p><img src="img/banderEsp.png" height="60px" width="100px"></p> <br>
+                    <p><img src="img/banderEsp.png" height="60px" width="100px" alt="imagen bandera de España"></p> <br>
                 </div>
                 <div class="imagenes-uso">
-                    <p><img src="img/banderEu.png" height="60px" width="100px"></p>
+                    <p><img src="img/banderEu.png" height="60px" width="100px" alt="imagen bandera de Europa"></p>
                 </div>
         </div>
 
