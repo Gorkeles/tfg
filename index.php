@@ -169,14 +169,14 @@ $_SESSION['nombre'] = 'Gorka'; //Sesión iniciada con Gorka
         <div class="cover-page">
 	
 	<header class="entry-header">
-		<h1 class="entry-title"> <br><br> Acerca de nuestras Mascarillas</h1>
+		<h1 class="entry-title"> <br><br> Acerca de nuestras Mascarillas <br><br></h1>
 	</header>
 
 </div>
     <main class="cuerpo-imagenes">
         <article class="articulo">
             
-                    <div class="entry-content post about-our-maskks padding-m">
+                    <div class="">
                         
                         <h2 class="center-text">Cómo usarlas</h2>
                         
@@ -192,49 +192,65 @@ $_SESSION['nombre'] = 'Gorka'; //Sesión iniciada con Gorka
                                 <div class="imagenes-uso">
                                     <p><br><br> Paso 2
                                     <br><br><br>
-                                    Tirar suavemente de la tira a ambos lados</p>
+                                    Tirar suavemente de la tira a ambos lados
+                                    </p>
                                     <img src="img/paso2.png" width="200px" height="200px">
                                 </div>
                                 <div class="imagenes-uso">
                                     <p><br><br> Paso 3
                                     <br><br><br>
-                                    Colocar la tira alrededor de las orejas de forma holgada</p>
+                                    Colocar la tira alrededor de las orejas de forma holgada
+                                    </p>
                                     <img src="img/paso3.png" width="200px" height="200px">
                                 </div>
                             </div>
                             <div class="sub-bloque-imagenes-uso">
                                 <div class="imagenes-uso">
+                                    <p><br><br> Paso 4
+                                    <br><br><br>
+                                    Colocar la Maskk sobre el rosto cubriendo boca y nariz
+                                    </p>
                                     <img src="img/paso4.png" width="200px" height="200px">
-                                    <p>Colocar la Maskk sobre el rosto cubriendo boca y nariz</p>
                                 </div>
                                 <div class="imagenes-uso">
+                                    <p><br><br> Paso 5
+                                    <br><br><br>
+                                    Apretar el cierre sobre la nuca para asegurar un ajuste cómodo y firme
+                                    </p>
                                     <img src="img/paso5.png" width="200px" height="200px">
-                                    <p>Apretar el cierre sobre la nuca para asegurar un ajuste cómodo y firme</p>
                                 </div>
                                 <div class="imagenes-uso">
+                                    <p><br><br> Paso 6
+                                    <br><br><br>
+                                    Ajustar la Maskk sobre nariz y barbilla
+                                    </p>
                                     <img src="img/paso6.png" width="200px" height="200px">
-                                    <p>Ajustar la Maskk sobre nariz y barbilla</p>
                                 </div>
                             </div>
                         </div>
                         
                         
-                        <div class="">
-                            <div class="">
-                                <h3><strong>Fuera</strong></h3>
-                                <img src="img/fuera.png">
+                        <div class="bloque-imagenes-uso-dentrofuera">
+                            <div class="sub-bloque-imagenes-uso-dentrofuera">
+                                <div class="imagenes-uso">
+                                    <h3><strong>Fuera</strong></h3>
+                                    <img src="img/fuera.png" width="225px" height="130px">
+                                </div>
+                                <div class="imagenes-uso">
+                                    <h3><strong>Dentro</strong></h3>
+                                    <img src="img/dentro.png" width="225px" height="130px">
+                                </div>
                             </div>
-                            <div class="">
-                                <h3><strong>Dentro</strong></h3>
-                                <img src="img/dentro.png">
-                            </div>
-
-                            <h2>información legal</h2>
-                            <p>Posibilidades de uso – Esto no es un consejo medico. No cumple con la regulaciones para usos quirúrjicos (EU/2017/745 regulation).</p>
-                            <p>FH2H, Lda Rua Doutor Eduardo Santos Silva 261 Fracção H 4200-283 Porto NIF: 515994839</p>
-                            <h2>¿cualquier duda?</h2>
-                            <p>Póngase en contacto con nuestro servicio de atención al cliente en <a href="#">EMAIL</a>.</p>
-                            
+                            <div class="info-legal-dudas">
+                                <br><br><br>
+                                <h2>información legal</h2>
+                                <p>Posibilidades de uso – Esto no es un consejo medico. No cumple con la regulaciones para usos quirúrjicos (EU/2017/745 regulation).</p>
+                                <p>FH2H, Lda Rua Doutor Eduardo Santos Silva 261 Fracção H 4200-283 Porto NIF: 515994839</p>
+                                <br>
+                                <h2>¿cualquier duda?</h2>
+                                <p>Póngase en contacto con nuestro servicio de atención al cliente en <a href="#">EMAIL</a>.</p>
+                                <br><br>
+                            </div> 
                         </div>
                     </div>
         </article>

@@ -366,7 +366,7 @@ ul.slider li:target {
     border-right: 5px dashed;
 }
 
-/*ESTILOS BLOQUE INFORMACIÓN 1*/
+/*ESTILOS BLOQUE INFORMACIÓN 2*/
 
 .bloque-imagenes-uso{
     margin: 2px;
@@ -376,7 +376,18 @@ ul.slider li:target {
 
 .imagenes-uso{
     display: inline-flex;
+    margin: 20px;
+    padding: 5px;
 }
+
+.sub-bloque-imagenes-uso-dentrofuera{
+    margin: 2px;
+    padding: 2px;
+    display: inline-flex;
+    border: dashed 5px;
+    border-color: var(--primary-color);
+}
+
 
 /* Call for action para Comprar */
 .slider aside {
