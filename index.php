@@ -181,29 +181,40 @@ $_SESSION['nombre'] = 'Gorka'; //Sesión iniciada con Gorka
                         <h2 class="center-text">Cómo usarlas</h2>
                         
                         <div class="bloque-imagenes-uso">
-                            <div class="imagenes-uso">
-                                <img src="img/paso1.png" width="200px" height="200px">
-                                <p>Abrir la tira de ajuste lo máximo posible y colocaria alrededor del cuello</p>
+                            <div class="sub-bloque-imagenes-uso">
+                                <div class="imagenes-uso">
+                                    <p><br><br> Paso 1
+                                    <br><br><br>
+                                    Abrir la tira de ajuste lo máximo posible y colocaria alrededor del cuello
+                                    </p>
+                                    <img src="img/paso1.png" width="200px" height="200px">
+                                </div>
+                                <div class="imagenes-uso">
+                                    <p><br><br> Paso 2
+                                    <br><br><br>
+                                    Tirar suavemente de la tira a ambos lados</p>
+                                    <img src="img/paso2.png" width="200px" height="200px">
+                                </div>
+                                <div class="imagenes-uso">
+                                    <p><br><br> Paso 3
+                                    <br><br><br>
+                                    Colocar la tira alrededor de las orejas de forma holgada</p>
+                                    <img src="img/paso3.png" width="200px" height="200px">
+                                </div>
                             </div>
-                            <div class="imagenes-uso">
-                                <img src="img/paso2.png">
-                                <p>Tirar suavemente de la tira a ambos lados</p>
-                            </div>
-                            <div class="imagenes-uso">
-                                <img src="img/paso3.png">
-                                <p>Colocar la tira alrededor de las orejas de forma holgada</p>
-                            </div>
-                            <div class="imagenes-uso">
-                                <img src="img/paso4.png">
-                                <p>Colocar la Maskk sobre el rosto cubriendo boca y nariz</p>
-                            </div>
-                            <div class="imagenes-uso">
-                                <img src="img/paso5.png">
-                                <p>Apretar el cierre sobre la nuca para asegurar un ajuste cómodo y firme</p>
-                            </div>
-                            <div class="imagenes-uso">
-                                <img src="img/paso6.png">
-                                <p>Ajustar la Maskk sobre nariz y barbilla</p>
+                            <div class="sub-bloque-imagenes-uso">
+                                <div class="imagenes-uso">
+                                    <img src="img/paso4.png" width="200px" height="200px">
+                                    <p>Colocar la Maskk sobre el rosto cubriendo boca y nariz</p>
+                                </div>
+                                <div class="imagenes-uso">
+                                    <img src="img/paso5.png" width="200px" height="200px">
+                                    <p>Apretar el cierre sobre la nuca para asegurar un ajuste cómodo y firme</p>
+                                </div>
+                                <div class="imagenes-uso">
+                                    <img src="img/paso6.png" width="200px" height="200px">
+                                    <p>Ajustar la Maskk sobre nariz y barbilla</p>
+                                </div>
                             </div>
                         </div>
                         
