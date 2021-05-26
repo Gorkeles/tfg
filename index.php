@@ -78,16 +78,7 @@ $_SESSION['nombre'] = 'Gorka'; //Sesión iniciada con Gorka
 
         <!-- Imagen de cabecera, subtítulo y descripción -->
         <div class="container">
-            <!--<header>
-                <div class="image">
-                    <img src="img/portada.jpg" height=500 alt="foto portada de mascarillas" />
-                </div>
-            </header>-->
-            <main>
-                <br><br><br>
-                <h1>Tu web de mascarillas</h1> <br>
-
-                <div class="container1">
+               <div class="container1">
         
                     <ul class="slider">
                         <li id="slide1">
@@ -118,9 +109,11 @@ $_SESSION['nombre'] = 'Gorka'; //Sesión iniciada con Gorka
                     </ul>
                 
                 </div>
+                <br><br><br>
+                <h1>Tu web de mascarillas</h1> <br>
         
-            </main>
-
+        </div>
+        <div class="container">
             <!--PRIMER BLOQUE DE INFORMACIÓN-->
 
         <div class="infoPortada">
