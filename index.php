@@ -76,7 +76,6 @@ $_SESSION['nombre'] = 'Gorka'; //Sesión iniciada con Gorka
     </nav>
 
 
-<<<<<<< HEAD
         <!-- Imagen de cabecera, subtítulo y descripción -->
         <div class="container">
             <header>
@@ -122,51 +121,6 @@ $_SESSION['nombre'] = 'Gorka'; //Sesión iniciada con Gorka
             </main>
 
             <!--PRIMER BLOQUE DE INFORMACIÓN-->
-=======
-    <!-- Imagen de cabecera, subtítulo y descripción -->
-    <div class="container">
-        <header>
-            <div class="image">
-                <img src="img/portada.jpg" height=500 alt="foto portada de mascarillas" />
-            </div>
-        </header>
-        <main>
-            <h1>Tu web de mascarillas</h1>
-            <br>
-            <div class="container1">
-
-                <ul class="slider">
-                    <li id="slide1">
-                        <img src="img/doctora-mascarilla2.jpg" alt="" height="562" width="200" />
-                    </li>
-                    <li id="slide2">
-                        <img src="img/galeria-mascarilla.jpg" alt="" />
-                    </li>
-                    <li id="slide3">
-                        <img src="img/paquete.jpg" alt="" />
-                        <a href="tienda.view.php" alt="">¡Corre a mirar nuestros productos!</a>
-                        <!--la intención es colocar esto como un aside-->
-                    </li>
-                </ul>
-
-                <ul class="menu">
-                    <li>
-                        <a href="#slide1" alt="1">1</a>
-                    </li>
-                    <li>
-                        <a href="#slide2" alt="2">2</a>
-                    </li>
-                    <li>
-                        <a href="#slide3" alt="3">3</a>
-                    </li>
-                </ul>
-
-            </div>
-
-        </main>
-
-        <!--PRIMER BLOQUE DE INFORMACIÓN-->
->>>>>>> 464167945fb0a2291f9f931871e2ff9cb5fae3d1
 
         <div class="infoPortada">
             <div class="bloque1">
@@ -239,7 +193,7 @@ $_SESSION['nombre'] = 'Gorka'; //Sesión iniciada con Gorka
                                 <div class="imagenes-uso">
                                     <p><br><br> Paso 4
                                     <br><br><br>
-                                    Colocar la Maskk sobre el rosto cubriendo boca y nariz
+                                    Colocar la mascarilla sobre el rosto cubriendo boca y nariz
                                     </p>
                                     <img src="img/paso4.png" width="200px" height="200px">
                                 </div>
@@ -253,7 +207,7 @@ $_SESSION['nombre'] = 'Gorka'; //Sesión iniciada con Gorka
                                 <div class="imagenes-uso">
                                     <p><br><br> Paso 6
                                     <br><br><br>
-                                    Ajustar la Maskk sobre nariz y barbilla
+                                    Ajustar la mascarilla sobre nariz y barbilla
                                     </p>
                                     <img src="img/paso6.png" width="200px" height="200px">
                                 </div>
