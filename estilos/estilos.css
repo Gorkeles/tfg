@@ -373,8 +373,14 @@ ul.slider li:target {
 
 .bloque-imagenes-uso{
     margin: 2px;
+    margin-bottom: 1px;
     padding: 2px;
-    display: inline-flex;
+    display: flex;
+    align-items: baseline;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: stretch;
+    justify-content: space-evenly;
 }
 
 .imagenes-uso{

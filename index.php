@@ -153,17 +153,12 @@ $_SESSION['nombre'] = 'Gorka'; //Sesión iniciada con Gorka
         <!--SEGUNDO BLOQUE DE INFORMACIÓN-->
 
         <div class="cover-page">
-	
-	<header class="entry-header">
-		<h1 class="entry-title"> <br><br> Acerca de nuestras Mascarillas <br><br></h1>
-	</header>
-
-</div>
+            <header class="entry-header">
+                <h1 class="entry-title"> <br><br> Acerca de nuestras Mascarillas <br><br></h1>
+            </header>
+        </div>
     <main class="cuerpo-imagenes">
         <article class="articulo">
-            
-                    <div class="">
-                        
                         <h2 class="center-text">Cómo usarlas</h2>
                         
                         <div class="bloque-imagenes-uso">
@@ -229,54 +224,34 @@ $_SESSION['nombre'] = 'Gorka'; //Sesión iniciada con Gorka
                             </div>
                             <div class="info-legal-dudas">
                                 <br><br><br>
-                                <h2>información legal</h2>
-                                <p>Posibilidades de uso – Esto no es un consejo medico. No cumple con la regulaciones para usos quirúrjicos (EU/2017/745 regulation).</p>
-                                <p>FH2H, Lda Rua Doutor Eduardo Santos Silva 261 Fracção H 4200-283 Porto NIF: 515994839</p>
+                                <h2>Información legal</h2>
+                                <p>Posibilidades de uso | Esto no es un consejo medico. No cumple con la regulaciones para usos quirúrjicos <i>(regulación EU/2017/745).</i></p>
+                                <p>Calle Madariaga Fernández, 16, MADRID. NIF: 584954875</p>
                                 <br>
-                                <h2>¿cualquier duda?</h2>
+                                <h2>¿Alguna duda?</h2>
                                 <p>Póngase en contacto con nuestro servicio de atención al cliente en <a href="#">EMAIL</a>.</p>
                                 <br><br>
                             </div> 
                         </div>
-                    </div>
         </article>
     </main>
 
         <!--FIN SEGUNDO BLOQUE DE INFORMACIÓN-->
 
-        <div class="box70 box100-m center-box certificados-boxes">
-
-
-
-
-            <footer>
-                <address>
-                    <div class="box33 box100-m f-left center-text double-padding-full">
-                        <img src="https://maskk.com/wp-content/uploads/2020/09/selo-25.jpg">
-                        <p data-mh="text-cert">25 CICLOS DE LAVADO <br><strong>NIVEL 2</strong>
-                            <br>BFE 95% ; Transpirabilidad <20 (Pa/cm2) <br>BO No:202014058 por Equilibrium
-                        </p>
-                        <p class="logos-cert"><img src="https://maskk.com/wp-content/themes/maskk/img/spain.png"><img src="https://maskk.com/wp-content/themes/maskk/img/european-union.png"><img src="https://maskk.com/wp-content/themes/maskk/img/logo-25-lavages-noir.png"></p>
-                    </div>
-                </address>
-                <div class="box33 box100-m f-left center-text double-padding-full">
-                    <img src="https://maskk.com/wp-content/uploads/2020/09/selo-50.jpg">
-                    <p data-mh="text-cert">50 CICLOS DE LAVADO <br><strong>NIVEL 3</strong>
-                        <br>BFE 88%; Transpirabilidad <20(Pa /cm2) <br>BO No:202014058 por Equilibrium
-                    </p>
-                    <p class="logos-cert"><img src="https://maskk.com/wp-content/themes/maskk/img/european-union.png"></p>
+        <div class="bloque-imagenes-uso">
+                <div class="imagenes-uso">
+                    <img src="img/certificado2.png" height="120px" width="200px">
                 </div>
-                <section class="social">
-                    <div class="box33 box100-m f-left center-text double-padding-full">
-                        <img src="https://maskk.com/wp-content/uploads/2020/09/une-all.jpg">
-                        <p data-mh="text-cert">TODOS LOS CRITERIOS <br>APROBADOS <br>AMS-Lab 20-008737 </p>
-                        <p class="logos-cert"><img src="https://maskk.com/wp-content/themes/maskk/img/spain.png"></p>
-                    </div>
-                    <div class="clr"></div>
-                    <p class="center-text">Código: CL-1429 por AMSLab <br>Pruebas realizadas según EN14683:2019+AC 2019</p>
+                <div class="imagenes-uso">
+                    <img src="img/certificado2.png">
+                </div>
+                <div class="imagenes-uso"> 
+                    <p><img src="img/banderEsp.png" height="60px" width="100px"></p> <br>
+                </div>
+                <div class="imagenes-uso">
+                    <p><img src="img/banderEu.png" height="60px" width="100px"></p>
+                </div>
         </div>
-        </section>
-        </footer>
 
         <footer>
             <address>
