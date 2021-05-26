@@ -78,19 +78,20 @@ $_SESSION['nombre'] = 'Gorka'; //Sesión iniciada con Gorka
 
         <!-- Imagen de cabecera, subtítulo y descripción -->
         <div class="container">
-            <header>
+            <!--<header>
                 <div class="image">
                     <img src="img/portada.jpg" height=500 alt="foto portada de mascarillas" />
                 </div>
-            </header>
+            </header>-->
             <main>
+                <br><br><br>
                 <h1>Tu web de mascarillas</h1> <br>
 
                 <div class="container1">
         
                     <ul class="slider">
                         <li id="slide1">
-                        <img src="img/doctora-mascarilla2.jpg" alt="" height="562" width="200"/>
+                        <img src="img/portada.jpg" height=500 alt="foto portada de mascarillas" alt=""/>
                         </li>
                         <li id="slide2">
                         <img src="img/galeria-mascarilla.jpg" alt=""/>
