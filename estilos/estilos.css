@@ -274,7 +274,7 @@ form input[type="submit"]:hover {
 .container1 {
     margin: auto;
     background-color: var(--background-color);
-    width: 1500px;
+    width: 950px;
     padding: 5px;
     text-align: -webkit-center;
 }
