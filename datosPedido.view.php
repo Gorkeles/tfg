@@ -17,7 +17,7 @@
 <body>
     <!-- Barra de navegación con los enlaces a distintas páginas de la web -->
     <nav>
-        <a href="index.php"><img src="img/logo.jpg" alt="logo" class="logo"></a>
+        <a href="index.php"><img src="img/logo.jpg" alt="Logotipo de enmascarados" class="logo"></a>
         <div class="nav-item">
             <a href="contacto.view.php" style="text-decoration:none">Contacto</a>
         </div>

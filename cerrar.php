@@ -22,7 +22,7 @@ session_destroy();
 <body>
     <!-- Barra de navegación con los enlaces a distintas páginas de la web -->
     <nav>
-        <a href="index.php"><img src="img/logo.jpg" alt="logo" class="logo" ></a>
+        <a href="index.php"><img src="img/logo.jpg" alt="Logotipo de enmascarados" class="logo" ></a>
     </nav>
     <div class="container">
         <header>

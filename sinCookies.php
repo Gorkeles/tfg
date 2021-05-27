@@ -17,7 +17,7 @@
 <body>
     <!-- Barra de navegación con los enlaces a distintas páginas de la web -->
     <nav>
-        <a href="index.php"><img src="img/logo.jpg" alt="logo" class="logo"></a>
+        <a href="index.php"><img src="img/logo.jpg" alt="Logotipo de enmascarados" class="logo"></a>
     </nav>
 
     <!-- Imagen de cabecera y subtítulo -->
@@ -29,7 +29,7 @@
             <br>
             <br>
             <div class="image">
-                <img src="img/coronavirus.jpg" alt="Cerula coronavirus">
+                <img src="img/coronavirus.jpg" alt="Cerula de coronavirus">
                 <br>
                 <br>
                 <br>
