@@ -59,10 +59,10 @@
                         <br>
                         <br>
                         Teléfono: <br><br>
-                        <input type="text" placeholder="Introduzca su teléfono" name="phone" id="phone" required>
+                        <input type="tel" placeholder="Introduzca su teléfono" name="phone" id="phone" required>
                         <br>
                         <br>
-                        <!-- El DNI es tipo text -->
+                        <!-- El correo es tipo email -->
                         Correo electrónico: <br><br>
                         <input type="email" placeholder="Introduzca su email" name="email" id="email" required>
                         <br>

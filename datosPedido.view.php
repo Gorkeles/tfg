@@ -11,7 +11,7 @@
     <link href="estilos/tienda.css" rel="stylesheet" type="text/css" />
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
-    <script src="validar.js"></script>
+    
 </head>
 
 <body>
@@ -43,7 +43,7 @@
                 <br>
                 <br>
                 Teléfono: <br><br>
-                <input type="text" placeholder="Introduzca su teléfono" name="phone" id="phone" required>
+                <input type="tel" placeholder="Introduzca su teléfono" name="phone" id="phone" required>
                 <br>
                 <br>
                 <!-- El correo es tipo text -->
@@ -66,6 +66,7 @@
     </section>
 
     <script src="./tienda.js"></script>
+    <script src="validar.js"></script>
 
     <footer>
         <map>
