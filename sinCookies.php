@@ -37,10 +37,10 @@
         </header>
 
         <footer>
-            <address>
-                Siempre protegido
+            <map>
+                <a href="mapa.view.php" style="text-decoration:none">Mapa Web</a>
 
-            </address>
+            </map>
             <div>Enmascarados | Cookies no aceptadas</div>
             <section class="social">
                 <a href="index.php" style="text-decoration:none">Volver a PORTADA</a>

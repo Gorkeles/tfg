@@ -48,30 +48,30 @@
         $result = $conexion->query($query1);
 
         // guarfdo los resultados en un array
-        while ($row = $result->fetch_assoc()){
+        while ($row = $result->fetch_assoc()) {
             array_push($arrayProducts, $row);
         }
     ?>
 
 
-    <section class="container">
-    
-        <?php foreach ($arrayProducts as $product) : ?>
-        
-            <div class="item"> 
-                <h3 class="item-title"><?php echo ($product["title"]); 
-                ?></h3>
-                <img class="item-image" src="<?php echo($product["img_url"]); ?>" alt="<?php echo($product["alt"]); ?>">
+        <section class="container">
 
-                <div class="item-details">
-                    <h4 class="item-price"><?php echo ($product["price"]);?></h4>
-                    <button class="item-button btn btn-primary addToCart">AÑADIR AL CARRITO</button>
+            <?php foreach ($arrayProducts as $product) : ?>
+
+                <div class="item">
+                    <h3 class="item-title"><?php echo ($product["title"]);
+                                            ?></h3>
+                    <img class="item-image" src="<?php echo ($product["img_url"]); ?>" alt="<?php echo ($product["alt"]); ?>">
+
+                    <div class="item-details">
+                        <h4 class="item-price"><?php echo ($product["price"]); ?></h4>
+                        <button class="item-button btn btn-primary addToCart">AÑADIR AL CARRITO</button>
+                    </div>
                 </div>
-            </div>
-        <?php endforeach; ?>
-    </section>
+            <?php endforeach; ?>
+        </section>
     <?php } ?>
-    
+
 
     <!-- FIN TIENDA -->
 
@@ -106,7 +106,7 @@
                 <p class="shopping-cart-footer shoppingCartTotal">0€</p>
                 <form action="tienda.php" name="productos" method="POST" id="productos">
                     <input type="hidden" name="pedido" id="pedido">
-                <p class="shopping-cart-footer "><input class="comprarButton" type="submit" id="comprar" name="comprar" onclick="comprarButtonClicked()" value="comprar"></button></p>
+                    <p class="shopping-cart-footer "><input class="comprarButton" type="submit" id="comprar" name="comprar" onclick="comprarButtonClicked()" value="comprar"></button></p>
                 </form>
             </div>
 
@@ -118,14 +118,14 @@
 
     </section>
     <!-- END SECTION SHOPPING CART -->
-        
+
     <script src="./tienda.js"></script>
 
     <footer>
-        <address>
-            Siempre protegido
+        <map>
+            <a href="mapa.view.php" style="text-decoration:none">Mapa Web</a>
 
-        </address>
+        </map>
         <div>Enmascarados | Tienda</div>
         <section class="social">
             <a href="admin.login.view.php" style="text-decoration:none">Administrador</a>

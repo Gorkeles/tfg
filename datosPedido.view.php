@@ -68,10 +68,10 @@
     <script src="./tienda.js"></script>
 
     <footer>
-        <address>
-            Siempre protegido
+        <map>
+            <a href="mapa.view.php" style="text-decoration:none">Mapa Web</a>
 
-        </address>
+        </map>
         <div>Enmascarados | Proceso de compra</div>
         <section class="social">
             <a href="admin.login.view.php" style="text-decoration:none">Administrador</a>

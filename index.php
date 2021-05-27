@@ -107,9 +107,7 @@ $_SESSION['nombre'] = 'Gorka'; //Sesión iniciada con Gorka
                         <a href="#slide3">3</a>
                         </li>
                     </ul>
-                
                 </div>
-                <br><br><br>
                 <h1>Tu web de mascarillas</h1> <br>
         
         </div>
@@ -248,9 +246,9 @@ $_SESSION['nombre'] = 'Gorka'; //Sesión iniciada con Gorka
         </div>
 
         <footer>
-            <address>
-                Siempre protegido
-            </address>
+            <map>
+                <a href="mapa.view.php" style="text-decoration:none">Mapa Web</a>
+            </map>
             <div>Enmascarados | Portada</div>
             <section class="social">
                 <a href="admin.login.view.php" style="text-decoration:none">Administrador</a>

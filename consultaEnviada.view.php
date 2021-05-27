@@ -43,10 +43,10 @@
                 
     </div>
     <footer>
-        <address>
-            Siempre protegido
+        <map>
+            <a href="mapa.view.php" style="text-decoration:none">Mapa Web</a>
 
-        </address>
+        </map>
         <div>Enmascarados | Consulta Enviada</div>
         <section class="social">
             <a href="admin.login.view.php" style="text-decoration:none">Administrador</a>

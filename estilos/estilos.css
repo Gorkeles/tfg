@@ -139,7 +139,7 @@ footer {
     position: relative;
 }
 
-footer address {
+footer map {
     text-align: center;
     float: left;
     width: 20%;
@@ -240,7 +240,7 @@ form select {
     color: #333333;
 }
 
-#borracion{
+#borracion {
     background-color: #F2F2F2;
 }
 
@@ -287,8 +287,8 @@ li {
 
 ul.slider {
     position: relative;
-    width:100%;
-    height: 500px;
+    width: 100%;
+    height: 700px;
 }
 
 ul.slider li {
@@ -304,9 +304,8 @@ ul.slider li {
 
 ul.slider li img {
     width: 100%;
-    height: 500px;
+    height: 700px;
     object-fit: cover;
-    border-radius: 10px;
 }
 
 ul.slider li:first-child {
@@ -367,22 +366,23 @@ ul.slider li:target {
     border-right: 5px dashed;
 }
 
+
 /*ESTILOS BLOQUE INFORMACIÓN 2*/
 
-.bloque-imagenes-uso{
+.bloque-imagenes-uso {
     margin: 2px;
     margin-bottom: 1px;
     padding: 2px;
     display: inline-flex;
 }
 
-.imagenes-uso{
+.imagenes-uso {
     display: inline-flex;
     margin: 20px;
     padding: 5px;
 }
 
-.sub-bloque-imagenes-uso-dentrofuera{
+.sub-bloque-imagenes-uso-dentrofuera {
     margin: 2px;
     padding: 2px;
     display: inline-flex;
@@ -392,6 +392,7 @@ ul.slider li:target {
 
 
 /* Call for action para Comprar */
+
 .slider aside {
     background-color: rgb(238, 236, 236);
     border-radius: 20px;
@@ -402,8 +403,8 @@ ul.slider li:target {
     text-align: center;
     top: 30%;
     width: 15%;
-  }
-  
+}
+
 .slider aside a {
     background-color: var(--primary-color);
     border-radius: 10px;
@@ -411,13 +412,13 @@ ul.slider li:target {
     margin-top: 40px;
     padding: 10px;
     text-decoration: none;
-  }
-  
+}
+
 .slider aside h4 {
     margin: 20px 0px;
-  }
+}
 
-  .bloque-imagenes-pie{
+.bloque-imagenes-pie {
     margin: 2px;
     margin-bottom: 1px;
     padding: 2px;
@@ -429,7 +430,10 @@ ul.slider li:target {
     justify-content: space-evenly;
 }
 
-
-#pronto{
+#pronto {
     width: 100%;
+}
+
+.mapa-web {
+    text-align: left;
 }

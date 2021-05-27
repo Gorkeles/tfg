@@ -17,17 +17,18 @@
 	<nav>
 		<a href="index.php"><img src="img/logo.jpg" alt="logo" class="logo"></a>
 		<div class="nav-item">
-			<a href="tienda.view.php" style="text-decoration:none">Tienda</a>
-		</div>
-		<div class="nav-item">
-			<a href="contacto.view.php" style="text-decoration:none">Contacto</a>
-		</div>
-		<div class="nav-item">
-			<a href="index.php" style="text-decoration:none">Portada</a>
-		</div>
+			<div class="nav-item">
+				<a href="contacto.view.php" style="text-decoration:none">Contacto</a>
+			</div>
+			<div class="nav-item">
+				<a href="tienda.view.php" style="text-decoration:none">Tienda</a>
+			</div>
+			<div class="nav-item">
+				<a href="index.php" style="text-decoration:none">Portada</a>
+			</div>
 	</nav>
 	<div class="container">
-	<br><br><br><br>
+		<br><br><br><br>
 		<main>
 			<H1> Acceso a administración </H1> <!-- Titulo de la web -->
 			<br><br><br>
@@ -37,7 +38,7 @@
 
 					<form action="admin.login.php" name="formulario" method="post">
 						<!-- Usamos el método post para recoger lo que seleccione el usuario en unas variables -->
-						
+
 						<h3>Inicia sesión</h3>
 						<!-- Placeholder es lo que le aparece al usuario en la web, name es como se llama la variable que recogeremos con post y type el tipo de datos que introduce el usuario -->
 						<br>
@@ -62,12 +63,12 @@
 			<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 	</div>
 	</main>
-	
-	<footer>
-		<address>
-			Siempre protegido
 
-		</address>
+	<footer>
+		<map>
+			<a href="mapa.view.php" style="text-decoration:none">Mapa Web</a>
+
+		</map>
 		<div>Enmascarados | Acceso a administración</div>
 		<section class="social">
 			<p><a href="index.php" style="text-decoration:none">Volver a Portada</a></p>
