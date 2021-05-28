@@ -12,19 +12,19 @@
 	if (!$result) {
         echo "<script type='text/javascript'>
         		alert(¡ERROR! Has introducido mal tu E-mail o contraseña);
-        		window.location.href='login.php';
+        		window.location.href='admin.php';
         		</script>";
     } else {
         if (password_verify($pass, $result['pass'])) {
             $_SESSION['user_id'] = $result['id'];
             echo "<script type='text/javascript'>
             alert(¡ENHORABUENA! Te has logueado satisfactoriamente);
-            window.location.href='login.php';
+            window.location.href='admin.php';
             </script>";
         } else {
             echo "<script type='text/javascript'>
         		alert(¡ERROR! Has introducido mal tu E-mail o contraseña);
-        		window.location.href='login.php';
+        		window.location.href='admin.php';
         		</script>";
         }
     }
@@ -43,19 +43,19 @@
 		if (!$result) {
 			echo "<script type='text/javascript'>
 					alert(¡ERROR! Has introducido mal tu E-mail o contraseña);
-					window.location.href='login.php';
+					window.location.href='admin.php';
 					</script>";
 		} else {
 			if (password_verify($passlog, $result['pass'])) {
 				$_SESSION['user_id'] = $result['id'];
 				echo "<script type='text/javascript'>
 				alert(¡ENHORABUENA! Te has logueado satisfactoriamente);
-				window.location.href='login.php';
+				window.location.href='admin.php';
 				</script>";
 			} else {
 				echo "<script type='text/javascript'>
 					alert(¡ERROR! Has introducido mal tu E-mail o contraseña);
-					window.location.href='login.php';
+					window.location.href='admin.php';
 					</script>";
 			}
 		}
@@ -65,15 +65,15 @@
 		
 
 	function hayConexion (){
-	$sql = "SELECT * FROM practica5"; //Traemos los elementos de la base de datos
+	$sql = "SELECT * FROM products"; //Traemos los elementos de la base de datos
 	$connect = $conexion->query($sql); //La conexión se ejecuta
 	
 		if($connect->num_rows){ //Con este condicional vamos a comprobar que hay datos en la base de datos
 		
 			while($fila = $connect->fetch_assoc()){  //El método fetch_assoc trae la información del elemento de cada fila que queramos
 				
-				if($fila['nombre']==$nombre){
-				echo  "Hola ". $fila['nombre'] . '<br />';
+				if($fila['id_product']==$id_product){
+				echo  "Hola ". $fila['id_product'] . '<br />';
 				//aquí podemos hacer un require o un include de otra página donde el usuario pueda hacer cosas.
 				//O redirigirle a la página de Login
 				}
@@ -83,4 +83,11 @@
 			echo 'No hay datos en la base de datos';
 		}
 	}
-?>
+
+	function borrarProducto($id_product){
+        $pdo = conexion();
+        $sql = "DELETE from products where id_product = '{$_POST["id_product"]}'";
+        $stmt = $pdo->prepare($sql);
+        $stmt ->bindValue(':id_product',$id_product);
+        $stmt->execute();
+    }

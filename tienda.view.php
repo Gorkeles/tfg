@@ -1,5 +1,3 @@
-
-
 <!DOCTYPE html>
 <html lang="es">
 
@@ -10,201 +8,130 @@
     <title>Enmascarados | Tienda</title>
 
     <!-- Incluimos los estilos y fuente utilizada en la web -->
-    <link href="estilos.css" rel="stylesheet" type="text/css" />
-<link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
-
-
-
-
+    <link href="estilos/tienda.css" rel="stylesheet" type="text/css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
 </head>
 
 <body>
-
     <!-- Barra de navegación con los enlaces a distintas páginas de la web -->
     <nav>
-        <div class="nav-item" href="index.php" target="_blank">
-            <a href="index.php" style="text-decoration:none">Portada</a>
+        <a href="index.php"><img src="img/logo.jpg" alt="Logotipo de enmascarados" class="logo"></a>
+        <div class="nav-item">
+            <a href="contacto.view.php" style="text-decoration:none">Contacto</a>
         </div>
         <div class="nav-item">
             <a href="tienda.view.php" style="text-decoration:none">Tienda</a>
         </div>
         <div class="nav-item">
-            <a href="contacto.view.php" style="text-decoration:none">Contacto</a>
+            <a href="index.php" style="text-decoration:none">Portada</a>
         </div>
-        <section class="social">
-            <a href="cerrar.php" style="text-decoration:none">Cerrar sesión</a>
-        </section>
-
     </nav>
 
-    <!-- Imagen de cabecera, subtítulo y descripción -->
-    <div class="container">
-        <header>
-            <div class="image">
-                <img src="img/tienda.jpg" height=500 />
+    <!-- INICIO GALERIA TIENDA -->
+
+    <!-- Conexion a la base de datos -->
+    <?php
+
+    //creo array vacio para guardar los productos
+    $arrayProducts = array();
+
+    //conecto con la bbdd
+    $conexion = new mysqli('localhost', 'root', '', 'tfg');
+
+    if ($conexion->connect_errno) {
+        die('Lo siento, hubo un problema con el servidor');
+    } else {
+        // creo una query
+        $query1 = 'SELECT * from products';
+
+        // guardo los resultados de la query en una variable
+        $result = $conexion->query($query1);
+
+        // guardo los resultados en un array
+        while ($row = $result->fetch_assoc()) {
+            array_push($arrayProducts, $row);
+        }
+    ?>
+
+
+        <section class="container">
+            <!-- muestro el contenido de mi array con un foreach -->
+            <?php foreach ($arrayProducts as $product) : ?>
+
+                <div class="item">
+                    <!--  cada item tendra titulo, imagen, descripcion de la imagen y precio -->
+                    <h3 class="item-title"><?php echo ($product["title"]); ?></h3>
+                    <img class="item-image" src="<?php echo ($product["img_url"]); ?>" alt="<?php echo ($product["alt"]); ?>">
+
+                    <div class="item-details">
+                        <h4 class="item-price"><?php echo ($product["price"]); ?></h4>
+                        <!-- boton para añadir al carrito -->
+                        <button class="addToCart">AÑADIR AL CARRITO</button>
+                    </div>
+                </div>
+            <?php endforeach; ?>
+        </section>
+    <?php } ?>
+
+
+    <!-- FIN TIENDA -->
+
+    <!-- INICIO CARRITO -->
+    <section class="shopping-cart">
+        <div class="container">
+            <h1 class="text-center">CARRITO</h1>
+            <hr>
+            <div class="row">
+                <div class="shopping-cart-header">
+                    <h6>Producto</h6>
+                </div>
+
+                <div class="shopping-cart-header">
+                    <h6 class="text-truncate">Precio</h6>
+                </div>
+
+                <div class="shopping-cart-header">
+                    <h6>Cantidad</h6>
+                </div>
+
             </div>
-        </header>
-        <main>
-            <h1>Bienvenidos a la tienda</h1><br>
+            <!-- INICIO SHOPPING CART ITEMS  QUE SE LLENARÁ CON EL JS-->
 
-            <section class="rutasMoto">
-
-                <div>
-                    En nuestra tienda tienes una original seleción de merchandising que no encontrarás en otras páginas y con envío gratuito
-                </div>
-
-
-            </section>
-
-            <!-- Introducimos una serie de apartados para organizar el contenido de la web -->
-            <h2>Muestrario</h2>
-            <div class="cards">
-                <div class="card">
-                    <a title="Mascarilla" href="login.view.php"><img src="img/mascarilla-negra.jpg" alt="Mascarilla negra" /></a>
-                    <h3>Mascarillas</h3>
-                </div>
-                <div class="card">
-                    <a title="Filtros" href="login.view.php"><img src="img/filtros.jpg" alt="Filtros de mascatilla" /></a>
-                    <h3>Filtros</h3>
-                </div>
-                <div class="card">
-                    <a title="Estuche" href="login.view.php"><img src="img/estuche.jpg" alt="Estuche portamascarillas" /></a>
-                    <h3>Portamascarillas</h3>
-                </div>
+            <div class="row shoppingCartItemsContainer">
             </div>
-    </div>
+            <!-- ? FIN SHOPPING CART ITEMS -->
 
-
-
-<!-- Imagen de cabecera, subtítulo y descripción -->
-<div class="container">
-        <main>
-            <h1>Buscador de mascarillas</h1><br>
-
-            <section class="rutasMoto">
-
-                <div>
-                    En éste apartado te mostraremos las mejores rutas disponibles, catalogamos las rutas por longitud y niveles de dificultad, para adaptarse a tus necesidades.
-                </div><br>
-
-
-            </section>
-
-            <!-- Buscador de rutas que busca en la base de datos según el datos que elijas
-            y a continuación escribir que quieres buscar dentro de ese campo seleccionado -->
-            <section>
-                <h2>Buscador de rutas</h2>
-                <br>
-                <div class="motos">
-                    <form action="rutas.php" name="rutas" method="post">
-                        Aquí puedes buscar todas las rutas por el criterio que elijas
-                        <br>
-                        <br>
-                        <select name="tipoBusquedaRuta" id="tipoBusquedaRuta">
-                            <option value="PROVINCIA">Provincia</option>
-                            <option value="NIVEL">Nivel</option>
-                            <option value="DISTANCIA">Distancia</option>
-                            <option value="DESCRIPCION">Descripción</option>
-                            <option value="ADAPTADA">Adaptada a tu moto (cc³)</option>
-                        </select>
-                        <br>
-                        <br>
-                        Ahora escribe que quieres buscar
-                        <br>
-                        <br>
-                        <input type="text" placeholder="¿Qué ruta quieres buscar?" name="provincia" id="provincia" require="required">
-                        <br>
-                        <br>
-                        <input type="submit" name="buscarRutas" class="btn btn-primary" value="Enviar">
-                        <br>
-                    </form>
-                </div>
-            </section>
-
-            <!-- Aquí mostramos el resultado obtenido del SELECT de la anterior búsqueda
-            Y con el foreach recorremos todos los datos pra que muestre los resultados -->
-            <div class="resultado">
-                <?php if (!empty($arrayRutas)) { ?>
-                    <center>
-                        <table>
-                            <thead>
-                                <tr>
-                                    <th><b><u>Provincia</u></b></th>
-                                    <th><b><u>Nivel</u></b></th>
-                                    <th><b><u>Distancia</u></b></th>
-                                    <th><b><u>Descripción</u></b></th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <?php foreach ($arrayRutas as $ruta => $rutas) : ?>
-                                    <tr>
-                                        <td><?= $rutas["provincia"]; ?></td>
-                                        <td><?= $rutas["nivel"]; ?></td>
-                                        <td><?= $rutas["distancia"]; ?></td>
-                                        <td><?= $rutas["descripcion"]; ?></td>
-                                    </tr>
-                            </tbody>
-                        <?php endforeach; ?>
-                        </table>
-                    </center>
-                <?php } ?>
+            <!-- INICIO TOTAL -->
+            <div class="total">
+                <p class="shopping-cart-footer">Total</p>
+                <p class="shopping-cart-footer shoppingCartTotal">0€</p>
+                <form action="tienda.php" name="productos" method="POST" id="productos">
+                    <input type="hidden" name="pedido" id="pedido">
+                    <p class="shopping-cart-footer "><input class="comprarButton" type="submit" id="comprar" name="comprar" onclick="comprarButtonClicked()" value="comprar"></button></p>
+                </form>
             </div>
 
-
-            <section>
-                <h2>Introduce tu ruta</h2>
-                <br>
-                <div class="rutas">
-                    <!-- contenedor -->
-
-                    <form action="rutas.php" name="rutas" method="post">
-                        <!-- Usamos el método post para recoger lo que seleccione el usuario en unas variables -->
-
-                        <!-- Placeholder es lo que le aparece al usuario en la web, name es como se llama la variable que recogeremos con post y type el tipo de datos que introduce el usuario -->
-
-                        Provincia: <br>
-                        <input type="text" placeholder="¿Donde es la ruta?" name="provincia" id="provincia" required>
-                        <br>
-                        <br>
-                        Dificultad: <br>
-                        <input type="text" placeholder="¿Fácil, media o dificil?" name="nivel" id="nivel" required>
-                        <br>
-                        <br>
-                        Distancia: <br>
-                        <input type="text" placeholder="¿Cuantos kilómetros tiene?" name="distancia" id="distancia" required>
-                        <br>
-                        <br>
-                        Descripción: <br>
-                        <input type="text" placeholder="Describe la ruta brevemente" name="descripcion" id="descripcion" required>
-                        <br>
-                        <br>
-
-
-                        <!-- boton para enviar los datos -->
-                        <input type="submit" name="rutas" class="btn btn-primary" value="Enviar">
-                    </form>
-
-
-                </div>
-
-
-            </section>
-
-    </div>
+            <!-- FIN TOTAL -->
 
 
 
+        </div>
 
-    </main>
+    </section>
+    <!-- FIN SECCION CARRITO -->
+
+    <!-- importo el script de JS para que funciones la cesta -->
+    <script src="./tienda.js"></script>
+
     <footer>
-        <address>
-            <p>Siempre protegido </p>
+        <map>
+            <a href="mapa.view.php" style="text-decoration:none">Mapa Web</a>
 
-        </address>
+        </map>
         <div>Enmascarados | Tienda</div>
         <section class="social">
-            <p><a href="mapa.view.php" style="text-decoration:none">Mapa WEB</a></p>
+            <a href="admin.login.view.php" style="text-decoration:none">Administrador</a>
         </section>
     </footer>
 </body>

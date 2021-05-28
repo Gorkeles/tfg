@@ -1,0 +1,440 @@
+/* BOX-SIZING para calcular directamente todas las dimensiones de las cajas */
+
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+
+/* RESETEO LIMITADO DE PROPIEDADES */
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0px;
+    text-align: center;
+    color: var(--primary-text-color);
+}
+
+
+/* Todos son colores seguros, falta añadir a guía de estilos*/
+
+:root {
+    --background-color: #ccffcc;
+    --primary-color: #cc99cc;
+    --primary-text-color: #000000;
+    --secondary-text-color: #ffffff;
+}
+
+
+/* El background color también se podría poner simplemente blanco*/
+
+body {
+    font-size: 16px;
+    font-family: "Montserrat", sans-serif;
+    color: var(--primary-text-color);
+    background-color: rgb(238, 236, 236);
+    background-position: center;
+    background-attachment: fixed;
+    font-weight: bold;
+    margin-bottom: 0px;
+}
+
+a {
+    color: var(--primary-text-color);
+}
+
+
+/* Establecemos el centrado y las dimensiones de los elementos principales */
+
+nav,
+.container,
+footer {
+    max-width: 1200px;
+    min-width: 576px;
+    margin: 0px auto;
+}
+
+.container {
+    margin: 0 auto;
+    background-color: var(--background-color);
+}
+
+.contacto,
+.registro {
+    align-items: center;
+    align-content: center;
+    text-align: center;
+    max-width: 600px;
+    margin: auto;
+    background: #0000;
+}
+
+
+/* Estilos para el menú superior */
+
+nav {
+    background-color: var(--primary-color);
+    color: var(--primary-text-color);
+    padding: 10px;
+    position: sticky;
+    overflow-y: auto;
+    top: 0px;
+    z-index: 100;
+}
+
+nav div {
+    float: right;
+    margin-left: 20px;
+    padding: 5px;
+}
+
+.social {
+    color: #ffffff;
+}
+
+.logo {
+    float: left;
+    height: 35px;
+}
+
+
+/* Estilos y fondo para la cabecera */
+
+header {
+    position: relative;
+    text-align: center;
+}
+
+header img {
+    width: 100%;
+}
+
+
+/* Formato del elemento principal  */
+
+main {
+    margin: 0px auto;
+    width: 90%;
+    background-color: var(--background-color);
+}
+
+
+/* Estilos para el pie de página presente en todas las páginas */
+
+footer {
+    background-color: var(--primary-color);
+    clear: both;
+    color: var(--primary-text-color);
+    font-size: 0.8;
+    overflow-y: auto;
+    padding: 20px;
+    margin-bottom: 0px;
+    position: relative;
+}
+
+footer map {
+    text-align: center;
+    float: left;
+    width: 20%;
+}
+
+footer div {
+    float: left;
+    text-align: center;
+    width: 60%;
+}
+
+footer section {
+    float: left;
+    text-align: center;
+    width: 20%;
+    background-color: var(--primary-color);
+}
+
+
+/*Estilo de las tablas del buscador*/
+
+label {
+    display: inline-block;
+    width: 120px;
+}
+
+table {
+    margin-bottom: 50px;
+    margin-top: 50px;
+    width: 100%;
+    text-align: center;
+    border-collapse: collapse;
+}
+
+th {
+    padding: 10px;
+    background: var(--primary-color);
+    border-bottom: 1px solid #fff;
+}
+
+td {
+    padding: 8px;
+    background: #F2F2F2;
+    border-bottom: 1px solid #fff;
+    border-top: 1px solid transparent;
+}
+
+tr:hover td {
+    background: #d0d0d0;
+    color: rgb(128, 128, 128);
+}
+
+
+/*Estilo de formularios*/
+
+button,
+.button {
+    height: 60px;
+    width: 150px;
+    border: none;
+    background-color: var(--primary-color);
+    border-radius: 10px;
+    font-size: 16px;
+    font-family: "Montserrat";
+    font-weight: bold;
+}
+
+button:hover {
+    background-color: #fff;
+    transition: background-color 0.2s ease;
+}
+
+form {
+    width: 100%;
+    background-color: var(--primary-color);
+    color: black;
+    padding: 20px;
+}
+
+::placeholder {
+    color: #333333;
+    font-size: larger;
+    text-align: left;
+}
+
+form input {
+    width: 70%;
+    height: 25px;
+    border: none;
+    border-radius: 20px;
+}
+
+form select {
+    width: 70%;
+    height: 25px;
+    border: none;
+    border-radius: 20px;
+    color: #333333;
+}
+
+#borracion {
+    background-color: #F2F2F2;
+}
+
+form input[type="text"]:focus {
+    color: "black";
+}
+
+form input[type="submit"]:hover {
+    background: white;
+}
+
+#consulta {
+    height: 50px;
+}
+
+
+/* Establecemos el centrado y las dimensiones de los elementos principales */
+
+.wrapper {
+    min-height: calc(100% - 4rem);
+}
+
+.cookies {
+    min-height: calc(100% - 4rem);
+    align-items: center;
+}
+
+
+/*ESTILOS DEL SLIDE*/
+
+.container1 {
+    margin: 0px;
+    background-color: var(--background-color);
+    width: 100%;
+    text-align: -webkit-center;
+}
+
+ul,
+li {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+ul.slider {
+    position: relative;
+    width: 100%;
+    height: 700px;
+}
+
+ul.slider li {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    opacity: 0;
+    width: inherit;
+    height: inherit;
+    transition: opacity .5s;
+    background: var(--primary-color);
+}
+
+ul.slider li img {
+    width: 100%;
+    height: 700px;
+    object-fit: cover;
+}
+
+ul.slider li:first-child {
+    opacity: 1;
+    /*Mostramos el primer <li>*/
+}
+
+ul.slider li:target {
+    opacity: 1;
+    /*Mostramos el <li> del enlace que pulsemos*/
+}
+
+.menu {
+    text-align: center;
+    margin: 20px;
+}
+
+.menu li {
+    display: inline-block;
+    text-align: center;
+}
+
+.menu li a {
+    display: inline-block;
+    color: var(--background-color);
+    text-decoration: none;
+    background-color: var(--primary-color);
+    padding: 10px;
+    width: 42px;
+    height: 42px;
+    font-size: 20px;
+    border-radius: 100%;
+}
+
+
+/*ESTILOS BLOQUE INFORMACIÓN 1*/
+
+.infoPortada {
+    margin: 1px;
+    border: 5px dashed;
+    color: var(--primary-color);
+    padding: 5px;
+    background-color: var(--background-color);
+    display: inline-flex;
+}
+
+.titulos,
+.textos {
+    margin: 2px;
+    width: 95%;
+    height: 40%;
+}
+
+.bloque {
+    width: 33%;
+}
+.bloque2 {
+    border-left: 5px dashed;
+    border-right: 5px dashed;
+}
+
+
+/*ESTILOS BLOQUE INFORMACIÓN 2*/
+
+.bloque-imagenes-uso {
+    margin: 2px;
+    margin-bottom: 1px;
+    padding: 2px;
+    display: inline-flex;
+}
+
+.imagenes-uso {
+    display: inline-flex;
+    margin: 20px;
+    padding: 5px;
+}
+
+.sub-bloque-imagenes-uso-dentrofuera {
+    margin: 2px;
+    padding: 2px;
+    display: inline-flex;
+    border: dashed 5px;
+    border-color: var(--primary-color);
+}
+
+
+/* Call for action para Comprar */
+
+.slider aside {
+    background-color: rgb(238, 236, 236);
+    border-radius: 20px;
+    color: var(--primary-color);
+    padding: 10px;
+    position: absolute;
+    right: 15%;
+    text-align: center;
+    top: 30%;
+    width: 15%;
+}
+
+.slider aside a {
+    background-color: var(--primary-color);
+    border-radius: 10px;
+    color: var(--primary-text-color);
+    margin-top: 40px;
+    padding: 10px;
+    text-decoration: none;
+}
+
+.slider aside h4 {
+    margin: 20px 0px;
+}
+
+.bloque-imagenes-pie {
+    margin: 2px;
+    margin-bottom: 1px;
+    padding: 2px;
+    display: flex;
+    align-items: baseline;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: stretch;
+    justify-content: space-evenly;
+}
+
+#pronto {
+    width: 100%;
+}
+
+.mapa-web {
+    text-align: left;
+}
