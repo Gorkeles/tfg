@@ -29,19 +29,21 @@
         </div>
     </nav>
 
+    <!-- formulario de pedido -->
     <section class="container">
         <br><br><br><br>
         <div class="modal" id="modal">
+            <!-- valido formulario -->
             <form action="datosPedido.php" name="formulario" method="POST" onsubmit="return validar();">
                 <br>
                 <h3>Datos para el envío:</h3>
-                <!-- Placeholder es lo que le aparece al usuario en la web, name es como se llama la variable que recogeremos con post y type el tipo de datos que introduce el usuario -->
                 <br>
                 <!-- El nombre es tipo text -->
                 Nombre: <br><br>
                 <input type="text" placeholder="Introduzca su nombre y apellido" name="nombre" id="name" required>
                 <br>
                 <br>
+                <!-- El telefono es tipo tel -->
                 Teléfono: <br><br>
                 <input type="tel" placeholder="Introduzca su teléfono" name="phone" id="phone" required>
                 <br>
@@ -52,7 +54,7 @@
                 <br>
                 <br>
                 <!-- La direccion es tipo text-->
-                Comentarios: <br><br>
+                Dirección: <br><br>
                 <input type="text" placeholder="Introduzca su dirección" name="direction" id="direction" required>
                 <br>
                 <br>
@@ -65,6 +67,8 @@
         </div>
     </section>
 
+
+    <!-- importo script de validacion y de tienda -->
     <script src="./tienda.js"></script>
     <script src="validar.js"></script>
 

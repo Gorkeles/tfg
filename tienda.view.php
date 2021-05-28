@@ -28,7 +28,8 @@
         </div>
     </nav>
 
-    <!-- INICIO TIENDA -->
+    <!-- INICIO GALERIA TIENDA -->
+
     <!-- Conexion a la base de datos -->
     <?php
 
@@ -47,7 +48,7 @@
         // guardo los resultados de la query en una variable
         $result = $conexion->query($query1);
 
-        // guarfdo los resultados en un array
+        // guardo los resultados en un array
         while ($row = $result->fetch_assoc()) {
             array_push($arrayProducts, $row);
         }
@@ -55,17 +56,18 @@
 
 
         <section class="container">
-
+            <!-- muestro el contenido de mi array con un foreach -->
             <?php foreach ($arrayProducts as $product) : ?>
 
                 <div class="item">
-                    <h3 class="item-title"><?php echo ($product["title"]);
-                                            ?></h3>
+                    <!--  cada item tendra titulo, imagen, descripcion de la imagen y precio -->
+                    <h3 class="item-title"><?php echo ($product["title"]); ?></h3>
                     <img class="item-image" src="<?php echo ($product["img_url"]); ?>" alt="<?php echo ($product["alt"]); ?>">
 
                     <div class="item-details">
                         <h4 class="item-price"><?php echo ($product["price"]); ?></h4>
-                        <button class="item-button btn btn-primary addToCart">AÑADIR AL CARRITO</button>
+                        <!-- boton para añadir al carrito -->
+                        <button class="addToCart">AÑADIR AL CARRITO</button>
                     </div>
                 </div>
             <?php endforeach; ?>
@@ -94,7 +96,7 @@
                 </div>
 
             </div>
-            <!-- ? INICIO SHOPPING CART ITEMS -->
+            <!-- INICIO SHOPPING CART ITEMS  QUE SE LLENARÁ CON EL JS-->
 
             <div class="row shoppingCartItemsContainer">
             </div>
@@ -117,8 +119,9 @@
         </div>
 
     </section>
-    <!-- END SECTION SHOPPING CART -->
+    <!-- FIN SECCION CARRITO -->
 
+    <!-- importo el script de JS para que funciones la cesta -->
     <script src="./tienda.js"></script>
 
     <footer>

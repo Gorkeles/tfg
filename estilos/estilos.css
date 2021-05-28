@@ -355,12 +355,13 @@ ul.slider li:target {
 .titulos,
 .textos {
     margin: 2px;
-    padding: 5px;
     width: 95%;
-    /* border: double; */
-    height: 60%;
+    height: 40%;
 }
 
+.bloque {
+    width: 33%;
+}
 .bloque2 {
     border-left: 5px dashed;
     border-right: 5px dashed;

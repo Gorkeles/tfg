@@ -1,14 +1,12 @@
 <?php
 
-include 'funciones.php';
-
 if(isset($_POST['email'])) {
 
     // correo de la dueña al que se enviaran los emails y su asunto
     $email_to = "olga.cobo@ezzing.com";
     $email_subject = "Pedido";
 
-    // validacion de los datos recogidos por el formulario
+    // validacion de los datos recogidos por el formulario para que no esten vacios
     if(!isset($_POST['nombre']) ||
     !isset($_POST['phone']) ||
     !isset($_POST['email']) ||

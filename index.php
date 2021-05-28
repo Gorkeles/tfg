@@ -115,28 +115,29 @@ $_SESSION['nombre'] = 'Gorka'; //Sesión iniciada con Gorka
             <!--PRIMER BLOQUE DE INFORMACIÓN-->
 
         <div class="infoPortada">
-            <div class="bloque1">
+            <div class="bloque">
                 <div class="titulos">
                     <h2><u>MAYOR SUJECCIÓN</u></h2>
                 </div>
                 <div class="textos">
-                    <p>Sujección baja que evita rozaduras y molestias en la zona de las orejas <br><br><br><br></p>
+                    <p>Sujección baja que evita rozaduras y
+                     molestias en la zona de las orejas <br><br><br><br></p>
                 </div>
             </div>
-            <div class="bloque2">
+            <div class="bloque bloque2">
                 <div class="titulos">
                     <h2><u>UN DISEÑO ADAPTADO A TI</u></h2>
                 </div>
                 <div class="textos">
-                    <p>Sujección baja que evita rozaduras y molestias en la zona de las orejas</p>
+                    <p>¡Con pago contra reembolso! No pagas hasta que llegue tu mascarilla</p>
                 </div>
             </div>
-            <div class="bloque3">
+            <div class="bloque">
                 <div class="titulos">
                     <h2><u>MODA SEGURA</u></h2>
                 </div>
                 <div class="textos">
-                    <p>Sujección baja que evita rozaduras y molestias en la zona de las orejas</p>
+                    <p>Flitra un 99% de las bacterias del ambiente</p>
                 </div>
             </div>
         </div>
